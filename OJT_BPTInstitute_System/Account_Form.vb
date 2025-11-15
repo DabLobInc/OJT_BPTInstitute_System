@@ -24,12 +24,7 @@
         Me.Text = Mode & " Account"
     End Sub
     'jAS
-<<<<<<< HEAD
     'mea
 
-=======
-    Private Sub Add_Panel_Paint(sender As Object, e As PaintEventArgs) Handles Add_Panel.Paint
->>>>>>> 0d2e9388696473873ba52337ecd3674dcee4c7f0
 
-    End Sub
 End Class
