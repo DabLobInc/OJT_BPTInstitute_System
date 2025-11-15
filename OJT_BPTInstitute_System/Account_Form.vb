@@ -24,4 +24,7 @@
         Me.Text = Mode & " Account"
     End Sub
 
+    Private Sub Add_Panel_Paint(sender As Object, e As PaintEventArgs) Handles Add_Panel.Paint
+
+    End Sub
 End Class
