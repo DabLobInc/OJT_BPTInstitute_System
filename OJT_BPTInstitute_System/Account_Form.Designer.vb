@@ -28,11 +28,11 @@ Partial Class Account_Form
         SchoolName_Lbl = New Label()
         Screen_Panel = New Panel()
         Add_Panel = New Panel()
+        Label3 = New Label()
         Edit_Panel = New Panel()
+        Label2 = New Label()
         Search_Panel = New Panel()
         Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
         MainMenu_Panel.SuspendLayout()
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
         Screen_Panel.SuspendLayout()
@@ -106,6 +106,15 @@ Partial Class Account_Form
         Add_Panel.Size = New Size(800, 344)
         Add_Panel.TabIndex = 0
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(228, 95)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(67, 20)
+        Label3.TabIndex = 0
+        Label3.Text = "Add Test"
+        ' 
         ' Edit_Panel
         ' 
         Edit_Panel.Controls.Add(Label2)
@@ -113,6 +122,15 @@ Partial Class Account_Form
         Edit_Panel.Name = "Edit_Panel"
         Edit_Panel.Size = New Size(800, 344)
         Edit_Panel.TabIndex = 1
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(207, 98)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(65, 20)
+        Label2.TabIndex = 0
+        Label2.Text = "Edit Test"
         ' 
         ' Search_Panel
         ' 
@@ -130,24 +148,6 @@ Partial Class Account_Form
         Label1.Size = New Size(83, 20)
         Label1.TabIndex = 0
         Label1.Text = "Search Test"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(207, 98)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(65, 20)
-        Label2.TabIndex = 0
-        Label2.Text = "Edit Test"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(228, 95)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(67, 20)
-        Label3.TabIndex = 0
-        Label3.Text = "Add Test"
         ' 
         ' Account_Form
         ' 
