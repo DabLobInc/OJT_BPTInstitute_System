@@ -14,11 +14,18 @@ Public Class Faculty_Dashboard
         ShowPanel(Screen_Panel, "Home_Panel")
     End Sub
 
-    Private Sub MyAcc_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles MyAcc_BTN.LinkClicked
-        ShowPanel(Screen_Panel, "Account_Panel")
+    Private Sub Profile_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Profile_BTN.LinkClicked
+        ShowPanel(Screen_Panel, "Profile_Panel")
     End Sub
 
-    Private Sub About_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles About_BTN.LinkClicked
-        ShowPanel(Screen_Panel, "About_Panel")
+    Private Sub Section_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Section_BTN.LinkClicked
+        ShowPanel(Screen_Panel, "Section_Panel")
     End Sub
+
+    Private Sub Faculty_Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.TopMost = True
+        Me.FormBorderStyle = FormBorderStyle.None
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
+
 End Class
