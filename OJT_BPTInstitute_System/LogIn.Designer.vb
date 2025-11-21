@@ -146,6 +146,7 @@ Partial Class LogIn_Form
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "LogIn_Form"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Log In"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
