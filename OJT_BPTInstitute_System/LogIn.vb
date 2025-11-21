@@ -95,4 +95,7 @@ Class LogIn_Form
         End If
     End Sub
 
+    Private Sub LogIn_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
