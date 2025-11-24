@@ -650,6 +650,20 @@ Partial Class Faculty_Dashboard
     Friend WithEvents Last_vis_col_lbl As DataGridViewTextBoxColumn
     Friend WithEvents Actions_col_lbl As DataGridViewTextBoxColumn
     Friend WithEvents FacInfo_Panel As Panel
+    Friend WithEvents Fac_DeptName_lbl As Label
+    Friend WithEvents Fac_DeptName__lbl As Label
+    Friend WithEvents Fac_DeptID__lbl As Label
+    Friend WithEvents Fac_FacID__lbl As Label
+    Friend WithEvents Fac_Suffix_lbl As Label
+    Friend WithEvents Fac_LName_lbl As Label
+    Friend WithEvents Fac_FName_lbl As Label
+    Friend WithEvents Fac_MName_lbl As Label
+    Friend WithEvents Fac_Suffix_txt As TextBox
+    Friend WithEvents Fac_LName_txt As TextBox
+    Friend WithEvents Fac_FName_txt As TextBox
+    Friend WithEvents Fac_MName_txt As TextBox
+    Friend WithEvents Profile_lbl As Label
+    Friend WithEvents Section_lbl As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
