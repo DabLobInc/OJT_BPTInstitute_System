@@ -34,6 +34,7 @@ Partial Class Student_Dashboard
         Screen_Panel = New Panel()
         Profile_Panel = New Panel()
         StudProfile_Panel = New Panel()
+        MaskedTextBox4 = New MaskedTextBox()
         Button5 = New Button()
         Button4 = New Button()
         MaskedTextBox3 = New MaskedTextBox()
@@ -114,7 +115,6 @@ Partial Class Student_Dashboard
         InternTitle_Panel = New Panel()
         Label1 = New Label()
         Panel9 = New Panel()
-        MaskedTextBox4 = New MaskedTextBox()
         MainMenu_Panel.SuspendLayout()
         SchoolTitle_Panel.SuspendLayout()
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
@@ -245,8 +245,8 @@ Partial Class Student_Dashboard
         ' Screen_Panel
         ' 
         Screen_Panel.BackColor = SystemColors.Control
-        Screen_Panel.Controls.Add(Profile_Panel)
         Screen_Panel.Controls.Add(Home_Panel)
+        Screen_Panel.Controls.Add(Profile_Panel)
         Screen_Panel.Controls.Add(Internship_Panel)
         Screen_Panel.Dock = DockStyle.Fill
         Screen_Panel.Location = New Point(0, 225)
@@ -297,6 +297,15 @@ Partial Class Student_Dashboard
         StudProfile_Panel.Name = "StudProfile_Panel"
         StudProfile_Panel.Size = New Size(1902, 653)
         StudProfile_Panel.TabIndex = 12
+        ' 
+        ' MaskedTextBox4
+        ' 
+        MaskedTextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox4.Location = New Point(71, 264)
+        MaskedTextBox4.Mask = "00-0000"
+        MaskedTextBox4.Name = "MaskedTextBox4"
+        MaskedTextBox4.Size = New Size(296, 51)
+        MaskedTextBox4.TabIndex = 45
         ' 
         ' Button5
         ' 
@@ -1092,15 +1101,6 @@ Partial Class Student_Dashboard
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(38, 105)
         Panel9.TabIndex = 12
-        ' 
-        ' MaskedTextBox4
-        ' 
-        MaskedTextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox4.Location = New Point(71, 264)
-        MaskedTextBox4.Mask = "00-0000"
-        MaskedTextBox4.Name = "MaskedTextBox4"
-        MaskedTextBox4.Size = New Size(296, 51)
-        MaskedTextBox4.TabIndex = 45
         ' 
         ' Student_Dashboard
         ' 

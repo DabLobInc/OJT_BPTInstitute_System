@@ -28,6 +28,9 @@ Partial Class Admin_Dashboard
         Content_Panel = New Panel()
         Dashboard_Panel = New Panel()
         Container_Panel = New Panel()
+        Fac_Eval_Panel = New Panel()
+        FEval_DateTime = New Label()
+        Evaluatorslbl = New Label()
         Stud_Eval_Panel = New Panel()
         Adm_Greeting_lbl = New Label()
         Adm_User_lbl = New Label()
@@ -35,9 +38,6 @@ Partial Class Admin_Dashboard
         Partner_Comp_Panel = New Panel()
         PComp_DateTime = New Label()
         Companieslbl = New Label()
-        Fac_Eval_Panel = New Panel()
-        FEval_DateTime = New Label()
-        Evaluatorslbl = New Label()
         Stud_Regis_Panel = New Panel()
         Registeredlbl = New Label()
         SEval_DateTime = New Label()
@@ -67,9 +67,9 @@ Partial Class Admin_Dashboard
         Content_Panel.SuspendLayout()
         Dashboard_Panel.SuspendLayout()
         Container_Panel.SuspendLayout()
+        Fac_Eval_Panel.SuspendLayout()
         Stud_Eval_Panel.SuspendLayout()
         Partner_Comp_Panel.SuspendLayout()
-        Fac_Eval_Panel.SuspendLayout()
         Stud_Regis_Panel.SuspendLayout()
         Side_Panel.SuspendLayout()
         SideBar_Panel.SuspendLayout()
@@ -137,6 +137,34 @@ Partial Class Admin_Dashboard
         Container_Panel.Size = New Size(1548, 830)
         Container_Panel.TabIndex = 16
         ' 
+        ' Fac_Eval_Panel
+        ' 
+        Fac_Eval_Panel.BackColor = Color.WhiteSmoke
+        Fac_Eval_Panel.Controls.Add(FEval_DateTime)
+        Fac_Eval_Panel.Controls.Add(Evaluatorslbl)
+        Fac_Eval_Panel.Location = New Point(20, 30)
+        Fac_Eval_Panel.Name = "Fac_Eval_Panel"
+        Fac_Eval_Panel.Size = New Size(1515, 780)
+        Fac_Eval_Panel.TabIndex = 3
+        ' 
+        ' FEval_DateTime
+        ' 
+        FEval_DateTime.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FEval_DateTime.Location = New Point(735, 32)
+        FEval_DateTime.Name = "FEval_DateTime"
+        FEval_DateTime.Size = New Size(695, 49)
+        FEval_DateTime.TabIndex = 7
+        ' 
+        ' Evaluatorslbl
+        ' 
+        Evaluatorslbl.AutoSize = True
+        Evaluatorslbl.Font = New Font("Times New Roman", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Evaluatorslbl.Location = New Point(116, 96)
+        Evaluatorslbl.Name = "Evaluatorslbl"
+        Evaluatorslbl.Size = New Size(654, 62)
+        Evaluatorslbl.TabIndex = 6
+        Evaluatorslbl.Text = "FACULTY EVALUATORS"
+        ' 
         ' Stud_Eval_Panel
         ' 
         Stud_Eval_Panel.BackColor = Color.WhiteSmoke
@@ -201,34 +229,6 @@ Partial Class Admin_Dashboard
         Companieslbl.Size = New Size(622, 62)
         Companieslbl.TabIndex = 5
         Companieslbl.Text = "PARTNER COMPANIES"
-        ' 
-        ' Fac_Eval_Panel
-        ' 
-        Fac_Eval_Panel.BackColor = Color.WhiteSmoke
-        Fac_Eval_Panel.Controls.Add(FEval_DateTime)
-        Fac_Eval_Panel.Controls.Add(Evaluatorslbl)
-        Fac_Eval_Panel.Location = New Point(20, 30)
-        Fac_Eval_Panel.Name = "Fac_Eval_Panel"
-        Fac_Eval_Panel.Size = New Size(1515, 780)
-        Fac_Eval_Panel.TabIndex = 3
-        ' 
-        ' FEval_DateTime
-        ' 
-        FEval_DateTime.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FEval_DateTime.Location = New Point(735, 32)
-        FEval_DateTime.Name = "FEval_DateTime"
-        FEval_DateTime.Size = New Size(695, 49)
-        FEval_DateTime.TabIndex = 7
-        ' 
-        ' Evaluatorslbl
-        ' 
-        Evaluatorslbl.AutoSize = True
-        Evaluatorslbl.Font = New Font("Times New Roman", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Evaluatorslbl.Location = New Point(116, 96)
-        Evaluatorslbl.Name = "Evaluatorslbl"
-        Evaluatorslbl.Size = New Size(654, 62)
-        Evaluatorslbl.TabIndex = 6
-        Evaluatorslbl.Text = "FACULTY EVALUATORS"
         ' 
         ' Stud_Regis_Panel
         ' 
@@ -507,11 +507,11 @@ Partial Class Admin_Dashboard
         Content_Panel.ResumeLayout(False)
         Dashboard_Panel.ResumeLayout(False)
         Container_Panel.ResumeLayout(False)
+        Fac_Eval_Panel.ResumeLayout(False)
+        Fac_Eval_Panel.PerformLayout()
         Stud_Eval_Panel.ResumeLayout(False)
         Partner_Comp_Panel.ResumeLayout(False)
         Partner_Comp_Panel.PerformLayout()
-        Fac_Eval_Panel.ResumeLayout(False)
-        Fac_Eval_Panel.PerformLayout()
         Stud_Regis_Panel.ResumeLayout(False)
         Stud_Regis_Panel.PerformLayout()
         Side_Panel.ResumeLayout(False)
