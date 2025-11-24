@@ -112,9 +112,9 @@ Partial Class Faculty_Dashboard
         ' Screen_Panel
         ' 
         Screen_Panel.BackColor = SystemColors.Control
+        Screen_Panel.Controls.Add(Home_Panel)
         Screen_Panel.Controls.Add(Profile_Panel)
         Screen_Panel.Controls.Add(Section_Panel)
-        Screen_Panel.Controls.Add(Home_Panel)
         Screen_Panel.Controls.Add(MainMenu_Panel)
         Screen_Panel.Dock = DockStyle.Fill
         Screen_Panel.Location = New Point(0, 0)
