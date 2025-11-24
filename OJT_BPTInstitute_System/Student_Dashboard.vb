@@ -24,6 +24,6 @@
     End Sub
 
     Private Sub Section_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Internship_BTN.LinkClicked
-        ShowPanel(Screen_Panel, "Section_Panel")
+        ShowPanel(Screen_Panel, "Internship_Panel")
     End Sub
 End Class
