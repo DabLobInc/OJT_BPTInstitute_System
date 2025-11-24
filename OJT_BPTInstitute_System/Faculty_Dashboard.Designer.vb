@@ -24,6 +24,20 @@ Partial Class Faculty_Dashboard
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Screen_Panel = New Panel()
+        Home_Panel = New Panel()
+        Label9 = New Label()
+        DataGridView1 = New DataGridView()
+        LinkLabel1 = New LinkLabel()
+        FacInfo_Panel = New Panel()
+        Panel4 = New Panel()
+        Panel3 = New Panel()
+        Panel2 = New Panel()
+        Panel1 = New Panel()
+        Time_Position_lbl = New Label()
+        Greet_Fac_lbl = New Label()
+        FacName_lbl = New Label()
+        DeptName_lbl = New Label()
+        Faculty_DateTime = New Label()
         Profile_Panel = New Panel()
         FacProfile_Panel = New Panel()
         MaskedTextBox3 = New MaskedTextBox()
@@ -69,20 +83,6 @@ Partial Class Faculty_Dashboard
         Fac_Search_txt = New TextBox()
         Undecided_Filter = New ComboBox()
         Fac_SelSec_Cmb = New ComboBox()
-        Home_Panel = New Panel()
-        Label9 = New Label()
-        DataGridView1 = New DataGridView()
-        LinkLabel1 = New LinkLabel()
-        FacInfo_Panel = New Panel()
-        Panel4 = New Panel()
-        Panel3 = New Panel()
-        Panel2 = New Panel()
-        Panel1 = New Panel()
-        Time_Position_lbl = New Label()
-        Greet_Fac_lbl = New Label()
-        FacName_lbl = New Label()
-        DeptName_lbl = New Label()
-        Faculty_DateTime = New Label()
         MainMenu_Panel = New Panel()
         SchoolTitle_Panel = New Panel()
         Logo_Pic = New PictureBox()
@@ -94,15 +94,15 @@ Partial Class Faculty_Dashboard
         Section_Linklbl = New LinkLabel()
         Timer1 = New Timer(components)
         Screen_Panel.SuspendLayout()
+        Home_Panel.SuspendLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        FacInfo_Panel.SuspendLayout()
         Profile_Panel.SuspendLayout()
         FacProfile_Panel.SuspendLayout()
         ProfTitle_Panel.SuspendLayout()
         Section_Panel.SuspendLayout()
         SecTitle_Panel.SuspendLayout()
         CType(Fac_SecInfo_DTV, ComponentModel.ISupportInitialize).BeginInit()
-        Home_Panel.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
-        FacInfo_Panel.SuspendLayout()
         MainMenu_Panel.SuspendLayout()
         SchoolTitle_Panel.SuspendLayout()
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
@@ -121,6 +121,149 @@ Partial Class Faculty_Dashboard
         Screen_Panel.Name = "Screen_Panel"
         Screen_Panel.Size = New Size(1902, 1055)
         Screen_Panel.TabIndex = 13
+        ' 
+        ' Home_Panel
+        ' 
+        Home_Panel.Controls.Add(Label9)
+        Home_Panel.Controls.Add(DataGridView1)
+        Home_Panel.Controls.Add(LinkLabel1)
+        Home_Panel.Controls.Add(FacInfo_Panel)
+        Home_Panel.Dock = DockStyle.Fill
+        Home_Panel.Location = New Point(0, 225)
+        Home_Panel.Name = "Home_Panel"
+        Home_Panel.Size = New Size(1902, 830)
+        Home_Panel.TabIndex = 16
+        ' 
+        ' Label9
+        ' 
+        Label9.BackColor = Color.Navy
+        Label9.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.Transparent
+        Label9.Location = New Point(68, 449)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(485, 77)
+        Label9.TabIndex = 20
+        Label9.Text = "Pending Evaluations:"
+        Label9.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(68, 529)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 51
+        DataGridView1.Size = New Size(1776, 267)
+        DataGridView1.TabIndex = 19
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.ActiveLinkColor = Color.Goldenrod
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LinkLabel1.LinkColor = Color.Navy
+        LinkLabel1.Location = New Point(146, 356)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(461, 46)
+        LinkLabel1.TabIndex = 18
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Download Evaluation Form"
+        ' 
+        ' FacInfo_Panel
+        ' 
+        FacInfo_Panel.Controls.Add(Panel4)
+        FacInfo_Panel.Controls.Add(Panel3)
+        FacInfo_Panel.Controls.Add(Panel2)
+        FacInfo_Panel.Controls.Add(Panel1)
+        FacInfo_Panel.Controls.Add(Time_Position_lbl)
+        FacInfo_Panel.Controls.Add(Greet_Fac_lbl)
+        FacInfo_Panel.Controls.Add(FacName_lbl)
+        FacInfo_Panel.Controls.Add(DeptName_lbl)
+        FacInfo_Panel.Controls.Add(Faculty_DateTime)
+        FacInfo_Panel.Dock = DockStyle.Top
+        FacInfo_Panel.Location = New Point(0, 0)
+        FacInfo_Panel.Name = "FacInfo_Panel"
+        FacInfo_Panel.Size = New Size(1902, 436)
+        FacInfo_Panel.TabIndex = 9
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.LightBlue
+        Panel4.Location = New Point(68, 356)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(38, 46)
+        Panel4.TabIndex = 15
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.CornflowerBlue
+        Panel3.Location = New Point(68, 300)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(38, 42)
+        Panel3.TabIndex = 14
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.RoyalBlue
+        Panel2.Location = New Point(68, 241)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(38, 46)
+        Panel2.TabIndex = 13
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Navy
+        Panel1.Location = New Point(68, 48)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(38, 156)
+        Panel1.TabIndex = 12
+        ' 
+        ' Time_Position_lbl
+        ' 
+        Time_Position_lbl.AutoSize = True
+        Time_Position_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        Time_Position_lbl.Location = New Point(146, 241)
+        Time_Position_lbl.Name = "Time_Position_lbl"
+        Time_Position_lbl.Size = New Size(617, 45)
+        Time_Position_lbl.TabIndex = 6
+        Time_Position_lbl.Text = "[FULL/PART TIME - POSITION]"
+        ' 
+        ' Greet_Fac_lbl
+        ' 
+        Greet_Fac_lbl.AutoSize = True
+        Greet_Fac_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Greet_Fac_lbl.Location = New Point(132, 48)
+        Greet_Fac_lbl.Name = "Greet_Fac_lbl"
+        Greet_Fac_lbl.Size = New Size(252, 45)
+        Greet_Fac_lbl.TabIndex = 0
+        Greet_Fac_lbl.Text = "WELCOME!"
+        ' 
+        ' FacName_lbl
+        ' 
+        FacName_lbl.AutoSize = True
+        FacName_lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        FacName_lbl.Location = New Point(121, 90)
+        FacName_lbl.Name = "FacName_lbl"
+        FacName_lbl.Size = New Size(855, 105)
+        FacName_lbl.TabIndex = 5
+        FacName_lbl.Text = "[FACULTY NAME]"
+        ' 
+        ' DeptName_lbl
+        ' 
+        DeptName_lbl.AutoSize = True
+        DeptName_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        DeptName_lbl.Location = New Point(146, 300)
+        DeptName_lbl.Name = "DeptName_lbl"
+        DeptName_lbl.Size = New Size(329, 45)
+        DeptName_lbl.TabIndex = 7
+        DeptName_lbl.Text = "[DEPARTMENT]"
+        ' 
+        ' Faculty_DateTime
+        ' 
+        Faculty_DateTime.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Faculty_DateTime.Location = New Point(1182, 47)
+        Faculty_DateTime.Name = "Faculty_DateTime"
+        Faculty_DateTime.Size = New Size(695, 49)
+        Faculty_DateTime.TabIndex = 8
         ' 
         ' Profile_Panel
         ' 
@@ -564,149 +707,6 @@ Partial Class Faculty_Dashboard
         Fac_SelSec_Cmb.Size = New Size(386, 53)
         Fac_SelSec_Cmb.TabIndex = 1
         ' 
-        ' Home_Panel
-        ' 
-        Home_Panel.Controls.Add(Label9)
-        Home_Panel.Controls.Add(DataGridView1)
-        Home_Panel.Controls.Add(LinkLabel1)
-        Home_Panel.Controls.Add(FacInfo_Panel)
-        Home_Panel.Dock = DockStyle.Fill
-        Home_Panel.Location = New Point(0, 225)
-        Home_Panel.Name = "Home_Panel"
-        Home_Panel.Size = New Size(1902, 830)
-        Home_Panel.TabIndex = 16
-        ' 
-        ' Label9
-        ' 
-        Label9.BackColor = Color.Navy
-        Label9.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.Transparent
-        Label9.Location = New Point(68, 449)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(485, 77)
-        Label9.TabIndex = 20
-        Label9.Text = "Pending Evaluations:"
-        Label9.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(68, 529)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1776, 267)
-        DataGridView1.TabIndex = 19
-        ' 
-        ' LinkLabel1
-        ' 
-        LinkLabel1.ActiveLinkColor = Color.Goldenrod
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel1.LinkColor = Color.Navy
-        LinkLabel1.Location = New Point(146, 356)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(461, 46)
-        LinkLabel1.TabIndex = 18
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Download Evaluation Form"
-        ' 
-        ' FacInfo_Panel
-        ' 
-        FacInfo_Panel.Controls.Add(Panel4)
-        FacInfo_Panel.Controls.Add(Panel3)
-        FacInfo_Panel.Controls.Add(Panel2)
-        FacInfo_Panel.Controls.Add(Panel1)
-        FacInfo_Panel.Controls.Add(Time_Position_lbl)
-        FacInfo_Panel.Controls.Add(Greet_Fac_lbl)
-        FacInfo_Panel.Controls.Add(FacName_lbl)
-        FacInfo_Panel.Controls.Add(DeptName_lbl)
-        FacInfo_Panel.Controls.Add(Faculty_DateTime)
-        FacInfo_Panel.Dock = DockStyle.Top
-        FacInfo_Panel.Location = New Point(0, 0)
-        FacInfo_Panel.Name = "FacInfo_Panel"
-        FacInfo_Panel.Size = New Size(1902, 436)
-        FacInfo_Panel.TabIndex = 9
-        ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.LightBlue
-        Panel4.Location = New Point(68, 356)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(38, 46)
-        Panel4.TabIndex = 15
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.CornflowerBlue
-        Panel3.Location = New Point(68, 300)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(38, 42)
-        Panel3.TabIndex = 14
-        ' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = Color.RoyalBlue
-        Panel2.Location = New Point(68, 241)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(38, 46)
-        Panel2.TabIndex = 13
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.Navy
-        Panel1.Location = New Point(68, 48)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(38, 156)
-        Panel1.TabIndex = 12
-        ' 
-        ' Time_Position_lbl
-        ' 
-        Time_Position_lbl.AutoSize = True
-        Time_Position_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
-        Time_Position_lbl.Location = New Point(146, 241)
-        Time_Position_lbl.Name = "Time_Position_lbl"
-        Time_Position_lbl.Size = New Size(617, 45)
-        Time_Position_lbl.TabIndex = 6
-        Time_Position_lbl.Text = "[FULL/PART TIME - POSITION]"
-        ' 
-        ' Greet_Fac_lbl
-        ' 
-        Greet_Fac_lbl.AutoSize = True
-        Greet_Fac_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Greet_Fac_lbl.Location = New Point(132, 48)
-        Greet_Fac_lbl.Name = "Greet_Fac_lbl"
-        Greet_Fac_lbl.Size = New Size(252, 45)
-        Greet_Fac_lbl.TabIndex = 0
-        Greet_Fac_lbl.Text = "WELCOME!"
-        ' 
-        ' FacName_lbl
-        ' 
-        FacName_lbl.AutoSize = True
-        FacName_lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        FacName_lbl.Location = New Point(121, 90)
-        FacName_lbl.Name = "FacName_lbl"
-        FacName_lbl.Size = New Size(855, 105)
-        FacName_lbl.TabIndex = 5
-        FacName_lbl.Text = "[FACULTY NAME]"
-        ' 
-        ' DeptName_lbl
-        ' 
-        DeptName_lbl.AutoSize = True
-        DeptName_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
-        DeptName_lbl.Location = New Point(146, 300)
-        DeptName_lbl.Name = "DeptName_lbl"
-        DeptName_lbl.Size = New Size(329, 45)
-        DeptName_lbl.TabIndex = 7
-        DeptName_lbl.Text = "[DEPARTMENT]"
-        ' 
-        ' Faculty_DateTime
-        ' 
-        Faculty_DateTime.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Faculty_DateTime.Location = New Point(1182, 47)
-        Faculty_DateTime.Name = "Faculty_DateTime"
-        Faculty_DateTime.Size = New Size(695, 49)
-        Faculty_DateTime.TabIndex = 8
-        ' 
         ' MainMenu_Panel
         ' 
         MainMenu_Panel.BackColor = Color.Navy
@@ -834,6 +834,11 @@ Partial Class Faculty_Dashboard
         Text = "Faculty"
         WindowState = FormWindowState.Maximized
         Screen_Panel.ResumeLayout(False)
+        Home_Panel.ResumeLayout(False)
+        Home_Panel.PerformLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        FacInfo_Panel.ResumeLayout(False)
+        FacInfo_Panel.PerformLayout()
         Profile_Panel.ResumeLayout(False)
         FacProfile_Panel.ResumeLayout(False)
         FacProfile_Panel.PerformLayout()
@@ -844,11 +849,6 @@ Partial Class Faculty_Dashboard
         SecTitle_Panel.ResumeLayout(False)
         SecTitle_Panel.PerformLayout()
         CType(Fac_SecInfo_DTV, ComponentModel.ISupportInitialize).EndInit()
-        Home_Panel.ResumeLayout(False)
-        Home_Panel.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
-        FacInfo_Panel.ResumeLayout(False)
-        FacInfo_Panel.PerformLayout()
         MainMenu_Panel.ResumeLayout(False)
         SchoolTitle_Panel.ResumeLayout(False)
         CType(Logo_Pic, ComponentModel.ISupportInitialize).EndInit()
