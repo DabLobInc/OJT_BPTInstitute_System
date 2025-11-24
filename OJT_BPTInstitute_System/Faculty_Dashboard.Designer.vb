@@ -30,6 +30,19 @@ Partial Class Faculty_Dashboard
         FacName_lbl = New Label()
         Time_Position_lbl = New Label()
         Greet_Fac_lbl = New Label()
+        Section_Panel = New Panel()
+        Fac_SecInfo_DTV = New DataGridView()
+        studID_col_lbl = New DataGridViewTextBoxColumn()
+        studName_col_lbl = New DataGridViewTextBoxColumn()
+        CompAssigned_col_lbl = New DataGridViewTextBoxColumn()
+        Supervisor_col_column = New DataGridViewTextBoxColumn()
+        Stat_col_lbl = New DataGridViewTextBoxColumn()
+        Last_vis_col_lbl = New DataGridViewTextBoxColumn()
+        Actions_col_lbl = New DataGridViewTextBoxColumn()
+        Fac_Search_txt = New TextBox()
+        Undecided_Filter = New ComboBox()
+        Fac_SelSec_Cmb = New ComboBox()
+        Section_lbl = New Label()
         Profile_Panel = New Panel()
         Fac_UpdProfile_Btn = New Button()
         Fac_ChangePass_Btn = New Button()
@@ -54,19 +67,6 @@ Partial Class Faculty_Dashboard
         Fac_MName_lbl = New Label()
         Fac_FName_lbl = New Label()
         Profile_lbl = New Label()
-        Section_Panel = New Panel()
-        Fac_SecInfo_DTV = New DataGridView()
-        studID_col_lbl = New DataGridViewTextBoxColumn()
-        studName_col_lbl = New DataGridViewTextBoxColumn()
-        CompAssigned_col_lbl = New DataGridViewTextBoxColumn()
-        Supervisor_col_column = New DataGridViewTextBoxColumn()
-        Stat_col_lbl = New DataGridViewTextBoxColumn()
-        Last_vis_col_lbl = New DataGridViewTextBoxColumn()
-        Actions_col_lbl = New DataGridViewTextBoxColumn()
-        Fac_Search_txt = New TextBox()
-        Undecided_Filter = New ComboBox()
-        Fac_SelSec_Cmb = New ComboBox()
-        Section_lbl = New Label()
         MainMenu_Panel = New Panel()
         SchoolTitle_Panel = New Panel()
         Logo_Pic = New PictureBox()
@@ -79,9 +79,9 @@ Partial Class Faculty_Dashboard
         Timer1 = New Timer(components)
         Screen_Panel.SuspendLayout()
         Home_Panel.SuspendLayout()
-        Profile_Panel.SuspendLayout()
         Section_Panel.SuspendLayout()
         CType(Fac_SecInfo_DTV, ComponentModel.ISupportInitialize).BeginInit()
+        Profile_Panel.SuspendLayout()
         MainMenu_Panel.SuspendLayout()
         SchoolTitle_Panel.SuspendLayout()
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
@@ -161,6 +161,117 @@ Partial Class Faculty_Dashboard
         Greet_Fac_lbl.Size = New Size(295, 53)
         Greet_Fac_lbl.TabIndex = 0
         Greet_Fac_lbl.Text = "WELCOME!"
+        ' 
+        ' Section_Panel
+        ' 
+        Section_Panel.Controls.Add(Fac_SecInfo_DTV)
+        Section_Panel.Controls.Add(Fac_Search_txt)
+        Section_Panel.Controls.Add(Undecided_Filter)
+        Section_Panel.Controls.Add(Fac_SelSec_Cmb)
+        Section_Panel.Controls.Add(Section_lbl)
+        Section_Panel.Dock = DockStyle.Fill
+        Section_Panel.Location = New Point(0, 225)
+        Section_Panel.Name = "Section_Panel"
+        Section_Panel.Size = New Size(1902, 830)
+        Section_Panel.TabIndex = 0
+        ' 
+        ' Fac_SecInfo_DTV
+        ' 
+        Fac_SecInfo_DTV.AllowUserToOrderColumns = True
+        Fac_SecInfo_DTV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Fac_SecInfo_DTV.Columns.AddRange(New DataGridViewColumn() {studID_col_lbl, studName_col_lbl, CompAssigned_col_lbl, Supervisor_col_column, Stat_col_lbl, Last_vis_col_lbl, Actions_col_lbl})
+        Fac_SecInfo_DTV.Location = New Point(102, 401)
+        Fac_SecInfo_DTV.Name = "Fac_SecInfo_DTV"
+        Fac_SecInfo_DTV.RowHeadersWidth = 51
+        Fac_SecInfo_DTV.Size = New Size(1610, 188)
+        Fac_SecInfo_DTV.TabIndex = 4
+        ' 
+        ' studID_col_lbl
+        ' 
+        studID_col_lbl.HeaderText = "Student ID"
+        studID_col_lbl.MinimumWidth = 6
+        studID_col_lbl.Name = "studID_col_lbl"
+        studID_col_lbl.Width = 175
+        ' 
+        ' studName_col_lbl
+        ' 
+        studName_col_lbl.HeaderText = "Student Name"
+        studName_col_lbl.MinimumWidth = 6
+        studName_col_lbl.Name = "studName_col_lbl"
+        studName_col_lbl.Width = 275
+        ' 
+        ' CompAssigned_col_lbl
+        ' 
+        CompAssigned_col_lbl.HeaderText = "Company Assigned"
+        CompAssigned_col_lbl.MinimumWidth = 6
+        CompAssigned_col_lbl.Name = "CompAssigned_col_lbl"
+        CompAssigned_col_lbl.Width = 325
+        ' 
+        ' Supervisor_col_column
+        ' 
+        Supervisor_col_column.HeaderText = "Supervisor"
+        Supervisor_col_column.MinimumWidth = 6
+        Supervisor_col_column.Name = "Supervisor_col_column"
+        Supervisor_col_column.Width = 275
+        ' 
+        ' Stat_col_lbl
+        ' 
+        Stat_col_lbl.HeaderText = "STATUS"
+        Stat_col_lbl.MinimumWidth = 6
+        Stat_col_lbl.Name = "Stat_col_lbl"
+        Stat_col_lbl.Width = 125
+        ' 
+        ' Last_vis_col_lbl
+        ' 
+        Last_vis_col_lbl.HeaderText = "LAST VISIT"
+        Last_vis_col_lbl.MinimumWidth = 6
+        Last_vis_col_lbl.Name = "Last_vis_col_lbl"
+        Last_vis_col_lbl.Width = 125
+        ' 
+        ' Actions_col_lbl
+        ' 
+        Actions_col_lbl.HeaderText = "Actions"
+        Actions_col_lbl.MinimumWidth = 6
+        Actions_col_lbl.Name = "Actions_col_lbl"
+        Actions_col_lbl.Width = 250
+        ' 
+        ' Fac_Search_txt
+        ' 
+        Fac_Search_txt.Font = New Font("Verdana", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_Search_txt.Location = New Point(1350, 239)
+        Fac_Search_txt.Name = "Fac_Search_txt"
+        Fac_Search_txt.Size = New Size(295, 56)
+        Fac_Search_txt.TabIndex = 3
+        ' 
+        ' Undecided_Filter
+        ' 
+        Undecided_Filter.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Undecided_Filter.FormattingEnabled = True
+        Undecided_Filter.Items.AddRange(New Object() {"FILTER BY"})
+        Undecided_Filter.Location = New Point(656, 243)
+        Undecided_Filter.Name = "Undecided_Filter"
+        Undecided_Filter.Size = New Size(206, 54)
+        Undecided_Filter.TabIndex = 2
+        ' 
+        ' Fac_SelSec_Cmb
+        ' 
+        Fac_SelSec_Cmb.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Fac_SelSec_Cmb.FormattingEnabled = True
+        Fac_SelSec_Cmb.Items.AddRange(New Object() {"Sections:", "4A", "4B", "4C", "4D"})
+        Fac_SelSec_Cmb.Location = New Point(112, 243)
+        Fac_SelSec_Cmb.Name = "Fac_SelSec_Cmb"
+        Fac_SelSec_Cmb.Size = New Size(386, 53)
+        Fac_SelSec_Cmb.TabIndex = 1
+        ' 
+        ' Section_lbl
+        ' 
+        Section_lbl.AutoSize = True
+        Section_lbl.Font = New Font("Stencil", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Section_lbl.Location = New Point(134, 43)
+        Section_lbl.Name = "Section_lbl"
+        Section_lbl.Size = New Size(409, 95)
+        Section_lbl.TabIndex = 0
+        Section_lbl.Text = "SECTIONS"
         ' 
         ' Profile_Panel
         ' 
@@ -406,117 +517,6 @@ Partial Class Faculty_Dashboard
         Profile_lbl.TabIndex = 0
         Profile_lbl.Text = "PROFILE"
         ' 
-        ' Section_Panel
-        ' 
-        Section_Panel.Controls.Add(Fac_SecInfo_DTV)
-        Section_Panel.Controls.Add(Fac_Search_txt)
-        Section_Panel.Controls.Add(Undecided_Filter)
-        Section_Panel.Controls.Add(Fac_SelSec_Cmb)
-        Section_Panel.Controls.Add(Section_lbl)
-        Section_Panel.Dock = DockStyle.Fill
-        Section_Panel.Location = New Point(0, 225)
-        Section_Panel.Name = "Section_Panel"
-        Section_Panel.Size = New Size(1902, 830)
-        Section_Panel.TabIndex = 0
-        ' 
-        ' Fac_SecInfo_DTV
-        ' 
-        Fac_SecInfo_DTV.AllowUserToOrderColumns = True
-        Fac_SecInfo_DTV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Fac_SecInfo_DTV.Columns.AddRange(New DataGridViewColumn() {studID_col_lbl, studName_col_lbl, CompAssigned_col_lbl, Supervisor_col_column, Stat_col_lbl, Last_vis_col_lbl, Actions_col_lbl})
-        Fac_SecInfo_DTV.Location = New Point(102, 401)
-        Fac_SecInfo_DTV.Name = "Fac_SecInfo_DTV"
-        Fac_SecInfo_DTV.RowHeadersWidth = 51
-        Fac_SecInfo_DTV.Size = New Size(1610, 188)
-        Fac_SecInfo_DTV.TabIndex = 4
-        ' 
-        ' studID_col_lbl
-        ' 
-        studID_col_lbl.HeaderText = "Student ID"
-        studID_col_lbl.MinimumWidth = 6
-        studID_col_lbl.Name = "studID_col_lbl"
-        studID_col_lbl.Width = 175
-        ' 
-        ' studName_col_lbl
-        ' 
-        studName_col_lbl.HeaderText = "Student Name"
-        studName_col_lbl.MinimumWidth = 6
-        studName_col_lbl.Name = "studName_col_lbl"
-        studName_col_lbl.Width = 275
-        ' 
-        ' CompAssigned_col_lbl
-        ' 
-        CompAssigned_col_lbl.HeaderText = "Company Assigned"
-        CompAssigned_col_lbl.MinimumWidth = 6
-        CompAssigned_col_lbl.Name = "CompAssigned_col_lbl"
-        CompAssigned_col_lbl.Width = 325
-        ' 
-        ' Supervisor_col_column
-        ' 
-        Supervisor_col_column.HeaderText = "Supervisor"
-        Supervisor_col_column.MinimumWidth = 6
-        Supervisor_col_column.Name = "Supervisor_col_column"
-        Supervisor_col_column.Width = 275
-        ' 
-        ' Stat_col_lbl
-        ' 
-        Stat_col_lbl.HeaderText = "STATUS"
-        Stat_col_lbl.MinimumWidth = 6
-        Stat_col_lbl.Name = "Stat_col_lbl"
-        Stat_col_lbl.Width = 125
-        ' 
-        ' Last_vis_col_lbl
-        ' 
-        Last_vis_col_lbl.HeaderText = "LAST VISIT"
-        Last_vis_col_lbl.MinimumWidth = 6
-        Last_vis_col_lbl.Name = "Last_vis_col_lbl"
-        Last_vis_col_lbl.Width = 125
-        ' 
-        ' Actions_col_lbl
-        ' 
-        Actions_col_lbl.HeaderText = "Actions"
-        Actions_col_lbl.MinimumWidth = 6
-        Actions_col_lbl.Name = "Actions_col_lbl"
-        Actions_col_lbl.Width = 250
-        ' 
-        ' Fac_Search_txt
-        ' 
-        Fac_Search_txt.Font = New Font("Verdana", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_Search_txt.Location = New Point(1350, 239)
-        Fac_Search_txt.Name = "Fac_Search_txt"
-        Fac_Search_txt.Size = New Size(295, 56)
-        Fac_Search_txt.TabIndex = 3
-        ' 
-        ' Undecided_Filter
-        ' 
-        Undecided_Filter.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Undecided_Filter.FormattingEnabled = True
-        Undecided_Filter.Items.AddRange(New Object() {"FILTER BY"})
-        Undecided_Filter.Location = New Point(656, 243)
-        Undecided_Filter.Name = "Undecided_Filter"
-        Undecided_Filter.Size = New Size(206, 54)
-        Undecided_Filter.TabIndex = 2
-        ' 
-        ' Fac_SelSec_Cmb
-        ' 
-        Fac_SelSec_Cmb.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Fac_SelSec_Cmb.FormattingEnabled = True
-        Fac_SelSec_Cmb.Items.AddRange(New Object() {"Sections:", "4A", "4B", "4C", "4D"})
-        Fac_SelSec_Cmb.Location = New Point(112, 243)
-        Fac_SelSec_Cmb.Name = "Fac_SelSec_Cmb"
-        Fac_SelSec_Cmb.Size = New Size(386, 53)
-        Fac_SelSec_Cmb.TabIndex = 1
-        ' 
-        ' Section_lbl
-        ' 
-        Section_lbl.AutoSize = True
-        Section_lbl.Font = New Font("Stencil", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Section_lbl.Location = New Point(134, 43)
-        Section_lbl.Name = "Section_lbl"
-        Section_lbl.Size = New Size(409, 95)
-        Section_lbl.TabIndex = 0
-        Section_lbl.Text = "SECTIONS"
-        ' 
         ' MainMenu_Panel
         ' 
         MainMenu_Panel.BackColor = Color.Navy
@@ -646,11 +646,11 @@ Partial Class Faculty_Dashboard
         Screen_Panel.ResumeLayout(False)
         Home_Panel.ResumeLayout(False)
         Home_Panel.PerformLayout()
-        Profile_Panel.ResumeLayout(False)
-        Profile_Panel.PerformLayout()
         Section_Panel.ResumeLayout(False)
         Section_Panel.PerformLayout()
         CType(Fac_SecInfo_DTV, ComponentModel.ISupportInitialize).EndInit()
+        Profile_Panel.ResumeLayout(False)
+        Profile_Panel.PerformLayout()
         MainMenu_Panel.ResumeLayout(False)
         SchoolTitle_Panel.ResumeLayout(False)
         CType(Logo_Pic, ComponentModel.ISupportInitialize).EndInit()

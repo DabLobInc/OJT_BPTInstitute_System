@@ -34,4 +34,8 @@ Public Class Faculty_Dashboard
 
         Faculty_DateTime.Text = ts & ampm
     End Sub
+
+    Private Sub Time_Position_lbl_Click(sender As Object, e As EventArgs) Handles Time_Position_lbl.Click
+
+    End Sub
 End Class
