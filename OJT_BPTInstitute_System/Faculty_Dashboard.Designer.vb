@@ -134,7 +134,7 @@ Partial Class Faculty_Dashboard
         MainMenu_Panel.Dock = DockStyle.Top
         MainMenu_Panel.Location = New Point(0, 0)
         MainMenu_Panel.Name = "MainMenu_Panel"
-        MainMenu_Panel.Size = New Size(1438, 187)
+        MainMenu_Panel.Size = New Size(1902, 187)
         MainMenu_Panel.TabIndex = 11
         ' 
         ' SchoolTitle_Panel
@@ -154,7 +154,7 @@ Partial Class Faculty_Dashboard
         Function_Panel.Controls.Add(Profile_BTN)
         Function_Panel.Controls.Add(Logout_BTN)
         Function_Panel.Controls.Add(Section_BTN)
-        Function_Panel.Location = New Point(767, 0)
+        Function_Panel.Location = New Point(1231, 0)
         Function_Panel.Name = "Function_Panel"
         Function_Panel.Size = New Size(671, 187)
         Function_Panel.TabIndex = 11
@@ -168,7 +168,7 @@ Partial Class Faculty_Dashboard
         Screen_Panel.Dock = DockStyle.Fill
         Screen_Panel.Location = New Point(0, 0)
         Screen_Panel.Name = "Screen_Panel"
-        Screen_Panel.Size = New Size(1438, 805)
+        Screen_Panel.Size = New Size(1902, 1055)
         Screen_Panel.TabIndex = 12
         ' 
         ' Home_Panel
@@ -177,7 +177,7 @@ Partial Class Faculty_Dashboard
         Home_Panel.Dock = DockStyle.Fill
         Home_Panel.Location = New Point(0, 0)
         Home_Panel.Name = "Home_Panel"
-        Home_Panel.Size = New Size(1438, 805)
+        Home_Panel.Size = New Size(1902, 1055)
         Home_Panel.TabIndex = 0
         ' 
         ' Label3
@@ -195,7 +195,7 @@ Partial Class Faculty_Dashboard
         Section_Panel.Dock = DockStyle.Fill
         Section_Panel.Location = New Point(0, 0)
         Section_Panel.Name = "Section_Panel"
-        Section_Panel.Size = New Size(1438, 805)
+        Section_Panel.Size = New Size(1902, 1055)
         Section_Panel.TabIndex = 2
         ' 
         ' Label2
@@ -213,7 +213,7 @@ Partial Class Faculty_Dashboard
         Profile_Panel.Dock = DockStyle.Fill
         Profile_Panel.Location = New Point(0, 0)
         Profile_Panel.Name = "Profile_Panel"
-        Profile_Panel.Size = New Size(1438, 805)
+        Profile_Panel.Size = New Size(1902, 1055)
         Profile_Panel.TabIndex = 1
         ' 
         ' Label1
@@ -230,7 +230,7 @@ Partial Class Faculty_Dashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
-        ClientSize = New Size(1438, 805)
+        ClientSize = New Size(1902, 1055)
         Controls.Add(MainMenu_Panel)
         Controls.Add(Screen_Panel)
         Name = "Faculty_Dashboard"
@@ -262,7 +262,7 @@ Partial Class Faculty_Dashboard
     Friend WithEvents Home_Panel As Panel
     Friend WithEvents Section_Panel As Panel
     Friend WithEvents Profile_Panel As Panel
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label3 As Label
 End Class
