@@ -1,4 +1,6 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Text
+Imports System.Security.Cryptography
+Imports MySql.Data.MySqlClient
 Module OJT_BPT_Module
     Public connString As String = "Server=localhost;Database=ojtdb_bptinstitute;Uid=root;"
 End Module
@@ -84,5 +86,21 @@ Module PanelManager
 
 End Module
 
+Module SecurityModule
+
+    ' Function to hash a password using SHA-256
+    Public Function HashPassword(password As String) As String
+        Using sha256 As SHA256 = sha256.Create()
+            Dim bytes() As Byte = Encoding.UTF8.GetBytes(password)
+            Dim hash() As Byte = sha256.ComputeHash(bytes)
+            Dim sb As New StringBuilder()
+            For Each b As Byte In hash
+                sb.Append(b.ToString("x2")) ' converts to lowercase hex
+            Next
+            Return sb.ToString()
+        End Using
+    End Function
+
+End Module
 
 
