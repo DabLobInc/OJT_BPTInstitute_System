@@ -127,8 +127,8 @@ Partial Class Admin_Dashboard
         ' 
         ' Container_Panel
         ' 
-        Container_Panel.Controls.Add(Fac_Eval_Panel)
         Container_Panel.Controls.Add(Stud_Eval_Panel)
+        Container_Panel.Controls.Add(Fac_Eval_Panel)
         Container_Panel.Controls.Add(Partner_Comp_Panel)
         Container_Panel.Controls.Add(Stud_Regis_Panel)
         Container_Panel.Dock = DockStyle.Fill
