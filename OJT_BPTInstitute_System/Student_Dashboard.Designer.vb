@@ -32,103 +32,101 @@ Partial Class Student_Dashboard
         Logout_BTN = New LinkLabel()
         Internship_BTN = New LinkLabel()
         Screen_Panel = New Panel()
+        Internship_Panel = New Panel()
+        IntStatus_Panel = New Panel()
+        Stud_InternCompName_txt = New TextBox()
+        Stud_InternCompName_lbl = New Label()
+        Stud_InternSem_txt = New TextBox()
+        Stud_InternSem_lbl = New Label()
+        Stud_InternSY_txt = New TextBox()
+        Stud_InternSY_lbl = New Label()
+        Stud_InternCompAdd_txt = New TextBox()
+        Stud_InternCompAdd_lbl = New Label()
+        Stud_InternCompID_Mtxt = New MaskedTextBox()
+        Stud_InternCompID_lbl = New Label()
+        Stud_InternEDate_txt = New TextBox()
+        Stud_InternEDate_lbl = New Label()
+        Stud_InternSDate_txt = New TextBox()
+        Stud_InternSDate_lbl = New Label()
+        Stud_SupervisorName_txt = New TextBox()
+        Stud_SupervisorName_lbl = New Label()
+        Stud_SupervisorID_Mtxt = New MaskedTextBox()
+        Stud_InternSupervisorID_lbl = New Label()
+        Stud_InternFacEvalName_lbl = New TextBox()
+        Stud_InternFacEval_lbl = New Label()
+        Stud_InternFacID_Mtxt = New MaskedTextBox()
+        Stud_InternFacID_lbl = New Label()
+        Stud_Update_btn = New Button()
+        Stud_InternID_Mtxt = New MaskedTextBox()
+        Stud_InternID_lbl = New Label()
+        InternTitle_Panel = New Panel()
+        Stud_Internship_lbl = New Label()
+        DarkBlue_Design3 = New Panel()
+        Profile_Panel = New Panel()
+        StudProfile_Panel = New Panel()
+        Stud_StudCourses_cmb = New ComboBox()
+        Stud_StudentID_Mtxt = New MaskedTextBox()
+        Stud_ChangePass_btn = New Button()
+        Stud_UpdateProfile_btn = New Button()
+        Stud_StudContNum_Mtxt = New MaskedTextBox()
+        Stud_StudContNum_lbl = New Label()
+        Stud_StudEmailAdd_txt = New TextBox()
+        Stud_StudEmailAdd_lbl = New Label()
+        Stud_StudDeptID_Mtxt = New MaskedTextBox()
+        Stud_StudCourseID_Mtxt = New MaskedTextBox()
+        Stud_StudSection_txt = New TextBox()
+        Stud_StudSection_lbl = New Label()
+        Stud_StudDeptID_lbl = New Label()
+        Stud_StudCourseID_lbl = New Label()
+        Stud_StudCourse_lbl = New Label()
+        Stud_StudID_lbl = New Label()
+        Stud_Suffix_txt = New TextBox()
+        Stud_LName_txt = New TextBox()
+        Stud_MName_txt = New TextBox()
+        Stud_FName_txt = New TextBox()
+        Stud_Suffix_lbl = New Label()
+        Stud_LName_lbl = New Label()
+        Stud_MName_lbl = New Label()
+        Stud_FName_lbl = New Label()
+        ProfileTitle_Panel = New Panel()
+        Stud_Profile_Lbl = New Label()
+        DarkBlue_Design2 = New Panel()
         Home_Panel = New Panel()
         Resources_Panel = New Panel()
-        LinkLabel1 = New LinkLabel()
-        LinkLabel2 = New LinkLabel()
-        LinkLabel3 = New LinkLabel()
-        Label9 = New Label()
-        Panel5 = New Panel()
-        Panel6 = New Panel()
-        Panel7 = New Panel()
+        OJT_Guidelines_Linklbl = New LinkLabel()
+        GradeSlip_Linklbl = New LinkLabel()
+        CompanyMOA_Linklbl = New LinkLabel()
+        Resources_lbl = New Label()
+        Blue_Design1 = New Panel()
+        LighterBlue_Design1 = New Panel()
+        Cyanlike_Design1 = New Panel()
         Stud_Info_Panel = New Panel()
         Stud_Greeting_lbl = New Label()
         Stud_User_lbl = New Label()
         Assigned_Label = New Label()
         Sup_Label = New Label()
         FacEval_Label = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        Panel4 = New Panel()
-        Panel3 = New Panel()
-        Panel2 = New Panel()
-        Panel1 = New Panel()
-        Profile_Panel = New Panel()
-        StudProfile_Panel = New Panel()
-        MaskedTextBox4 = New MaskedTextBox()
-        Button5 = New Button()
-        Button4 = New Button()
-        MaskedTextBox3 = New MaskedTextBox()
-        Label18 = New Label()
-        TextBox11 = New TextBox()
-        Label17 = New Label()
-        MaskedTextBox2 = New MaskedTextBox()
-        MaskedTextBox1 = New MaskedTextBox()
-        TextBox10 = New TextBox()
-        Label16 = New Label()
-        Label15 = New Label()
-        Label14 = New Label()
-        TextBox7 = New TextBox()
-        Label13 = New Label()
-        TextBox6 = New TextBox()
-        Label12 = New Label()
-        Label11 = New Label()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
-        Label10 = New Label()
-        Label5 = New Label()
-        Label4 = New Label()
-        Label2 = New Label()
-        ProfTitle_Panel = New Panel()
-        Label3 = New Label()
-        Panel8 = New Panel()
-        Internship_Panel = New Panel()
-        IntStatus_Panel = New Panel()
-        TextBox23 = New TextBox()
-        Label29 = New Label()
-        TextBox22 = New TextBox()
-        Label28 = New Label()
-        TextBox21 = New TextBox()
-        Label25 = New Label()
-        TextBox20 = New TextBox()
-        Label27 = New Label()
-        TextBox19 = New TextBox()
-        Label26 = New Label()
-        TextBox18 = New TextBox()
-        Label24 = New Label()
-        TextBox17 = New TextBox()
-        Label23 = New Label()
-        TextBox16 = New TextBox()
-        Label22 = New Label()
-        TextBox15 = New TextBox()
-        Label21 = New Label()
-        TextBox14 = New TextBox()
-        Label20 = New Label()
-        TextBox13 = New TextBox()
-        Label19 = New Label()
-        Button2 = New Button()
-        TextBox24 = New TextBox()
-        Label30 = New Label()
-        InternTitle_Panel = New Panel()
-        Label1 = New Label()
-        Panel9 = New Panel()
+        Assigned_Placeholder_lbl = New Label()
+        Supervised_Placeholder_lbl = New Label()
+        FacEval_Placeholder_lbl = New Label()
+        Cyanlike_Design = New Panel()
+        LighterBlue_Design = New Panel()
+        Blue_Design = New Panel()
+        DBlue_Design = New Panel()
         MainMenu_Panel.SuspendLayout()
         SchoolTitle_Panel.SuspendLayout()
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
         Function_Panel.SuspendLayout()
         Screen_Panel.SuspendLayout()
-        Home_Panel.SuspendLayout()
-        Resources_Panel.SuspendLayout()
-        Stud_Info_Panel.SuspendLayout()
-        Profile_Panel.SuspendLayout()
-        StudProfile_Panel.SuspendLayout()
-        ProfTitle_Panel.SuspendLayout()
         Internship_Panel.SuspendLayout()
         IntStatus_Panel.SuspendLayout()
         InternTitle_Panel.SuspendLayout()
+        Profile_Panel.SuspendLayout()
+        StudProfile_Panel.SuspendLayout()
+        ProfileTitle_Panel.SuspendLayout()
+        Home_Panel.SuspendLayout()
+        Resources_Panel.SuspendLayout()
+        Stud_Info_Panel.SuspendLayout()
         SuspendLayout()
         ' 
         ' MainMenu_Panel
@@ -245,14 +243,616 @@ Partial Class Student_Dashboard
         ' Screen_Panel
         ' 
         Screen_Panel.BackColor = SystemColors.Control
+        Screen_Panel.Controls.Add(Internship_Panel)
         Screen_Panel.Controls.Add(Profile_Panel)
         Screen_Panel.Controls.Add(Home_Panel)
-        Screen_Panel.Controls.Add(Internship_Panel)
         Screen_Panel.Dock = DockStyle.Fill
         Screen_Panel.Location = New Point(0, 225)
         Screen_Panel.Name = "Screen_Panel"
         Screen_Panel.Size = New Size(1902, 830)
         Screen_Panel.TabIndex = 13
+        ' 
+        ' Internship_Panel
+        ' 
+        Internship_Panel.Controls.Add(IntStatus_Panel)
+        Internship_Panel.Controls.Add(InternTitle_Panel)
+        Internship_Panel.Dock = DockStyle.Fill
+        Internship_Panel.Location = New Point(0, 0)
+        Internship_Panel.Name = "Internship_Panel"
+        Internship_Panel.Size = New Size(1902, 830)
+        Internship_Panel.TabIndex = 2
+        ' 
+        ' IntStatus_Panel
+        ' 
+        IntStatus_Panel.Controls.Add(Stud_InternCompName_txt)
+        IntStatus_Panel.Controls.Add(Stud_InternCompName_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternSem_txt)
+        IntStatus_Panel.Controls.Add(Stud_InternSem_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternSY_txt)
+        IntStatus_Panel.Controls.Add(Stud_InternSY_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternCompAdd_txt)
+        IntStatus_Panel.Controls.Add(Stud_InternCompAdd_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternCompID_Mtxt)
+        IntStatus_Panel.Controls.Add(Stud_InternCompID_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternEDate_txt)
+        IntStatus_Panel.Controls.Add(Stud_InternEDate_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternSDate_txt)
+        IntStatus_Panel.Controls.Add(Stud_InternSDate_lbl)
+        IntStatus_Panel.Controls.Add(Stud_SupervisorName_txt)
+        IntStatus_Panel.Controls.Add(Stud_SupervisorName_lbl)
+        IntStatus_Panel.Controls.Add(Stud_SupervisorID_Mtxt)
+        IntStatus_Panel.Controls.Add(Stud_InternSupervisorID_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternFacEvalName_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternFacEval_lbl)
+        IntStatus_Panel.Controls.Add(Stud_InternFacID_Mtxt)
+        IntStatus_Panel.Controls.Add(Stud_InternFacID_lbl)
+        IntStatus_Panel.Controls.Add(Stud_Update_btn)
+        IntStatus_Panel.Controls.Add(Stud_InternID_Mtxt)
+        IntStatus_Panel.Controls.Add(Stud_InternID_lbl)
+        IntStatus_Panel.Dock = DockStyle.Fill
+        IntStatus_Panel.Location = New Point(0, 177)
+        IntStatus_Panel.Name = "IntStatus_Panel"
+        IntStatus_Panel.Size = New Size(1902, 653)
+        IntStatus_Panel.TabIndex = 14
+        ' 
+        ' Stud_InternCompName_txt
+        ' 
+        Stud_InternCompName_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_InternCompName_txt.Location = New Point(710, 248)
+        Stud_InternCompName_txt.Name = "Stud_InternCompName_txt"
+        Stud_InternCompName_txt.Size = New Size(818, 51)
+        Stud_InternCompName_txt.TabIndex = 55
+        ' 
+        ' Stud_InternCompName_lbl
+        ' 
+        Stud_InternCompName_lbl.AutoSize = True
+        Stud_InternCompName_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternCompName_lbl.Location = New Point(710, 191)
+        Stud_InternCompName_lbl.Name = "Stud_InternCompName_lbl"
+        Stud_InternCompName_lbl.Size = New Size(358, 45)
+        Stud_InternCompName_lbl.TabIndex = 54
+        Stud_InternCompName_lbl.Text = "Company Assigned:"
+        ' 
+        ' Stud_InternSem_txt
+        ' 
+        Stud_InternSem_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_InternSem_txt.Location = New Point(389, 248)
+        Stud_InternSem_txt.Name = "Stud_InternSem_txt"
+        Stud_InternSem_txt.Size = New Size(299, 51)
+        Stud_InternSem_txt.TabIndex = 53
+        ' 
+        ' Stud_InternSem_lbl
+        ' 
+        Stud_InternSem_lbl.AutoSize = True
+        Stud_InternSem_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternSem_lbl.Location = New Point(389, 191)
+        Stud_InternSem_lbl.Name = "Stud_InternSem_lbl"
+        Stud_InternSem_lbl.Size = New Size(190, 45)
+        Stud_InternSem_lbl.TabIndex = 52
+        Stud_InternSem_lbl.Text = "Semester:"
+        ' 
+        ' Stud_InternSY_txt
+        ' 
+        Stud_InternSY_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_InternSY_txt.Location = New Point(68, 248)
+        Stud_InternSY_txt.Name = "Stud_InternSY_txt"
+        Stud_InternSY_txt.Size = New Size(299, 51)
+        Stud_InternSY_txt.TabIndex = 51
+        ' 
+        ' Stud_InternSY_lbl
+        ' 
+        Stud_InternSY_lbl.AutoSize = True
+        Stud_InternSY_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternSY_lbl.Location = New Point(68, 191)
+        Stud_InternSY_lbl.Name = "Stud_InternSY_lbl"
+        Stud_InternSY_lbl.Size = New Size(233, 45)
+        Stud_InternSY_lbl.TabIndex = 50
+        Stud_InternSY_lbl.Text = "School Year:"
+        ' 
+        ' Stud_InternCompAdd_txt
+        ' 
+        Stud_InternCompAdd_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_InternCompAdd_txt.Location = New Point(389, 552)
+        Stud_InternCompAdd_txt.Name = "Stud_InternCompAdd_txt"
+        Stud_InternCompAdd_txt.Size = New Size(880, 51)
+        Stud_InternCompAdd_txt.TabIndex = 49
+        ' 
+        ' Stud_InternCompAdd_lbl
+        ' 
+        Stud_InternCompAdd_lbl.AutoSize = True
+        Stud_InternCompAdd_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternCompAdd_lbl.Location = New Point(389, 495)
+        Stud_InternCompAdd_lbl.Name = "Stud_InternCompAdd_lbl"
+        Stud_InternCompAdd_lbl.Size = New Size(345, 45)
+        Stud_InternCompAdd_lbl.TabIndex = 48
+        Stud_InternCompAdd_lbl.Text = "Company Address:"
+        ' 
+        ' Stud_InternCompID_Mtxt
+        ' 
+        Stud_InternCompID_Mtxt.Font = New Font("Segoe UI", 20.0F)
+        Stud_InternCompID_Mtxt.Location = New Point(68, 552)
+        Stud_InternCompID_Mtxt.Mask = "\CO-000"
+        Stud_InternCompID_Mtxt.Name = "Stud_InternCompID_Mtxt"
+        Stud_InternCompID_Mtxt.Size = New Size(296, 52)
+        Stud_InternCompID_Mtxt.TabIndex = 62
+        ' 
+        ' Stud_InternCompID_lbl
+        ' 
+        Stud_InternCompID_lbl.AutoSize = True
+        Stud_InternCompID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternCompID_lbl.Location = New Point(68, 495)
+        Stud_InternCompID_lbl.Name = "Stud_InternCompID_lbl"
+        Stud_InternCompID_lbl.Size = New Size(252, 45)
+        Stud_InternCompID_lbl.TabIndex = 45
+        Stud_InternCompID_lbl.Text = "Company ID:"
+        ' 
+        ' Stud_InternEDate_txt
+        ' 
+        Stud_InternEDate_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_InternEDate_txt.Location = New Point(970, 98)
+        Stud_InternEDate_txt.Name = "Stud_InternEDate_txt"
+        Stud_InternEDate_txt.Size = New Size(558, 51)
+        Stud_InternEDate_txt.TabIndex = 44
+        ' 
+        ' Stud_InternEDate_lbl
+        ' 
+        Stud_InternEDate_lbl.AutoSize = True
+        Stud_InternEDate_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternEDate_lbl.Location = New Point(970, 41)
+        Stud_InternEDate_lbl.Name = "Stud_InternEDate_lbl"
+        Stud_InternEDate_lbl.Size = New Size(193, 45)
+        Stud_InternEDate_lbl.TabIndex = 43
+        Stud_InternEDate_lbl.Text = "End Date:"
+        ' 
+        ' Stud_InternSDate_txt
+        ' 
+        Stud_InternSDate_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_InternSDate_txt.Location = New Point(389, 98)
+        Stud_InternSDate_txt.Name = "Stud_InternSDate_txt"
+        Stud_InternSDate_txt.Size = New Size(558, 51)
+        Stud_InternSDate_txt.TabIndex = 42
+        ' 
+        ' Stud_InternSDate_lbl
+        ' 
+        Stud_InternSDate_lbl.AutoSize = True
+        Stud_InternSDate_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternSDate_lbl.Location = New Point(389, 41)
+        Stud_InternSDate_lbl.Name = "Stud_InternSDate_lbl"
+        Stud_InternSDate_lbl.Size = New Size(209, 45)
+        Stud_InternSDate_lbl.TabIndex = 41
+        Stud_InternSDate_lbl.Text = "Start Date:"
+        ' 
+        ' Stud_SupervisorName_txt
+        ' 
+        Stud_SupervisorName_txt.Font = New Font("Segoe UI", 20.0F)
+        Stud_SupervisorName_txt.Location = New Point(1294, 412)
+        Stud_SupervisorName_txt.Name = "Stud_SupervisorName_txt"
+        Stud_SupervisorName_txt.Size = New Size(445, 52)
+        Stud_SupervisorName_txt.TabIndex = 61
+        ' 
+        ' Stud_SupervisorName_lbl
+        ' 
+        Stud_SupervisorName_lbl.AutoSize = True
+        Stud_SupervisorName_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_SupervisorName_lbl.Location = New Point(1294, 354)
+        Stud_SupervisorName_lbl.Name = "Stud_SupervisorName_lbl"
+        Stud_SupervisorName_lbl.Size = New Size(218, 45)
+        Stud_SupervisorName_lbl.TabIndex = 39
+        Stud_SupervisorName_lbl.Text = "Supervisor:"
+        ' 
+        ' Stud_SupervisorID_Mtxt
+        ' 
+        Stud_SupervisorID_Mtxt.Font = New Font("Segoe UI", 20.0F)
+        Stud_SupervisorID_Mtxt.Location = New Point(970, 412)
+        Stud_SupervisorID_Mtxt.Mask = "S000"
+        Stud_SupervisorID_Mtxt.Name = "Stud_SupervisorID_Mtxt"
+        Stud_SupervisorID_Mtxt.Size = New Size(258, 52)
+        Stud_SupervisorID_Mtxt.TabIndex = 58
+        ' 
+        ' Stud_InternSupervisorID_lbl
+        ' 
+        Stud_InternSupervisorID_lbl.AutoSize = True
+        Stud_InternSupervisorID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternSupervisorID_lbl.Location = New Point(970, 354)
+        Stud_InternSupervisorID_lbl.Name = "Stud_InternSupervisorID_lbl"
+        Stud_InternSupervisorID_lbl.Size = New Size(218, 45)
+        Stud_InternSupervisorID_lbl.TabIndex = 60
+        Stud_InternSupervisorID_lbl.Text = "Supervisor:"
+        ' 
+        ' Stud_InternFacEvalName_lbl
+        ' 
+        Stud_InternFacEvalName_lbl.Font = New Font("Segoe UI", 20.0F)
+        Stud_InternFacEvalName_lbl.Location = New Point(399, 412)
+        Stud_InternFacEvalName_lbl.Name = "Stud_InternFacEvalName_lbl"
+        Stud_InternFacEvalName_lbl.Size = New Size(535, 52)
+        Stud_InternFacEvalName_lbl.TabIndex = 59
+        ' 
+        ' Stud_InternFacEval_lbl
+        ' 
+        Stud_InternFacEval_lbl.AutoSize = True
+        Stud_InternFacEval_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternFacEval_lbl.Location = New Point(389, 354)
+        Stud_InternFacEval_lbl.Name = "Stud_InternFacEval_lbl"
+        Stud_InternFacEval_lbl.Size = New Size(339, 45)
+        Stud_InternFacEval_lbl.TabIndex = 35
+        Stud_InternFacEval_lbl.Text = "Faculty Evaluator:"
+        ' 
+        ' Stud_InternFacID_Mtxt
+        ' 
+        Stud_InternFacID_Mtxt.Font = New Font("Segoe UI", 20.0F)
+        Stud_InternFacID_Mtxt.Location = New Point(71, 412)
+        Stud_InternFacID_Mtxt.Mask = "F000"
+        Stud_InternFacID_Mtxt.Name = "Stud_InternFacID_Mtxt"
+        Stud_InternFacID_Mtxt.Size = New Size(296, 52)
+        Stud_InternFacID_Mtxt.TabIndex = 57
+        ' 
+        ' Stud_InternFacID_lbl
+        ' 
+        Stud_InternFacID_lbl.AutoSize = True
+        Stud_InternFacID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternFacID_lbl.Location = New Point(68, 354)
+        Stud_InternFacID_lbl.Name = "Stud_InternFacID_lbl"
+        Stud_InternFacID_lbl.Size = New Size(215, 45)
+        Stud_InternFacID_lbl.TabIndex = 32
+        Stud_InternFacID_lbl.Text = "Faculty ID:"
+        ' 
+        ' Stud_Update_btn
+        ' 
+        Stud_Update_btn.BackColor = Color.Navy
+        Stud_Update_btn.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_Update_btn.ForeColor = Color.Transparent
+        Stud_Update_btn.Location = New Point(1486, 527)
+        Stud_Update_btn.Name = "Stud_Update_btn"
+        Stud_Update_btn.Size = New Size(362, 76)
+        Stud_Update_btn.TabIndex = 31
+        Stud_Update_btn.Text = "UPDATE "
+        Stud_Update_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Stud_InternID_Mtxt
+        ' 
+        Stud_InternID_Mtxt.Font = New Font("Segoe UI", 20.0F)
+        Stud_InternID_Mtxt.Location = New Point(68, 98)
+        Stud_InternID_Mtxt.Mask = "I000"
+        Stud_InternID_Mtxt.Name = "Stud_InternID_Mtxt"
+        Stud_InternID_Mtxt.Size = New Size(233, 52)
+        Stud_InternID_Mtxt.TabIndex = 56
+        ' 
+        ' Stud_InternID_lbl
+        ' 
+        Stud_InternID_lbl.AutoSize = True
+        Stud_InternID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_InternID_lbl.Location = New Point(68, 41)
+        Stud_InternID_lbl.Name = "Stud_InternID_lbl"
+        Stud_InternID_lbl.Size = New Size(195, 45)
+        Stud_InternID_lbl.TabIndex = 7
+        Stud_InternID_lbl.Text = "Intern ID:"
+        ' 
+        ' InternTitle_Panel
+        ' 
+        InternTitle_Panel.Controls.Add(Stud_Internship_lbl)
+        InternTitle_Panel.Controls.Add(DarkBlue_Design3)
+        InternTitle_Panel.Dock = DockStyle.Top
+        InternTitle_Panel.Location = New Point(0, 0)
+        InternTitle_Panel.Name = "InternTitle_Panel"
+        InternTitle_Panel.Size = New Size(1902, 177)
+        InternTitle_Panel.TabIndex = 13
+        ' 
+        ' Stud_Internship_lbl
+        ' 
+        Stud_Internship_lbl.AutoSize = True
+        Stud_Internship_lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_Internship_lbl.Location = New Point(132, 48)
+        Stud_Internship_lbl.Name = "Stud_Internship_lbl"
+        Stud_Internship_lbl.Size = New Size(1002, 105)
+        Stud_Internship_lbl.TabIndex = 11
+        Stud_Internship_lbl.Text = "INTERNSHIP STATUS"
+        Stud_Internship_lbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' DarkBlue_Design3
+        ' 
+        DarkBlue_Design3.BackColor = Color.Navy
+        DarkBlue_Design3.Location = New Point(68, 48)
+        DarkBlue_Design3.Name = "DarkBlue_Design3"
+        DarkBlue_Design3.Size = New Size(38, 105)
+        DarkBlue_Design3.TabIndex = 12
+        ' 
+        ' Profile_Panel
+        ' 
+        Profile_Panel.Controls.Add(StudProfile_Panel)
+        Profile_Panel.Controls.Add(ProfileTitle_Panel)
+        Profile_Panel.Dock = DockStyle.Fill
+        Profile_Panel.Location = New Point(0, 0)
+        Profile_Panel.Name = "Profile_Panel"
+        Profile_Panel.Size = New Size(1902, 830)
+        Profile_Panel.TabIndex = 1
+        ' 
+        ' StudProfile_Panel
+        ' 
+        StudProfile_Panel.Controls.Add(Stud_StudCourses_cmb)
+        StudProfile_Panel.Controls.Add(Stud_StudentID_Mtxt)
+        StudProfile_Panel.Controls.Add(Stud_ChangePass_btn)
+        StudProfile_Panel.Controls.Add(Stud_UpdateProfile_btn)
+        StudProfile_Panel.Controls.Add(Stud_StudContNum_Mtxt)
+        StudProfile_Panel.Controls.Add(Stud_StudContNum_lbl)
+        StudProfile_Panel.Controls.Add(Stud_StudEmailAdd_txt)
+        StudProfile_Panel.Controls.Add(Stud_StudEmailAdd_lbl)
+        StudProfile_Panel.Controls.Add(Stud_StudDeptID_Mtxt)
+        StudProfile_Panel.Controls.Add(Stud_StudCourseID_Mtxt)
+        StudProfile_Panel.Controls.Add(Stud_StudSection_txt)
+        StudProfile_Panel.Controls.Add(Stud_StudSection_lbl)
+        StudProfile_Panel.Controls.Add(Stud_StudDeptID_lbl)
+        StudProfile_Panel.Controls.Add(Stud_StudCourseID_lbl)
+        StudProfile_Panel.Controls.Add(Stud_StudCourse_lbl)
+        StudProfile_Panel.Controls.Add(Stud_StudID_lbl)
+        StudProfile_Panel.Controls.Add(Stud_Suffix_txt)
+        StudProfile_Panel.Controls.Add(Stud_LName_txt)
+        StudProfile_Panel.Controls.Add(Stud_MName_txt)
+        StudProfile_Panel.Controls.Add(Stud_FName_txt)
+        StudProfile_Panel.Controls.Add(Stud_Suffix_lbl)
+        StudProfile_Panel.Controls.Add(Stud_LName_lbl)
+        StudProfile_Panel.Controls.Add(Stud_MName_lbl)
+        StudProfile_Panel.Controls.Add(Stud_FName_lbl)
+        StudProfile_Panel.Dock = DockStyle.Fill
+        StudProfile_Panel.Location = New Point(0, 177)
+        StudProfile_Panel.Name = "StudProfile_Panel"
+        StudProfile_Panel.Size = New Size(1902, 653)
+        StudProfile_Panel.TabIndex = 12
+        ' 
+        ' Stud_StudCourses_cmb
+        ' 
+        Stud_StudCourses_cmb.Font = New Font("Segoe UI", 20.0F)
+        Stud_StudCourses_cmb.FormattingEnabled = True
+        Stud_StudCourses_cmb.Location = New Point(1071, 264)
+        Stud_StudCourses_cmb.Name = "Stud_StudCourses_cmb"
+        Stud_StudCourses_cmb.Size = New Size(419, 53)
+        Stud_StudCourses_cmb.TabIndex = 46
+        ' 
+        ' Stud_StudentID_Mtxt
+        ' 
+        Stud_StudentID_Mtxt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudentID_Mtxt.Location = New Point(71, 264)
+        Stud_StudentID_Mtxt.Mask = "00-0000"
+        Stud_StudentID_Mtxt.Name = "Stud_StudentID_Mtxt"
+        Stud_StudentID_Mtxt.Size = New Size(296, 51)
+        Stud_StudentID_Mtxt.TabIndex = 45
+        ' 
+        ' Stud_ChangePass_btn
+        ' 
+        Stud_ChangePass_btn.BackColor = Color.Navy
+        Stud_ChangePass_btn.Font = New Font("Times New Roman", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_ChangePass_btn.ForeColor = Color.Transparent
+        Stud_ChangePass_btn.Location = New Point(1114, 527)
+        Stud_ChangePass_btn.Name = "Stud_ChangePass_btn"
+        Stud_ChangePass_btn.Size = New Size(362, 76)
+        Stud_ChangePass_btn.TabIndex = 44
+        Stud_ChangePass_btn.Text = "CHANGE PASSWORD"
+        Stud_ChangePass_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Stud_UpdateProfile_btn
+        ' 
+        Stud_UpdateProfile_btn.BackColor = Color.Navy
+        Stud_UpdateProfile_btn.Font = New Font("Times New Roman", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_UpdateProfile_btn.ForeColor = Color.Transparent
+        Stud_UpdateProfile_btn.Location = New Point(1486, 527)
+        Stud_UpdateProfile_btn.Name = "Stud_UpdateProfile_btn"
+        Stud_UpdateProfile_btn.Size = New Size(362, 76)
+        Stud_UpdateProfile_btn.TabIndex = 43
+        Stud_UpdateProfile_btn.Text = "UPDATE PROFILE"
+        Stud_UpdateProfile_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Stud_StudContNum_Mtxt
+        ' 
+        Stud_StudContNum_Mtxt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudContNum_Mtxt.Location = New Point(71, 420)
+        Stud_StudContNum_Mtxt.Mask = "+63-000-000-0000"
+        Stud_StudContNum_Mtxt.Name = "Stud_StudContNum_Mtxt"
+        Stud_StudContNum_Mtxt.Size = New Size(474, 51)
+        Stud_StudContNum_Mtxt.TabIndex = 42
+        ' 
+        ' Stud_StudContNum_lbl
+        ' 
+        Stud_StudContNum_lbl.AutoSize = True
+        Stud_StudContNum_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudContNum_lbl.Location = New Point(71, 361)
+        Stud_StudContNum_lbl.Name = "Stud_StudContNum_lbl"
+        Stud_StudContNum_lbl.Size = New Size(318, 45)
+        Stud_StudContNum_lbl.TabIndex = 41
+        Stud_StudContNum_lbl.Text = "Contact Number:"
+        ' 
+        ' Stud_StudEmailAdd_txt
+        ' 
+        Stud_StudEmailAdd_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudEmailAdd_txt.Location = New Point(573, 420)
+        Stud_StudEmailAdd_txt.Name = "Stud_StudEmailAdd_txt"
+        Stud_StudEmailAdd_txt.Size = New Size(477, 51)
+        Stud_StudEmailAdd_txt.TabIndex = 40
+        ' 
+        ' Stud_StudEmailAdd_lbl
+        ' 
+        Stud_StudEmailAdd_lbl.AutoSize = True
+        Stud_StudEmailAdd_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudEmailAdd_lbl.Location = New Point(573, 363)
+        Stud_StudEmailAdd_lbl.Name = "Stud_StudEmailAdd_lbl"
+        Stud_StudEmailAdd_lbl.Size = New Size(284, 45)
+        Stud_StudEmailAdd_lbl.TabIndex = 39
+        Stud_StudEmailAdd_lbl.Text = "Email Address:"
+        ' 
+        ' Stud_StudDeptID_Mtxt
+        ' 
+        Stud_StudDeptID_Mtxt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudDeptID_Mtxt.Location = New Point(399, 267)
+        Stud_StudDeptID_Mtxt.Mask = "D000"
+        Stud_StudDeptID_Mtxt.Name = "Stud_StudDeptID_Mtxt"
+        Stud_StudDeptID_Mtxt.Size = New Size(264, 51)
+        Stud_StudDeptID_Mtxt.TabIndex = 38
+        ' 
+        ' Stud_StudCourseID_Mtxt
+        ' 
+        Stud_StudCourseID_Mtxt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudCourseID_Mtxt.Location = New Point(725, 267)
+        Stud_StudCourseID_Mtxt.Mask = "P___"
+        Stud_StudCourseID_Mtxt.Name = "Stud_StudCourseID_Mtxt"
+        Stud_StudCourseID_Mtxt.Size = New Size(256, 51)
+        Stud_StudCourseID_Mtxt.TabIndex = 37
+        ' 
+        ' Stud_StudSection_txt
+        ' 
+        Stud_StudSection_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudSection_txt.Location = New Point(1584, 264)
+        Stud_StudSection_txt.Name = "Stud_StudSection_txt"
+        Stud_StudSection_txt.Size = New Size(264, 51)
+        Stud_StudSection_txt.TabIndex = 28
+        ' 
+        ' Stud_StudSection_lbl
+        ' 
+        Stud_StudSection_lbl.AutoSize = True
+        Stud_StudSection_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudSection_lbl.Location = New Point(1584, 200)
+        Stud_StudSection_lbl.Name = "Stud_StudSection_lbl"
+        Stud_StudSection_lbl.Size = New Size(155, 45)
+        Stud_StudSection_lbl.TabIndex = 27
+        Stud_StudSection_lbl.Text = "Section:"
+        ' 
+        ' Stud_StudDeptID_lbl
+        ' 
+        Stud_StudDeptID_lbl.AutoSize = True
+        Stud_StudDeptID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudDeptID_lbl.Location = New Point(399, 200)
+        Stud_StudDeptID_lbl.Name = "Stud_StudDeptID_lbl"
+        Stud_StudDeptID_lbl.Size = New Size(180, 45)
+        Stud_StudDeptID_lbl.TabIndex = 23
+        Stud_StudDeptID_lbl.Text = "Dept. ID:"
+        ' 
+        ' Stud_StudCourseID_lbl
+        ' 
+        Stud_StudCourseID_lbl.AutoSize = True
+        Stud_StudCourseID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudCourseID_lbl.Location = New Point(725, 200)
+        Stud_StudCourseID_lbl.Name = "Stud_StudCourseID_lbl"
+        Stud_StudCourseID_lbl.Size = New Size(209, 45)
+        Stud_StudCourseID_lbl.TabIndex = 21
+        Stud_StudCourseID_lbl.Text = "Course ID:"
+        ' 
+        ' Stud_StudCourse_lbl
+        ' 
+        Stud_StudCourse_lbl.AutoSize = True
+        Stud_StudCourse_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudCourse_lbl.Location = New Point(1074, 200)
+        Stud_StudCourse_lbl.Name = "Stud_StudCourse_lbl"
+        Stud_StudCourse_lbl.Size = New Size(154, 45)
+        Stud_StudCourse_lbl.TabIndex = 19
+        Stud_StudCourse_lbl.Text = "Course:"
+        ' 
+        ' Stud_StudID_lbl
+        ' 
+        Stud_StudID_lbl.AutoSize = True
+        Stud_StudID_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_StudID_lbl.Location = New Point(71, 200)
+        Stud_StudID_lbl.Name = "Stud_StudID_lbl"
+        Stud_StudID_lbl.Size = New Size(218, 45)
+        Stud_StudID_lbl.TabIndex = 15
+        Stud_StudID_lbl.Text = "Student ID:"
+        ' 
+        ' Stud_Suffix_txt
+        ' 
+        Stud_Suffix_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_Suffix_txt.Location = New Point(1584, 98)
+        Stud_Suffix_txt.Name = "Stud_Suffix_txt"
+        Stud_Suffix_txt.Size = New Size(268, 51)
+        Stud_Suffix_txt.TabIndex = 14
+        ' 
+        ' Stud_LName_txt
+        ' 
+        Stud_LName_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_LName_txt.Location = New Point(1082, 98)
+        Stud_LName_txt.Name = "Stud_LName_txt"
+        Stud_LName_txt.Size = New Size(477, 51)
+        Stud_LName_txt.TabIndex = 13
+        ' 
+        ' Stud_MName_txt
+        ' 
+        Stud_MName_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_MName_txt.Location = New Point(573, 98)
+        Stud_MName_txt.Name = "Stud_MName_txt"
+        Stud_MName_txt.Size = New Size(477, 51)
+        Stud_MName_txt.TabIndex = 12
+        ' 
+        ' Stud_FName_txt
+        ' 
+        Stud_FName_txt.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_FName_txt.Location = New Point(68, 98)
+        Stud_FName_txt.Name = "Stud_FName_txt"
+        Stud_FName_txt.Size = New Size(477, 51)
+        Stud_FName_txt.TabIndex = 11
+        ' 
+        ' Stud_Suffix_lbl
+        ' 
+        Stud_Suffix_lbl.AutoSize = True
+        Stud_Suffix_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_Suffix_lbl.Location = New Point(1584, 41)
+        Stud_Suffix_lbl.Name = "Stud_Suffix_lbl"
+        Stud_Suffix_lbl.Size = New Size(135, 45)
+        Stud_Suffix_lbl.TabIndex = 10
+        Stud_Suffix_lbl.Text = "Suffix:"
+        ' 
+        ' Stud_LName_lbl
+        ' 
+        Stud_LName_lbl.AutoSize = True
+        Stud_LName_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_LName_lbl.Location = New Point(1082, 41)
+        Stud_LName_lbl.Name = "Stud_LName_lbl"
+        Stud_LName_lbl.Size = New Size(220, 45)
+        Stud_LName_lbl.TabIndex = 9
+        Stud_LName_lbl.Text = "Last Name:"
+        ' 
+        ' Stud_MName_lbl
+        ' 
+        Stud_MName_lbl.AutoSize = True
+        Stud_MName_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_MName_lbl.Location = New Point(573, 41)
+        Stud_MName_lbl.Name = "Stud_MName_lbl"
+        Stud_MName_lbl.Size = New Size(266, 45)
+        Stud_MName_lbl.TabIndex = 8
+        Stud_MName_lbl.Text = "Middle Name:"
+        ' 
+        ' Stud_FName_lbl
+        ' 
+        Stud_FName_lbl.AutoSize = True
+        Stud_FName_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_FName_lbl.Location = New Point(68, 41)
+        Stud_FName_lbl.Name = "Stud_FName_lbl"
+        Stud_FName_lbl.Size = New Size(227, 45)
+        Stud_FName_lbl.TabIndex = 7
+        Stud_FName_lbl.Text = "First Name:"
+        ' 
+        ' ProfileTitle_Panel
+        ' 
+        ProfileTitle_Panel.Controls.Add(Stud_Profile_Lbl)
+        ProfileTitle_Panel.Controls.Add(DarkBlue_Design2)
+        ProfileTitle_Panel.Dock = DockStyle.Top
+        ProfileTitle_Panel.Location = New Point(0, 0)
+        ProfileTitle_Panel.Name = "ProfileTitle_Panel"
+        ProfileTitle_Panel.Size = New Size(1902, 177)
+        ProfileTitle_Panel.TabIndex = 11
+        ' 
+        ' Stud_Profile_Lbl
+        ' 
+        Stud_Profile_Lbl.AutoSize = True
+        Stud_Profile_Lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_Profile_Lbl.Location = New Point(132, 48)
+        Stud_Profile_Lbl.Name = "Stud_Profile_Lbl"
+        Stud_Profile_Lbl.Size = New Size(463, 105)
+        Stud_Profile_Lbl.TabIndex = 8
+        Stud_Profile_Lbl.Text = "PROFILE"
+        Stud_Profile_Lbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' DarkBlue_Design2
+        ' 
+        DarkBlue_Design2.BackColor = Color.Navy
+        DarkBlue_Design2.Location = New Point(68, 48)
+        DarkBlue_Design2.Name = "DarkBlue_Design2"
+        DarkBlue_Design2.Size = New Size(38, 105)
+        DarkBlue_Design2.TabIndex = 10
         ' 
         ' Home_Panel
         ' 
@@ -266,93 +866,93 @@ Partial Class Student_Dashboard
         ' 
         ' Resources_Panel
         ' 
-        Resources_Panel.Controls.Add(LinkLabel1)
-        Resources_Panel.Controls.Add(LinkLabel2)
-        Resources_Panel.Controls.Add(LinkLabel3)
-        Resources_Panel.Controls.Add(Label9)
-        Resources_Panel.Controls.Add(Panel5)
-        Resources_Panel.Controls.Add(Panel6)
-        Resources_Panel.Controls.Add(Panel7)
+        Resources_Panel.Controls.Add(OJT_Guidelines_Linklbl)
+        Resources_Panel.Controls.Add(GradeSlip_Linklbl)
+        Resources_Panel.Controls.Add(CompanyMOA_Linklbl)
+        Resources_Panel.Controls.Add(Resources_lbl)
+        Resources_Panel.Controls.Add(Blue_Design1)
+        Resources_Panel.Controls.Add(LighterBlue_Design1)
+        Resources_Panel.Controls.Add(Cyanlike_Design1)
         Resources_Panel.Dock = DockStyle.Left
         Resources_Panel.Location = New Point(0, 438)
         Resources_Panel.Name = "Resources_Panel"
         Resources_Panel.Size = New Size(545, 392)
         Resources_Panel.TabIndex = 22
         ' 
-        ' LinkLabel1
+        ' OJT_Guidelines_Linklbl
         ' 
-        LinkLabel1.ActiveLinkColor = Color.Gold
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel1.LinkColor = Color.Navy
-        LinkLabel1.Location = New Point(132, 174)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(268, 46)
-        LinkLabel1.TabIndex = 17
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "OJT Guidelines"
+        OJT_Guidelines_Linklbl.ActiveLinkColor = Color.Gold
+        OJT_Guidelines_Linklbl.AutoSize = True
+        OJT_Guidelines_Linklbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        OJT_Guidelines_Linklbl.LinkColor = Color.Navy
+        OJT_Guidelines_Linklbl.Location = New Point(132, 174)
+        OJT_Guidelines_Linklbl.Name = "OJT_Guidelines_Linklbl"
+        OJT_Guidelines_Linklbl.Size = New Size(268, 46)
+        OJT_Guidelines_Linklbl.TabIndex = 17
+        OJT_Guidelines_Linklbl.TabStop = True
+        OJT_Guidelines_Linklbl.Text = "OJT Guidelines"
         ' 
-        ' LinkLabel2
+        ' GradeSlip_Linklbl
         ' 
-        LinkLabel2.ActiveLinkColor = Color.Gold
-        LinkLabel2.AutoSize = True
-        LinkLabel2.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel2.LinkColor = Color.Navy
-        LinkLabel2.Location = New Point(132, 235)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(190, 46)
-        LinkLabel2.TabIndex = 18
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "Grade Slip"
+        GradeSlip_Linklbl.ActiveLinkColor = Color.Gold
+        GradeSlip_Linklbl.AutoSize = True
+        GradeSlip_Linklbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GradeSlip_Linklbl.LinkColor = Color.Navy
+        GradeSlip_Linklbl.Location = New Point(132, 235)
+        GradeSlip_Linklbl.Name = "GradeSlip_Linklbl"
+        GradeSlip_Linklbl.Size = New Size(190, 46)
+        GradeSlip_Linklbl.TabIndex = 18
+        GradeSlip_Linklbl.TabStop = True
+        GradeSlip_Linklbl.Text = "Grade Slip"
         ' 
-        ' LinkLabel3
+        ' CompanyMOA_Linklbl
         ' 
-        LinkLabel3.ActiveLinkColor = Color.Gold
-        LinkLabel3.AutoSize = True
-        LinkLabel3.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel3.LinkColor = Color.Navy
-        LinkLabel3.Location = New Point(132, 296)
-        LinkLabel3.Name = "LinkLabel3"
-        LinkLabel3.Size = New Size(277, 46)
-        LinkLabel3.TabIndex = 19
-        LinkLabel3.TabStop = True
-        LinkLabel3.Text = "Company MOA"
+        CompanyMOA_Linklbl.ActiveLinkColor = Color.Gold
+        CompanyMOA_Linklbl.AutoSize = True
+        CompanyMOA_Linklbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        CompanyMOA_Linklbl.LinkColor = Color.Navy
+        CompanyMOA_Linklbl.Location = New Point(132, 296)
+        CompanyMOA_Linklbl.Name = "CompanyMOA_Linklbl"
+        CompanyMOA_Linklbl.Size = New Size(277, 46)
+        CompanyMOA_Linklbl.TabIndex = 19
+        CompanyMOA_Linklbl.TabStop = True
+        CompanyMOA_Linklbl.Text = "Company MOA"
         ' 
-        ' Label9
+        ' Resources_lbl
         ' 
-        Label9.BackColor = Color.Navy
-        Label9.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.Transparent
-        Label9.Location = New Point(68, 70)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(368, 77)
-        Label9.TabIndex = 16
-        Label9.Text = "RESOURCES"
-        Label9.TextAlign = ContentAlignment.MiddleCenter
+        Resources_lbl.BackColor = Color.Navy
+        Resources_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Resources_lbl.ForeColor = Color.Transparent
+        Resources_lbl.Location = New Point(68, 70)
+        Resources_lbl.Name = "Resources_lbl"
+        Resources_lbl.Size = New Size(368, 77)
+        Resources_lbl.TabIndex = 16
+        Resources_lbl.Text = "RESOURCES"
+        Resources_lbl.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Panel5
+        ' Blue_Design1
         ' 
-        Panel5.BackColor = Color.RoyalBlue
-        Panel5.Location = New Point(68, 174)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(38, 46)
-        Panel5.TabIndex = 20
+        Blue_Design1.BackColor = Color.RoyalBlue
+        Blue_Design1.Location = New Point(68, 174)
+        Blue_Design1.Name = "Blue_Design1"
+        Blue_Design1.Size = New Size(38, 46)
+        Blue_Design1.TabIndex = 20
         ' 
-        ' Panel6
+        ' LighterBlue_Design1
         ' 
-        Panel6.BackColor = Color.CornflowerBlue
-        Panel6.Location = New Point(68, 235)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(38, 46)
-        Panel6.TabIndex = 12
+        LighterBlue_Design1.BackColor = Color.CornflowerBlue
+        LighterBlue_Design1.Location = New Point(68, 235)
+        LighterBlue_Design1.Name = "LighterBlue_Design1"
+        LighterBlue_Design1.Size = New Size(38, 46)
+        LighterBlue_Design1.TabIndex = 12
         ' 
-        ' Panel7
+        ' Cyanlike_Design1
         ' 
-        Panel7.BackColor = Color.LightBlue
-        Panel7.Location = New Point(68, 296)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(38, 46)
-        Panel7.TabIndex = 12
+        Cyanlike_Design1.BackColor = Color.LightBlue
+        Cyanlike_Design1.Location = New Point(68, 296)
+        Cyanlike_Design1.Name = "Cyanlike_Design1"
+        Cyanlike_Design1.Size = New Size(38, 46)
+        Cyanlike_Design1.TabIndex = 12
         ' 
         ' Stud_Info_Panel
         ' 
@@ -361,13 +961,13 @@ Partial Class Student_Dashboard
         Stud_Info_Panel.Controls.Add(Assigned_Label)
         Stud_Info_Panel.Controls.Add(Sup_Label)
         Stud_Info_Panel.Controls.Add(FacEval_Label)
-        Stud_Info_Panel.Controls.Add(Label6)
-        Stud_Info_Panel.Controls.Add(Label7)
-        Stud_Info_Panel.Controls.Add(Label8)
-        Stud_Info_Panel.Controls.Add(Panel4)
-        Stud_Info_Panel.Controls.Add(Panel3)
-        Stud_Info_Panel.Controls.Add(Panel2)
-        Stud_Info_Panel.Controls.Add(Panel1)
+        Stud_Info_Panel.Controls.Add(Assigned_Placeholder_lbl)
+        Stud_Info_Panel.Controls.Add(Supervised_Placeholder_lbl)
+        Stud_Info_Panel.Controls.Add(FacEval_Placeholder_lbl)
+        Stud_Info_Panel.Controls.Add(Cyanlike_Design)
+        Stud_Info_Panel.Controls.Add(LighterBlue_Design)
+        Stud_Info_Panel.Controls.Add(Blue_Design)
+        Stud_Info_Panel.Controls.Add(DBlue_Design)
         Stud_Info_Panel.Dock = DockStyle.Top
         Stud_Info_Panel.Location = New Point(0, 0)
         Stud_Info_Panel.Name = "Stud_Info_Panel"
@@ -376,7 +976,7 @@ Partial Class Student_Dashboard
         ' 
         ' Stud_Greeting_lbl
         ' 
-        Stud_Greeting_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_Greeting_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Stud_Greeting_lbl.Location = New Point(132, 48)
         Stud_Greeting_lbl.Name = "Stud_Greeting_lbl"
         Stud_Greeting_lbl.Size = New Size(325, 42)
@@ -396,7 +996,7 @@ Partial Class Student_Dashboard
         ' Assigned_Label
         ' 
         Assigned_Label.AutoSize = True
-        Assigned_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        Assigned_Label.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold)
         Assigned_Label.Location = New Point(146, 241)
         Assigned_Label.Name = "Assigned_Label"
         Assigned_Label.Size = New Size(296, 45)
@@ -406,7 +1006,7 @@ Partial Class Student_Dashboard
         ' Sup_Label
         ' 
         Sup_Label.AutoSize = True
-        Sup_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        Sup_Label.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold)
         Sup_Label.Location = New Point(146, 300)
         Sup_Label.Name = "Sup_Label"
         Sup_Label.Size = New Size(349, 45)
@@ -416,695 +1016,78 @@ Partial Class Student_Dashboard
         ' FacEval_Label
         ' 
         FacEval_Label.AutoSize = True
-        FacEval_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        FacEval_Label.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold)
         FacEval_Label.Location = New Point(146, 356)
         FacEval_Label.Name = "FacEval_Label"
         FacEval_Label.Size = New Size(478, 45)
         FacEval_Label.TabIndex = 8
         FacEval_Label.Text = "FACULTY EVALUATOR:"
         ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(448, 241)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(351, 46)
-        Label6.TabIndex = 12
-        Label6.Text = "[ PLACEHOLDER ]"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(501, 300)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(351, 46)
-        Label7.TabIndex = 13
-        Label7.Text = "[ PLACEHOLDER ]"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(630, 356)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(351, 46)
-        Label8.TabIndex = 14
-        Label8.Text = "[ PLACEHOLDER ]"
-        ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.LightBlue
-        Panel4.Location = New Point(68, 356)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(38, 46)
-        Panel4.TabIndex = 11
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.CornflowerBlue
-        Panel3.Location = New Point(68, 300)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(38, 42)
-        Panel3.TabIndex = 11
-        ' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = Color.RoyalBlue
-        Panel2.Location = New Point(68, 241)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(38, 46)
-        Panel2.TabIndex = 10
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.Navy
-        Panel1.Location = New Point(68, 48)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(38, 156)
-        Panel1.TabIndex = 9
-        ' 
-        ' Profile_Panel
-        ' 
-        Profile_Panel.Controls.Add(StudProfile_Panel)
-        Profile_Panel.Controls.Add(ProfTitle_Panel)
-        Profile_Panel.Dock = DockStyle.Fill
-        Profile_Panel.Location = New Point(0, 0)
-        Profile_Panel.Name = "Profile_Panel"
-        Profile_Panel.Size = New Size(1902, 830)
-        Profile_Panel.TabIndex = 1
-        ' 
-        ' StudProfile_Panel
-        ' 
-        StudProfile_Panel.Controls.Add(MaskedTextBox4)
-        StudProfile_Panel.Controls.Add(Button5)
-        StudProfile_Panel.Controls.Add(Button4)
-        StudProfile_Panel.Controls.Add(MaskedTextBox3)
-        StudProfile_Panel.Controls.Add(Label18)
-        StudProfile_Panel.Controls.Add(TextBox11)
-        StudProfile_Panel.Controls.Add(Label17)
-        StudProfile_Panel.Controls.Add(MaskedTextBox2)
-        StudProfile_Panel.Controls.Add(MaskedTextBox1)
-        StudProfile_Panel.Controls.Add(TextBox10)
-        StudProfile_Panel.Controls.Add(Label16)
-        StudProfile_Panel.Controls.Add(Label15)
-        StudProfile_Panel.Controls.Add(Label14)
-        StudProfile_Panel.Controls.Add(TextBox7)
-        StudProfile_Panel.Controls.Add(Label13)
-        StudProfile_Panel.Controls.Add(TextBox6)
-        StudProfile_Panel.Controls.Add(Label12)
-        StudProfile_Panel.Controls.Add(Label11)
-        StudProfile_Panel.Controls.Add(TextBox4)
-        StudProfile_Panel.Controls.Add(TextBox3)
-        StudProfile_Panel.Controls.Add(TextBox2)
-        StudProfile_Panel.Controls.Add(TextBox1)
-        StudProfile_Panel.Controls.Add(Label10)
-        StudProfile_Panel.Controls.Add(Label5)
-        StudProfile_Panel.Controls.Add(Label4)
-        StudProfile_Panel.Controls.Add(Label2)
-        StudProfile_Panel.Dock = DockStyle.Fill
-        StudProfile_Panel.Location = New Point(0, 177)
-        StudProfile_Panel.Name = "StudProfile_Panel"
-        StudProfile_Panel.Size = New Size(1902, 653)
-        StudProfile_Panel.TabIndex = 12
-        ' 
-        ' MaskedTextBox4
-        ' 
-        MaskedTextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox4.Location = New Point(71, 264)
-        MaskedTextBox4.Mask = "00-0000"
-        MaskedTextBox4.Name = "MaskedTextBox4"
-        MaskedTextBox4.Size = New Size(296, 51)
-        MaskedTextBox4.TabIndex = 45
-        ' 
-        ' Button5
-        ' 
-        Button5.BackColor = Color.Navy
-        Button5.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.Transparent
-        Button5.Location = New Point(1114, 527)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(362, 76)
-        Button5.TabIndex = 44
-        Button5.Text = "CHANGE PASSWORD"
-        Button5.UseVisualStyleBackColor = False
-        ' 
-        ' Button4
-        ' 
-        Button4.BackColor = Color.Navy
-        Button4.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.Transparent
-        Button4.Location = New Point(1486, 527)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(362, 76)
-        Button4.TabIndex = 43
-        Button4.Text = "UPDATE PROFILE"
-        Button4.UseVisualStyleBackColor = False
-        ' 
-        ' MaskedTextBox3
-        ' 
-        MaskedTextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox3.Location = New Point(71, 420)
-        MaskedTextBox3.Mask = "+63-000-000-0000"
-        MaskedTextBox3.Name = "MaskedTextBox3"
-        MaskedTextBox3.Size = New Size(474, 51)
-        MaskedTextBox3.TabIndex = 42
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label18.Location = New Point(71, 363)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(318, 45)
-        Label18.TabIndex = 41
-        Label18.Text = "Contact Number:"
-        ' 
-        ' TextBox11
-        ' 
-        TextBox11.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox11.Location = New Point(573, 420)
-        TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(477, 51)
-        TextBox11.TabIndex = 40
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label17.Location = New Point(573, 363)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(284, 45)
-        Label17.TabIndex = 39
-        Label17.Text = "Email Address:"
-        ' 
-        ' MaskedTextBox2
-        ' 
-        MaskedTextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox2.Location = New Point(1294, 261)
-        MaskedTextBox2.Mask = "D000"
-        MaskedTextBox2.Name = "MaskedTextBox2"
-        MaskedTextBox2.Size = New Size(264, 51)
-        MaskedTextBox2.TabIndex = 38
-        ' 
-        ' MaskedTextBox1
-        ' 
-        MaskedTextBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox1.Location = New Point(973, 264)
-        MaskedTextBox1.Mask = "F000"
-        MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(296, 51)
-        MaskedTextBox1.TabIndex = 37
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox10.Location = New Point(1584, 264)
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(264, 51)
-        TextBox10.TabIndex = 28
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(1584, 200)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(155, 45)
-        Label16.TabIndex = 27
-        Label16.Text = "Section:"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(1295, 200)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(180, 45)
-        Label15.TabIndex = 23
-        Label15.Text = "Dept. ID:"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(973, 200)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(209, 45)
-        Label14.TabIndex = 21
-        Label14.Text = "Course ID:"
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox7.Location = New Point(683, 264)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(264, 51)
-        TextBox7.TabIndex = 20
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(683, 200)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(154, 45)
-        Label13.TabIndex = 19
-        Label13.Text = "Course:"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox6.Location = New Point(389, 264)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(264, 51)
-        TextBox6.TabIndex = 18
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(389, 200)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(217, 45)
-        Label12.TabIndex = 17
-        Label12.Text = "Year Level:"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(71, 200)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(218, 45)
-        Label11.TabIndex = 15
-        Label11.Text = "Student ID:"
-        ' 
-        ' TextBox4
-        ' 
-        TextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.Location = New Point(1584, 98)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(268, 51)
-        TextBox4.TabIndex = 14
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.Location = New Point(1082, 98)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(477, 51)
-        TextBox3.TabIndex = 13
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(573, 98)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(477, 51)
-        TextBox2.TabIndex = 12
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(68, 98)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(477, 51)
-        TextBox1.TabIndex = 11
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(1584, 41)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(135, 45)
-        Label10.TabIndex = 10
-        Label10.Text = "Suffix:"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(1082, 41)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(220, 45)
-        Label5.TabIndex = 9
-        Label5.Text = "Last Name:"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(573, 41)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(266, 45)
-        Label4.TabIndex = 8
-        Label4.Text = "Middle Name:"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(68, 41)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(227, 45)
-        Label2.TabIndex = 7
-        Label2.Text = "First Name:"
-        ' 
-        ' ProfTitle_Panel
-        ' 
-        ProfTitle_Panel.Controls.Add(Label3)
-        ProfTitle_Panel.Controls.Add(Panel8)
-        ProfTitle_Panel.Dock = DockStyle.Top
-        ProfTitle_Panel.Location = New Point(0, 0)
-        ProfTitle_Panel.Name = "ProfTitle_Panel"
-        ProfTitle_Panel.Size = New Size(1902, 177)
-        ProfTitle_Panel.TabIndex = 11
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(132, 48)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(463, 105)
-        Label3.TabIndex = 8
-        Label3.Text = "PROFILE"
-        Label3.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Panel8
-        ' 
-        Panel8.BackColor = Color.Navy
-        Panel8.Location = New Point(68, 48)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(38, 105)
-        Panel8.TabIndex = 10
-        ' 
-        ' Internship_Panel
-        ' 
-        Internship_Panel.Controls.Add(IntStatus_Panel)
-        Internship_Panel.Controls.Add(InternTitle_Panel)
-        Internship_Panel.Dock = DockStyle.Fill
-        Internship_Panel.Location = New Point(0, 0)
-        Internship_Panel.Name = "Internship_Panel"
-        Internship_Panel.Size = New Size(1902, 830)
-        Internship_Panel.TabIndex = 2
-        ' 
-        ' IntStatus_Panel
-        ' 
-        IntStatus_Panel.Controls.Add(TextBox23)
-        IntStatus_Panel.Controls.Add(Label29)
-        IntStatus_Panel.Controls.Add(TextBox22)
-        IntStatus_Panel.Controls.Add(Label28)
-        IntStatus_Panel.Controls.Add(TextBox21)
-        IntStatus_Panel.Controls.Add(Label25)
-        IntStatus_Panel.Controls.Add(TextBox20)
-        IntStatus_Panel.Controls.Add(Label27)
-        IntStatus_Panel.Controls.Add(TextBox19)
-        IntStatus_Panel.Controls.Add(Label26)
-        IntStatus_Panel.Controls.Add(TextBox18)
-        IntStatus_Panel.Controls.Add(Label24)
-        IntStatus_Panel.Controls.Add(TextBox17)
-        IntStatus_Panel.Controls.Add(Label23)
-        IntStatus_Panel.Controls.Add(TextBox16)
-        IntStatus_Panel.Controls.Add(Label22)
-        IntStatus_Panel.Controls.Add(TextBox15)
-        IntStatus_Panel.Controls.Add(Label21)
-        IntStatus_Panel.Controls.Add(TextBox14)
-        IntStatus_Panel.Controls.Add(Label20)
-        IntStatus_Panel.Controls.Add(TextBox13)
-        IntStatus_Panel.Controls.Add(Label19)
-        IntStatus_Panel.Controls.Add(Button2)
-        IntStatus_Panel.Controls.Add(TextBox24)
-        IntStatus_Panel.Controls.Add(Label30)
-        IntStatus_Panel.Dock = DockStyle.Fill
-        IntStatus_Panel.Location = New Point(0, 177)
-        IntStatus_Panel.Name = "IntStatus_Panel"
-        IntStatus_Panel.Size = New Size(1902, 653)
-        IntStatus_Panel.TabIndex = 14
-        ' 
-        ' TextBox23
-        ' 
-        TextBox23.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox23.Location = New Point(710, 248)
-        TextBox23.Name = "TextBox23"
-        TextBox23.Size = New Size(818, 51)
-        TextBox23.TabIndex = 55
-        ' 
-        ' Label29
-        ' 
-        Label29.AutoSize = True
-        Label29.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label29.Location = New Point(710, 191)
-        Label29.Name = "Label29"
-        Label29.Size = New Size(358, 45)
-        Label29.TabIndex = 54
-        Label29.Text = "Company Assigned:"
-        ' 
-        ' TextBox22
-        ' 
-        TextBox22.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox22.Location = New Point(389, 248)
-        TextBox22.Name = "TextBox22"
-        TextBox22.Size = New Size(299, 51)
-        TextBox22.TabIndex = 53
-        ' 
-        ' Label28
-        ' 
-        Label28.AutoSize = True
-        Label28.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label28.Location = New Point(389, 191)
-        Label28.Name = "Label28"
-        Label28.Size = New Size(190, 45)
-        Label28.TabIndex = 52
-        Label28.Text = "Semester:"
-        ' 
-        ' TextBox21
-        ' 
-        TextBox21.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox21.Location = New Point(68, 248)
-        TextBox21.Name = "TextBox21"
-        TextBox21.Size = New Size(299, 51)
-        TextBox21.TabIndex = 51
-        ' 
-        ' Label25
-        ' 
-        Label25.AutoSize = True
-        Label25.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label25.Location = New Point(68, 191)
-        Label25.Name = "Label25"
-        Label25.Size = New Size(233, 45)
-        Label25.TabIndex = 50
-        Label25.Text = "School Year:"
-        ' 
-        ' TextBox20
-        ' 
-        TextBox20.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox20.Location = New Point(389, 552)
-        TextBox20.Name = "TextBox20"
-        TextBox20.Size = New Size(880, 51)
-        TextBox20.TabIndex = 49
-        ' 
-        ' Label27
-        ' 
-        Label27.AutoSize = True
-        Label27.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label27.Location = New Point(389, 495)
-        Label27.Name = "Label27"
-        Label27.Size = New Size(345, 45)
-        Label27.TabIndex = 48
-        Label27.Text = "Company Address:"
-        ' 
-        ' TextBox19
-        ' 
-        TextBox19.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox19.Location = New Point(68, 552)
-        TextBox19.Name = "TextBox19"
-        TextBox19.Size = New Size(299, 51)
-        TextBox19.TabIndex = 46
-        ' 
-        ' Label26
-        ' 
-        Label26.AutoSize = True
-        Label26.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label26.Location = New Point(68, 495)
-        Label26.Name = "Label26"
-        Label26.Size = New Size(252, 45)
-        Label26.TabIndex = 45
-        Label26.Text = "Company ID:"
-        ' 
-        ' TextBox18
-        ' 
-        TextBox18.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox18.Location = New Point(970, 98)
-        TextBox18.Name = "TextBox18"
-        TextBox18.Size = New Size(558, 51)
-        TextBox18.TabIndex = 44
-        ' 
-        ' Label24
-        ' 
-        Label24.AutoSize = True
-        Label24.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label24.Location = New Point(970, 41)
-        Label24.Name = "Label24"
-        Label24.Size = New Size(193, 45)
-        Label24.TabIndex = 43
-        Label24.Text = "End Date:"
-        ' 
-        ' TextBox17
-        ' 
-        TextBox17.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox17.Location = New Point(389, 98)
-        TextBox17.Name = "TextBox17"
-        TextBox17.Size = New Size(558, 51)
-        TextBox17.TabIndex = 42
-        ' 
-        ' Label23
-        ' 
-        Label23.AutoSize = True
-        Label23.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label23.Location = New Point(389, 41)
-        Label23.Name = "Label23"
-        Label23.Size = New Size(209, 45)
-        Label23.TabIndex = 41
-        Label23.Text = "Start Date:"
-        ' 
-        ' TextBox16
-        ' 
-        TextBox16.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox16.Location = New Point(1294, 411)
-        TextBox16.Name = "TextBox16"
-        TextBox16.Size = New Size(558, 51)
-        TextBox16.TabIndex = 40
-        ' 
-        ' Label22
-        ' 
-        Label22.AutoSize = True
-        Label22.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label22.Location = New Point(1294, 354)
-        Label22.Name = "Label22"
-        Label22.Size = New Size(218, 45)
-        Label22.TabIndex = 39
-        Label22.Text = "Supervisor:"
-        ' 
-        ' TextBox15
-        ' 
-        TextBox15.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox15.Location = New Point(970, 412)
-        TextBox15.Name = "TextBox15"
-        TextBox15.Size = New Size(299, 51)
-        TextBox15.TabIndex = 38
-        ' 
-        ' Label21
-        ' 
-        Label21.AutoSize = True
-        Label21.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label21.Location = New Point(970, 354)
-        Label21.Name = "Label21"
-        Label21.Size = New Size(272, 45)
-        Label21.TabIndex = 37
-        Label21.Text = "Supervisor ID:"
-        ' 
-        ' TextBox14
-        ' 
-        TextBox14.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox14.Location = New Point(389, 411)
-        TextBox14.Name = "TextBox14"
-        TextBox14.Size = New Size(558, 51)
-        TextBox14.TabIndex = 36
-        ' 
-        ' Label20
-        ' 
-        Label20.AutoSize = True
-        Label20.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label20.Location = New Point(389, 354)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(339, 45)
-        Label20.TabIndex = 35
-        Label20.Text = "Faculty Evaluator:"
-        ' 
-        ' TextBox13
-        ' 
-        TextBox13.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox13.Location = New Point(68, 411)
-        TextBox13.Name = "TextBox13"
-        TextBox13.Size = New Size(299, 51)
-        TextBox13.TabIndex = 33
-        ' 
-        ' Label19
-        ' 
-        Label19.AutoSize = True
-        Label19.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label19.Location = New Point(68, 354)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(215, 45)
-        Label19.TabIndex = 32
-        Label19.Text = "Faculty ID:"
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.Navy
-        Button2.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.Transparent
-        Button2.Location = New Point(1486, 527)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(362, 76)
-        Button2.TabIndex = 31
-        Button2.Text = "UPDATE "
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' TextBox24
-        ' 
-        TextBox24.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox24.Location = New Point(68, 98)
-        TextBox24.Name = "TextBox24"
-        TextBox24.Size = New Size(299, 51)
-        TextBox24.TabIndex = 11
-        ' 
-        ' Label30
-        ' 
-        Label30.AutoSize = True
-        Label30.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label30.Location = New Point(68, 41)
-        Label30.Name = "Label30"
-        Label30.Size = New Size(195, 45)
-        Label30.TabIndex = 7
-        Label30.Text = "Intern ID:"
-        ' 
-        ' InternTitle_Panel
-        ' 
-        InternTitle_Panel.Controls.Add(Label1)
-        InternTitle_Panel.Controls.Add(Panel9)
-        InternTitle_Panel.Dock = DockStyle.Top
-        InternTitle_Panel.Location = New Point(0, 0)
-        InternTitle_Panel.Name = "InternTitle_Panel"
-        InternTitle_Panel.Size = New Size(1902, 177)
-        InternTitle_Panel.TabIndex = 13
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(132, 48)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(1002, 105)
-        Label1.TabIndex = 11
-        Label1.Text = "INTERNSHIP STATUS"
-        Label1.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Panel9
-        ' 
-        Panel9.BackColor = Color.Navy
-        Panel9.Location = New Point(68, 48)
-        Panel9.Name = "Panel9"
-        Panel9.Size = New Size(38, 105)
-        Panel9.TabIndex = 12
+        ' Assigned_Placeholder_lbl
+        ' 
+        Assigned_Placeholder_lbl.AutoSize = True
+        Assigned_Placeholder_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Assigned_Placeholder_lbl.Location = New Point(448, 241)
+        Assigned_Placeholder_lbl.Name = "Assigned_Placeholder_lbl"
+        Assigned_Placeholder_lbl.Size = New Size(351, 46)
+        Assigned_Placeholder_lbl.TabIndex = 12
+        Assigned_Placeholder_lbl.Text = "[ PLACEHOLDER ]"
+        ' 
+        ' Supervised_Placeholder_lbl
+        ' 
+        Supervised_Placeholder_lbl.AutoSize = True
+        Supervised_Placeholder_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Supervised_Placeholder_lbl.Location = New Point(501, 300)
+        Supervised_Placeholder_lbl.Name = "Supervised_Placeholder_lbl"
+        Supervised_Placeholder_lbl.Size = New Size(351, 46)
+        Supervised_Placeholder_lbl.TabIndex = 13
+        Supervised_Placeholder_lbl.Text = "[ PLACEHOLDER ]"
+        ' 
+        ' FacEval_Placeholder_lbl
+        ' 
+        FacEval_Placeholder_lbl.AutoSize = True
+        FacEval_Placeholder_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FacEval_Placeholder_lbl.Location = New Point(630, 356)
+        FacEval_Placeholder_lbl.Name = "FacEval_Placeholder_lbl"
+        FacEval_Placeholder_lbl.Size = New Size(351, 46)
+        FacEval_Placeholder_lbl.TabIndex = 14
+        FacEval_Placeholder_lbl.Text = "[ PLACEHOLDER ]"
+        ' 
+        ' Cyanlike_Design
+        ' 
+        Cyanlike_Design.BackColor = Color.LightBlue
+        Cyanlike_Design.Location = New Point(68, 356)
+        Cyanlike_Design.Name = "Cyanlike_Design"
+        Cyanlike_Design.Size = New Size(38, 46)
+        Cyanlike_Design.TabIndex = 11
+        ' 
+        ' LighterBlue_Design
+        ' 
+        LighterBlue_Design.BackColor = Color.CornflowerBlue
+        LighterBlue_Design.Location = New Point(68, 300)
+        LighterBlue_Design.Name = "LighterBlue_Design"
+        LighterBlue_Design.Size = New Size(38, 42)
+        LighterBlue_Design.TabIndex = 11
+        ' 
+        ' Blue_Design
+        ' 
+        Blue_Design.BackColor = Color.RoyalBlue
+        Blue_Design.Location = New Point(68, 241)
+        Blue_Design.Name = "Blue_Design"
+        Blue_Design.Size = New Size(38, 46)
+        Blue_Design.TabIndex = 10
+        ' 
+        ' DBlue_Design
+        ' 
+        DBlue_Design.BackColor = Color.Navy
+        DBlue_Design.Location = New Point(68, 48)
+        DBlue_Design.Name = "DBlue_Design"
+        DBlue_Design.Size = New Size(38, 156)
+        DBlue_Design.TabIndex = 9
         ' 
         ' Student_Dashboard
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1902, 1055)
         Controls.Add(Screen_Panel)
@@ -1116,21 +1099,21 @@ Partial Class Student_Dashboard
         CType(Logo_Pic, ComponentModel.ISupportInitialize).EndInit()
         Function_Panel.ResumeLayout(False)
         Screen_Panel.ResumeLayout(False)
-        Home_Panel.ResumeLayout(False)
-        Resources_Panel.ResumeLayout(False)
-        Resources_Panel.PerformLayout()
-        Stud_Info_Panel.ResumeLayout(False)
-        Stud_Info_Panel.PerformLayout()
-        Profile_Panel.ResumeLayout(False)
-        StudProfile_Panel.ResumeLayout(False)
-        StudProfile_Panel.PerformLayout()
-        ProfTitle_Panel.ResumeLayout(False)
-        ProfTitle_Panel.PerformLayout()
         Internship_Panel.ResumeLayout(False)
         IntStatus_Panel.ResumeLayout(False)
         IntStatus_Panel.PerformLayout()
         InternTitle_Panel.ResumeLayout(False)
         InternTitle_Panel.PerformLayout()
+        Profile_Panel.ResumeLayout(False)
+        StudProfile_Panel.ResumeLayout(False)
+        StudProfile_Panel.PerformLayout()
+        ProfileTitle_Panel.ResumeLayout(False)
+        ProfileTitle_Panel.PerformLayout()
+        Home_Panel.ResumeLayout(False)
+        Resources_Panel.ResumeLayout(False)
+        Resources_Panel.PerformLayout()
+        Stud_Info_Panel.ResumeLayout(False)
+        Stud_Info_Panel.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -1152,79 +1135,81 @@ Partial Class Student_Dashboard
     Friend WithEvents Assigned_Label As Label
     Friend WithEvents Sup_Label As Label
     Friend WithEvents FacEval_Label As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents LinkLabel3 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Cyanlike_Design As Panel
+    Friend WithEvents LighterBlue_Design As Panel
+    Friend WithEvents Blue_Design As Panel
+    Friend WithEvents DBlue_Design As Panel
+    Friend WithEvents FacEval_Placeholder_lbl As Label
+    Friend WithEvents Supervised_Placeholder_lbl As Label
+    Friend WithEvents Assigned_Placeholder_lbl As Label
+    Friend WithEvents Resources_lbl As Label
+    Friend WithEvents CompanyMOA_Linklbl As LinkLabel
+    Friend WithEvents GradeSlip_Linklbl As LinkLabel
+    Friend WithEvents OJT_Guidelines_Linklbl As LinkLabel
+    Friend WithEvents Blue_Design1 As Panel
+    Friend WithEvents Cyanlike_Design1 As Panel
+    Friend WithEvents LighterBlue_Design1 As Panel
     Friend WithEvents Stud_Info_Panel As Panel
     Friend WithEvents Resources_Panel As Panel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents ProfTitle_Panel As Panel
+    Friend WithEvents DarkBlue_Design2 As Panel
+    Friend WithEvents Stud_Profile_Lbl As Label
+    Friend WithEvents DarkBlue_Design3 As Panel
+    Friend WithEvents Stud_Internship_lbl As Label
+    Friend WithEvents ProfileTitle_Panel As Panel
     Friend WithEvents StudProfile_Panel As Panel
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label16 As Label
+    Friend WithEvents Stud_Suffix_lbl As Label
+    Friend WithEvents Stud_LName_lbl As Label
+    Friend WithEvents Stud_MName_lbl As Label
+    Friend WithEvents Stud_FName_lbl As Label
+    Friend WithEvents Stud_Suffix_txt As TextBox
+    Friend WithEvents Stud_LName_txt As TextBox
+    Friend WithEvents Stud_MName_txt As TextBox
+    Friend WithEvents Stud_FName_txt As TextBox
+    Friend WithEvents Stud_StudID_lbl As Label
+    Friend WithEvents Stud_StudDeptID_lbl As Label
+    Friend WithEvents Stud_StudCourseID_lbl As Label
+    Friend WithEvents Stud_StudCourse_lbl As Label
+    Friend WithEvents Stud_StudSection_txt As TextBox
+    Friend WithEvents Stud_StudSection_lbl As Label
     Friend WithEvents InternTitle_Panel As Panel
     Friend WithEvents IntStatus_Panel As Panel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents Label30 As Label
+    Friend WithEvents Stud_Update_btn As Button
+    Friend WithEvents Stud_InternID_lbl As Label
     Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents Label19 As Label
+    Friend WithEvents Stud_Supervisor_lbl As Label
+    Friend WithEvents Stud_InternFacEval_txt As TextBox
+    Friend WithEvents Stud_InternFacEval_lbl As Label
+    Friend WithEvents Stud_InternFacID_lbl As Label
     Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents Label27 As Label
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents Label26 As Label
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents Label25 As Label
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents Label29 As Label
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents Label28 As Label
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents MaskedTextBox3 As MaskedTextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents MaskedTextBox4 As MaskedTextBox
+    Friend WithEvents Stud_SupervisorName_lbl As Label
+    Friend WithEvents Stud_InternEDate_txt As TextBox
+    Friend WithEvents Stud_InternEDate_lbl As Label
+    Friend WithEvents Stud_InternSDate_txt As TextBox
+    Friend WithEvents Stud_InternSDate_lbl As Label
+    Friend WithEvents Stud_InternCompAdd_txt As TextBox
+    Friend WithEvents Stud_InternCompAdd_lbl As Label
+    Friend WithEvents Stud_InternCompID_lbl As Label
+    Friend WithEvents Stud_InternSY_txt As TextBox
+    Friend WithEvents Stud_InternSY_lbl As Label
+    Friend WithEvents Stud_InternCompName_txt As TextBox
+    Friend WithEvents Stud_InternCompName_lbl As Label
+    Friend WithEvents Stud_InternSem_txt As TextBox
+    Friend WithEvents Stud_InternSem_lbl As Label
+    Friend WithEvents Stud_StudDeptID_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_StudCourseID_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_StudContNum_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_StudContNum_lbl As Label
+    Friend WithEvents Stud_StudEmailAdd_txt As TextBox
+    Friend WithEvents Stud_StudEmailAdd_lbl As Label
+    Friend WithEvents Stud_ChangePass_btn As Button
+    Friend WithEvents Stud_UpdateProfile_btn As Button
+    Friend WithEvents Stud_StudentID_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_StudCourses_cmb As ComboBox
+    Friend WithEvents Stud_InternID_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_InternFacID_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_SupervisorID_Mtxt As MaskedTextBox
+    Friend WithEvents Stud_InternFacEvalName_lbl As TextBox
+    Friend WithEvents Stud_SupervisorName_txt As TextBox
+    Friend WithEvents Stud_InternSupervisorID_lbl As Label
+    Friend WithEvents Stud_InternCompID_Mtxt As MaskedTextBox
 End Class
