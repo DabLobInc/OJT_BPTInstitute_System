@@ -32,6 +32,28 @@ Partial Class Student_Dashboard
         Logout_BTN = New LinkLabel()
         Internship_BTN = New LinkLabel()
         Screen_Panel = New Panel()
+        Home_Panel = New Panel()
+        Resources_Panel = New Panel()
+        LinkLabel1 = New LinkLabel()
+        LinkLabel2 = New LinkLabel()
+        LinkLabel3 = New LinkLabel()
+        Label9 = New Label()
+        Panel5 = New Panel()
+        Panel6 = New Panel()
+        Panel7 = New Panel()
+        Stud_Info_Panel = New Panel()
+        Stud_Greeting_lbl = New Label()
+        Stud_User_lbl = New Label()
+        Assigned_Label = New Label()
+        Sup_Label = New Label()
+        FacEval_Label = New Label()
+        Label6 = New Label()
+        Label7 = New Label()
+        Label8 = New Label()
+        Panel4 = New Panel()
+        Panel3 = New Panel()
+        Panel2 = New Panel()
+        Panel1 = New Panel()
         Profile_Panel = New Panel()
         StudProfile_Panel = New Panel()
         MaskedTextBox4 = New MaskedTextBox()
@@ -63,28 +85,6 @@ Partial Class Student_Dashboard
         ProfTitle_Panel = New Panel()
         Label3 = New Label()
         Panel8 = New Panel()
-        Home_Panel = New Panel()
-        Resources_Panel = New Panel()
-        LinkLabel1 = New LinkLabel()
-        LinkLabel2 = New LinkLabel()
-        LinkLabel3 = New LinkLabel()
-        Label9 = New Label()
-        Panel5 = New Panel()
-        Panel6 = New Panel()
-        Panel7 = New Panel()
-        Stud_Info_Panel = New Panel()
-        Stud_Greeting_lbl = New Label()
-        Stud_User_lbl = New Label()
-        Assigned_Label = New Label()
-        Sup_Label = New Label()
-        FacEval_Label = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        Panel4 = New Panel()
-        Panel3 = New Panel()
-        Panel2 = New Panel()
-        Panel1 = New Panel()
         Internship_Panel = New Panel()
         IntStatus_Panel = New Panel()
         TextBox23 = New TextBox()
@@ -120,12 +120,12 @@ Partial Class Student_Dashboard
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
         Function_Panel.SuspendLayout()
         Screen_Panel.SuspendLayout()
-        Profile_Panel.SuspendLayout()
-        StudProfile_Panel.SuspendLayout()
-        ProfTitle_Panel.SuspendLayout()
         Home_Panel.SuspendLayout()
         Resources_Panel.SuspendLayout()
         Stud_Info_Panel.SuspendLayout()
+        Profile_Panel.SuspendLayout()
+        StudProfile_Panel.SuspendLayout()
+        ProfTitle_Panel.SuspendLayout()
         Internship_Panel.SuspendLayout()
         IntStatus_Panel.SuspendLayout()
         InternTitle_Panel.SuspendLayout()
@@ -245,14 +245,245 @@ Partial Class Student_Dashboard
         ' Screen_Panel
         ' 
         Screen_Panel.BackColor = SystemColors.Control
-        Screen_Panel.Controls.Add(Home_Panel)
         Screen_Panel.Controls.Add(Profile_Panel)
+        Screen_Panel.Controls.Add(Home_Panel)
         Screen_Panel.Controls.Add(Internship_Panel)
         Screen_Panel.Dock = DockStyle.Fill
         Screen_Panel.Location = New Point(0, 225)
         Screen_Panel.Name = "Screen_Panel"
         Screen_Panel.Size = New Size(1902, 830)
         Screen_Panel.TabIndex = 13
+        ' 
+        ' Home_Panel
+        ' 
+        Home_Panel.Controls.Add(Resources_Panel)
+        Home_Panel.Controls.Add(Stud_Info_Panel)
+        Home_Panel.Dock = DockStyle.Fill
+        Home_Panel.Location = New Point(0, 0)
+        Home_Panel.Name = "Home_Panel"
+        Home_Panel.Size = New Size(1902, 830)
+        Home_Panel.TabIndex = 0
+        ' 
+        ' Resources_Panel
+        ' 
+        Resources_Panel.Controls.Add(LinkLabel1)
+        Resources_Panel.Controls.Add(LinkLabel2)
+        Resources_Panel.Controls.Add(LinkLabel3)
+        Resources_Panel.Controls.Add(Label9)
+        Resources_Panel.Controls.Add(Panel5)
+        Resources_Panel.Controls.Add(Panel6)
+        Resources_Panel.Controls.Add(Panel7)
+        Resources_Panel.Dock = DockStyle.Left
+        Resources_Panel.Location = New Point(0, 438)
+        Resources_Panel.Name = "Resources_Panel"
+        Resources_Panel.Size = New Size(545, 392)
+        Resources_Panel.TabIndex = 22
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.ActiveLinkColor = Color.Gold
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LinkLabel1.LinkColor = Color.Navy
+        LinkLabel1.Location = New Point(132, 174)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(268, 46)
+        LinkLabel1.TabIndex = 17
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "OJT Guidelines"
+        ' 
+        ' LinkLabel2
+        ' 
+        LinkLabel2.ActiveLinkColor = Color.Gold
+        LinkLabel2.AutoSize = True
+        LinkLabel2.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LinkLabel2.LinkColor = Color.Navy
+        LinkLabel2.Location = New Point(132, 235)
+        LinkLabel2.Name = "LinkLabel2"
+        LinkLabel2.Size = New Size(190, 46)
+        LinkLabel2.TabIndex = 18
+        LinkLabel2.TabStop = True
+        LinkLabel2.Text = "Grade Slip"
+        ' 
+        ' LinkLabel3
+        ' 
+        LinkLabel3.ActiveLinkColor = Color.Gold
+        LinkLabel3.AutoSize = True
+        LinkLabel3.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LinkLabel3.LinkColor = Color.Navy
+        LinkLabel3.Location = New Point(132, 296)
+        LinkLabel3.Name = "LinkLabel3"
+        LinkLabel3.Size = New Size(277, 46)
+        LinkLabel3.TabIndex = 19
+        LinkLabel3.TabStop = True
+        LinkLabel3.Text = "Company MOA"
+        ' 
+        ' Label9
+        ' 
+        Label9.BackColor = Color.Navy
+        Label9.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.Transparent
+        Label9.Location = New Point(68, 70)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(368, 77)
+        Label9.TabIndex = 16
+        Label9.Text = "RESOURCES"
+        Label9.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Panel5
+        ' 
+        Panel5.BackColor = Color.RoyalBlue
+        Panel5.Location = New Point(68, 174)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(38, 46)
+        Panel5.TabIndex = 20
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BackColor = Color.CornflowerBlue
+        Panel6.Location = New Point(68, 235)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(38, 46)
+        Panel6.TabIndex = 12
+        ' 
+        ' Panel7
+        ' 
+        Panel7.BackColor = Color.LightBlue
+        Panel7.Location = New Point(68, 296)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(38, 46)
+        Panel7.TabIndex = 12
+        ' 
+        ' Stud_Info_Panel
+        ' 
+        Stud_Info_Panel.Controls.Add(Stud_Greeting_lbl)
+        Stud_Info_Panel.Controls.Add(Stud_User_lbl)
+        Stud_Info_Panel.Controls.Add(Assigned_Label)
+        Stud_Info_Panel.Controls.Add(Sup_Label)
+        Stud_Info_Panel.Controls.Add(FacEval_Label)
+        Stud_Info_Panel.Controls.Add(Label6)
+        Stud_Info_Panel.Controls.Add(Label7)
+        Stud_Info_Panel.Controls.Add(Label8)
+        Stud_Info_Panel.Controls.Add(Panel4)
+        Stud_Info_Panel.Controls.Add(Panel3)
+        Stud_Info_Panel.Controls.Add(Panel2)
+        Stud_Info_Panel.Controls.Add(Panel1)
+        Stud_Info_Panel.Dock = DockStyle.Top
+        Stud_Info_Panel.Location = New Point(0, 0)
+        Stud_Info_Panel.Name = "Stud_Info_Panel"
+        Stud_Info_Panel.Size = New Size(1902, 438)
+        Stud_Info_Panel.TabIndex = 21
+        ' 
+        ' Stud_Greeting_lbl
+        ' 
+        Stud_Greeting_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_Greeting_lbl.Location = New Point(132, 48)
+        Stud_Greeting_lbl.Name = "Stud_Greeting_lbl"
+        Stud_Greeting_lbl.Size = New Size(325, 42)
+        Stud_Greeting_lbl.TabIndex = 6
+        Stud_Greeting_lbl.Text = "WELCOME,"
+        ' 
+        ' Stud_User_lbl
+        ' 
+        Stud_User_lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Stud_User_lbl.Location = New Point(121, 90)
+        Stud_User_lbl.Name = "Stud_User_lbl"
+        Stud_User_lbl.Size = New Size(718, 114)
+        Stud_User_lbl.TabIndex = 7
+        Stud_User_lbl.Text = "[NAME HERE]"
+        Stud_User_lbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Assigned_Label
+        ' 
+        Assigned_Label.AutoSize = True
+        Assigned_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        Assigned_Label.Location = New Point(146, 241)
+        Assigned_Label.Name = "Assigned_Label"
+        Assigned_Label.Size = New Size(296, 45)
+        Assigned_Label.TabIndex = 8
+        Assigned_Label.Text = "ASSIGNED AT:"
+        ' 
+        ' Sup_Label
+        ' 
+        Sup_Label.AutoSize = True
+        Sup_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        Sup_Label.Location = New Point(146, 300)
+        Sup_Label.Name = "Sup_Label"
+        Sup_Label.Size = New Size(349, 45)
+        Sup_Label.TabIndex = 8
+        Sup_Label.Text = "SUPERVISED BY:"
+        ' 
+        ' FacEval_Label
+        ' 
+        FacEval_Label.AutoSize = True
+        FacEval_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
+        FacEval_Label.Location = New Point(146, 356)
+        FacEval_Label.Name = "FacEval_Label"
+        FacEval_Label.Size = New Size(478, 45)
+        FacEval_Label.TabIndex = 8
+        FacEval_Label.Text = "FACULTY EVALUATOR:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(448, 241)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(351, 46)
+        Label6.TabIndex = 12
+        Label6.Text = "[ PLACEHOLDER ]"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.Location = New Point(501, 300)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(351, 46)
+        Label7.TabIndex = 13
+        Label7.Text = "[ PLACEHOLDER ]"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.Location = New Point(630, 356)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(351, 46)
+        Label8.TabIndex = 14
+        Label8.Text = "[ PLACEHOLDER ]"
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.LightBlue
+        Panel4.Location = New Point(68, 356)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(38, 46)
+        Panel4.TabIndex = 11
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.CornflowerBlue
+        Panel3.Location = New Point(68, 300)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(38, 42)
+        Panel3.TabIndex = 11
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.RoyalBlue
+        Panel2.Location = New Point(68, 241)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(38, 46)
+        Panel2.TabIndex = 10
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Navy
+        Panel1.Location = New Point(68, 48)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(38, 156)
+        Panel1.TabIndex = 9
         ' 
         ' Profile_Panel
         ' 
@@ -571,237 +802,6 @@ Partial Class Student_Dashboard
         Panel8.Size = New Size(38, 105)
         Panel8.TabIndex = 10
         ' 
-        ' Home_Panel
-        ' 
-        Home_Panel.Controls.Add(Resources_Panel)
-        Home_Panel.Controls.Add(Stud_Info_Panel)
-        Home_Panel.Dock = DockStyle.Fill
-        Home_Panel.Location = New Point(0, 0)
-        Home_Panel.Name = "Home_Panel"
-        Home_Panel.Size = New Size(1902, 830)
-        Home_Panel.TabIndex = 0
-        ' 
-        ' Resources_Panel
-        ' 
-        Resources_Panel.Controls.Add(LinkLabel1)
-        Resources_Panel.Controls.Add(LinkLabel2)
-        Resources_Panel.Controls.Add(LinkLabel3)
-        Resources_Panel.Controls.Add(Label9)
-        Resources_Panel.Controls.Add(Panel5)
-        Resources_Panel.Controls.Add(Panel6)
-        Resources_Panel.Controls.Add(Panel7)
-        Resources_Panel.Dock = DockStyle.Left
-        Resources_Panel.Location = New Point(0, 438)
-        Resources_Panel.Name = "Resources_Panel"
-        Resources_Panel.Size = New Size(545, 392)
-        Resources_Panel.TabIndex = 22
-        ' 
-        ' LinkLabel1
-        ' 
-        LinkLabel1.ActiveLinkColor = Color.Gold
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel1.LinkColor = Color.Navy
-        LinkLabel1.Location = New Point(132, 174)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(268, 46)
-        LinkLabel1.TabIndex = 17
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "OJT Guidelines"
-        ' 
-        ' LinkLabel2
-        ' 
-        LinkLabel2.ActiveLinkColor = Color.Gold
-        LinkLabel2.AutoSize = True
-        LinkLabel2.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel2.LinkColor = Color.Navy
-        LinkLabel2.Location = New Point(132, 235)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(190, 46)
-        LinkLabel2.TabIndex = 18
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "Grade Slip"
-        ' 
-        ' LinkLabel3
-        ' 
-        LinkLabel3.ActiveLinkColor = Color.Gold
-        LinkLabel3.AutoSize = True
-        LinkLabel3.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel3.LinkColor = Color.Navy
-        LinkLabel3.Location = New Point(132, 296)
-        LinkLabel3.Name = "LinkLabel3"
-        LinkLabel3.Size = New Size(277, 46)
-        LinkLabel3.TabIndex = 19
-        LinkLabel3.TabStop = True
-        LinkLabel3.Text = "Company MOA"
-        ' 
-        ' Label9
-        ' 
-        Label9.BackColor = Color.Navy
-        Label9.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.Transparent
-        Label9.Location = New Point(68, 70)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(368, 77)
-        Label9.TabIndex = 16
-        Label9.Text = "RESOURCES"
-        Label9.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Panel5
-        ' 
-        Panel5.BackColor = Color.RoyalBlue
-        Panel5.Location = New Point(68, 174)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(38, 46)
-        Panel5.TabIndex = 20
-        ' 
-        ' Panel6
-        ' 
-        Panel6.BackColor = Color.CornflowerBlue
-        Panel6.Location = New Point(68, 235)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(38, 46)
-        Panel6.TabIndex = 12
-        ' 
-        ' Panel7
-        ' 
-        Panel7.BackColor = Color.LightBlue
-        Panel7.Location = New Point(68, 296)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(38, 46)
-        Panel7.TabIndex = 12
-        ' 
-        ' Stud_Info_Panel
-        ' 
-        Stud_Info_Panel.Controls.Add(Stud_Greeting_lbl)
-        Stud_Info_Panel.Controls.Add(Stud_User_lbl)
-        Stud_Info_Panel.Controls.Add(Assigned_Label)
-        Stud_Info_Panel.Controls.Add(Sup_Label)
-        Stud_Info_Panel.Controls.Add(FacEval_Label)
-        Stud_Info_Panel.Controls.Add(Label6)
-        Stud_Info_Panel.Controls.Add(Label7)
-        Stud_Info_Panel.Controls.Add(Label8)
-        Stud_Info_Panel.Controls.Add(Panel4)
-        Stud_Info_Panel.Controls.Add(Panel3)
-        Stud_Info_Panel.Controls.Add(Panel2)
-        Stud_Info_Panel.Controls.Add(Panel1)
-        Stud_Info_Panel.Dock = DockStyle.Top
-        Stud_Info_Panel.Location = New Point(0, 0)
-        Stud_Info_Panel.Name = "Stud_Info_Panel"
-        Stud_Info_Panel.Size = New Size(1902, 438)
-        Stud_Info_Panel.TabIndex = 21
-        ' 
-        ' Stud_Greeting_lbl
-        ' 
-        Stud_Greeting_lbl.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Stud_Greeting_lbl.Location = New Point(132, 48)
-        Stud_Greeting_lbl.Name = "Stud_Greeting_lbl"
-        Stud_Greeting_lbl.Size = New Size(325, 42)
-        Stud_Greeting_lbl.TabIndex = 6
-        Stud_Greeting_lbl.Text = "WELCOME,"
-        ' 
-        ' Stud_User_lbl
-        ' 
-        Stud_User_lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Stud_User_lbl.Location = New Point(121, 90)
-        Stud_User_lbl.Name = "Stud_User_lbl"
-        Stud_User_lbl.Size = New Size(718, 114)
-        Stud_User_lbl.TabIndex = 7
-        Stud_User_lbl.Text = "[NAME HERE]"
-        Stud_User_lbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Assigned_Label
-        ' 
-        Assigned_Label.AutoSize = True
-        Assigned_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
-        Assigned_Label.Location = New Point(146, 241)
-        Assigned_Label.Name = "Assigned_Label"
-        Assigned_Label.Size = New Size(296, 45)
-        Assigned_Label.TabIndex = 8
-        Assigned_Label.Text = "ASSIGNED AT:"
-        ' 
-        ' Sup_Label
-        ' 
-        Sup_Label.AutoSize = True
-        Sup_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
-        Sup_Label.Location = New Point(146, 300)
-        Sup_Label.Name = "Sup_Label"
-        Sup_Label.Size = New Size(349, 45)
-        Sup_Label.TabIndex = 8
-        Sup_Label.Text = "SUPERVISED BY:"
-        ' 
-        ' FacEval_Label
-        ' 
-        FacEval_Label.AutoSize = True
-        FacEval_Label.Font = New Font("Times New Roman", 24F, FontStyle.Bold)
-        FacEval_Label.Location = New Point(146, 356)
-        FacEval_Label.Name = "FacEval_Label"
-        FacEval_Label.Size = New Size(478, 45)
-        FacEval_Label.TabIndex = 8
-        FacEval_Label.Text = "FACULTY EVALUATOR:"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(448, 241)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(351, 46)
-        Label6.TabIndex = 12
-        Label6.Text = "[ PLACEHOLDER ]"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(501, 300)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(351, 46)
-        Label7.TabIndex = 13
-        Label7.Text = "[ PLACEHOLDER ]"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(630, 356)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(351, 46)
-        Label8.TabIndex = 14
-        Label8.Text = "[ PLACEHOLDER ]"
-        ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.LightBlue
-        Panel4.Location = New Point(68, 356)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(38, 46)
-        Panel4.TabIndex = 11
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.CornflowerBlue
-        Panel3.Location = New Point(68, 300)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(38, 42)
-        Panel3.TabIndex = 11
-        ' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = Color.RoyalBlue
-        Panel2.Location = New Point(68, 241)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(38, 46)
-        Panel2.TabIndex = 10
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.Navy
-        Panel1.Location = New Point(68, 48)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(38, 156)
-        Panel1.TabIndex = 9
-        ' 
         ' Internship_Panel
         ' 
         Internship_Panel.Controls.Add(IntStatus_Panel)
@@ -1116,16 +1116,16 @@ Partial Class Student_Dashboard
         CType(Logo_Pic, ComponentModel.ISupportInitialize).EndInit()
         Function_Panel.ResumeLayout(False)
         Screen_Panel.ResumeLayout(False)
-        Profile_Panel.ResumeLayout(False)
-        StudProfile_Panel.ResumeLayout(False)
-        StudProfile_Panel.PerformLayout()
-        ProfTitle_Panel.ResumeLayout(False)
-        ProfTitle_Panel.PerformLayout()
         Home_Panel.ResumeLayout(False)
         Resources_Panel.ResumeLayout(False)
         Resources_Panel.PerformLayout()
         Stud_Info_Panel.ResumeLayout(False)
         Stud_Info_Panel.PerformLayout()
+        Profile_Panel.ResumeLayout(False)
+        StudProfile_Panel.ResumeLayout(False)
+        StudProfile_Panel.PerformLayout()
+        ProfTitle_Panel.ResumeLayout(False)
+        ProfTitle_Panel.PerformLayout()
         Internship_Panel.ResumeLayout(False)
         IntStatus_Panel.ResumeLayout(False)
         IntStatus_Panel.PerformLayout()
