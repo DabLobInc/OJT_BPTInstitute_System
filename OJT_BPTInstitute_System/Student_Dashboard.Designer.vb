@@ -55,36 +55,6 @@ Partial Class Student_Dashboard
         Panel2 = New Panel()
         Panel1 = New Panel()
         Profile_Panel = New Panel()
-        Internship_Panel = New Panel()
-        IntStatus_Panel = New Panel()
-        TextBox23 = New TextBox()
-        Label29 = New Label()
-        TextBox22 = New TextBox()
-        Label28 = New Label()
-        TextBox21 = New TextBox()
-        Label25 = New Label()
-        TextBox20 = New TextBox()
-        Label27 = New Label()
-        TextBox19 = New TextBox()
-        Label26 = New Label()
-        TextBox18 = New TextBox()
-        Label24 = New Label()
-        TextBox17 = New TextBox()
-        Label23 = New Label()
-        TextBox16 = New TextBox()
-        Label22 = New Label()
-        TextBox15 = New TextBox()
-        Label21 = New Label()
-        TextBox14 = New TextBox()
-        Label20 = New Label()
-        TextBox13 = New TextBox()
-        Label19 = New Label()
-        Button2 = New Button()
-        TextBox24 = New TextBox()
-        Label30 = New Label()
-        InternTitle_Panel = New Panel()
-        Label1 = New Label()
-        Panel9 = New Panel()
         StudProfile_Panel = New Panel()
         MaskedTextBox4 = New MaskedTextBox()
         Button5 = New Button()
@@ -115,6 +85,36 @@ Partial Class Student_Dashboard
         ProfTitle_Panel = New Panel()
         Label3 = New Label()
         Panel8 = New Panel()
+        Internship_Panel = New Panel()
+        IntStatus_Panel = New Panel()
+        TextBox23 = New TextBox()
+        Label29 = New Label()
+        TextBox22 = New TextBox()
+        Label28 = New Label()
+        TextBox21 = New TextBox()
+        Label25 = New Label()
+        TextBox20 = New TextBox()
+        Label27 = New Label()
+        TextBox19 = New TextBox()
+        Label26 = New Label()
+        TextBox18 = New TextBox()
+        Label24 = New Label()
+        TextBox17 = New TextBox()
+        Label23 = New Label()
+        TextBox16 = New TextBox()
+        Label22 = New Label()
+        TextBox15 = New TextBox()
+        Label21 = New Label()
+        TextBox14 = New TextBox()
+        Label20 = New Label()
+        TextBox13 = New TextBox()
+        Label19 = New Label()
+        Button2 = New Button()
+        TextBox24 = New TextBox()
+        Label30 = New Label()
+        InternTitle_Panel = New Panel()
+        Label1 = New Label()
+        Panel9 = New Panel()
         MainMenu_Panel.SuspendLayout()
         SchoolTitle_Panel.SuspendLayout()
         CType(Logo_Pic, ComponentModel.ISupportInitialize).BeginInit()
@@ -124,11 +124,11 @@ Partial Class Student_Dashboard
         Resources_Panel.SuspendLayout()
         Stud_Info_Panel.SuspendLayout()
         Profile_Panel.SuspendLayout()
+        StudProfile_Panel.SuspendLayout()
+        ProfTitle_Panel.SuspendLayout()
         Internship_Panel.SuspendLayout()
         IntStatus_Panel.SuspendLayout()
         InternTitle_Panel.SuspendLayout()
-        StudProfile_Panel.SuspendLayout()
-        ProfTitle_Panel.SuspendLayout()
         SuspendLayout()
         ' 
         ' MainMenu_Panel
@@ -495,6 +495,313 @@ Partial Class Student_Dashboard
         Profile_Panel.Size = New Size(1902, 830)
         Profile_Panel.TabIndex = 1
         ' 
+        ' StudProfile_Panel
+        ' 
+        StudProfile_Panel.Controls.Add(MaskedTextBox4)
+        StudProfile_Panel.Controls.Add(Button5)
+        StudProfile_Panel.Controls.Add(Button4)
+        StudProfile_Panel.Controls.Add(MaskedTextBox3)
+        StudProfile_Panel.Controls.Add(Label18)
+        StudProfile_Panel.Controls.Add(TextBox11)
+        StudProfile_Panel.Controls.Add(Label17)
+        StudProfile_Panel.Controls.Add(MaskedTextBox2)
+        StudProfile_Panel.Controls.Add(MaskedTextBox1)
+        StudProfile_Panel.Controls.Add(TextBox10)
+        StudProfile_Panel.Controls.Add(Label16)
+        StudProfile_Panel.Controls.Add(Label15)
+        StudProfile_Panel.Controls.Add(Label14)
+        StudProfile_Panel.Controls.Add(TextBox7)
+        StudProfile_Panel.Controls.Add(Label13)
+        StudProfile_Panel.Controls.Add(TextBox6)
+        StudProfile_Panel.Controls.Add(Label12)
+        StudProfile_Panel.Controls.Add(Label11)
+        StudProfile_Panel.Controls.Add(TextBox4)
+        StudProfile_Panel.Controls.Add(TextBox3)
+        StudProfile_Panel.Controls.Add(TextBox2)
+        StudProfile_Panel.Controls.Add(TextBox1)
+        StudProfile_Panel.Controls.Add(Label10)
+        StudProfile_Panel.Controls.Add(Label5)
+        StudProfile_Panel.Controls.Add(Label4)
+        StudProfile_Panel.Controls.Add(Label2)
+        StudProfile_Panel.Dock = DockStyle.Fill
+        StudProfile_Panel.Location = New Point(0, 177)
+        StudProfile_Panel.Name = "StudProfile_Panel"
+        StudProfile_Panel.Size = New Size(1902, 653)
+        StudProfile_Panel.TabIndex = 12
+        ' 
+        ' MaskedTextBox4
+        ' 
+        MaskedTextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox4.Location = New Point(71, 264)
+        MaskedTextBox4.Mask = "00-0000"
+        MaskedTextBox4.Name = "MaskedTextBox4"
+        MaskedTextBox4.Size = New Size(296, 51)
+        MaskedTextBox4.TabIndex = 45
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = Color.Navy
+        Button5.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button5.ForeColor = Color.Transparent
+        Button5.Location = New Point(1114, 527)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(362, 76)
+        Button5.TabIndex = 44
+        Button5.Text = "CHANGE PASSWORD"
+        Button5.UseVisualStyleBackColor = False
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.Navy
+        Button4.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button4.ForeColor = Color.Transparent
+        Button4.Location = New Point(1486, 527)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(362, 76)
+        Button4.TabIndex = 43
+        Button4.Text = "UPDATE PROFILE"
+        Button4.UseVisualStyleBackColor = False
+        ' 
+        ' MaskedTextBox3
+        ' 
+        MaskedTextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox3.Location = New Point(71, 420)
+        MaskedTextBox3.Mask = "+63-000-000-0000"
+        MaskedTextBox3.Name = "MaskedTextBox3"
+        MaskedTextBox3.Size = New Size(474, 51)
+        MaskedTextBox3.TabIndex = 42
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label18.Location = New Point(71, 363)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(318, 45)
+        Label18.TabIndex = 41
+        Label18.Text = "Contact Number:"
+        ' 
+        ' TextBox11
+        ' 
+        TextBox11.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox11.Location = New Point(573, 420)
+        TextBox11.Name = "TextBox11"
+        TextBox11.Size = New Size(477, 51)
+        TextBox11.TabIndex = 40
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label17.Location = New Point(573, 363)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(284, 45)
+        Label17.TabIndex = 39
+        Label17.Text = "Email Address:"
+        ' 
+        ' MaskedTextBox2
+        ' 
+        MaskedTextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox2.Location = New Point(1294, 261)
+        MaskedTextBox2.Mask = "D000"
+        MaskedTextBox2.Name = "MaskedTextBox2"
+        MaskedTextBox2.Size = New Size(264, 51)
+        MaskedTextBox2.TabIndex = 38
+        ' 
+        ' MaskedTextBox1
+        ' 
+        MaskedTextBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox1.Location = New Point(973, 264)
+        MaskedTextBox1.Mask = "F000"
+        MaskedTextBox1.Name = "MaskedTextBox1"
+        MaskedTextBox1.Size = New Size(296, 51)
+        MaskedTextBox1.TabIndex = 37
+        ' 
+        ' TextBox10
+        ' 
+        TextBox10.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox10.Location = New Point(1584, 264)
+        TextBox10.Name = "TextBox10"
+        TextBox10.Size = New Size(264, 51)
+        TextBox10.TabIndex = 28
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.Location = New Point(1584, 200)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(155, 45)
+        Label16.TabIndex = 27
+        Label16.Text = "Section:"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Location = New Point(1295, 200)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(180, 45)
+        Label15.TabIndex = 23
+        Label15.Text = "Dept. ID:"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Location = New Point(973, 200)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(209, 45)
+        Label14.TabIndex = 21
+        Label14.Text = "Course ID:"
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox7.Location = New Point(683, 264)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(264, 51)
+        TextBox7.TabIndex = 20
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label13.Location = New Point(683, 200)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(154, 45)
+        Label13.TabIndex = 19
+        Label13.Text = "Course:"
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox6.Location = New Point(389, 264)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(264, 51)
+        TextBox6.TabIndex = 18
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Location = New Point(389, 200)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(217, 45)
+        Label12.TabIndex = 17
+        Label12.Text = "Year Level:"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.Location = New Point(71, 200)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(218, 45)
+        Label11.TabIndex = 15
+        Label11.Text = "Student ID:"
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox4.Location = New Point(1584, 98)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(268, 51)
+        TextBox4.TabIndex = 14
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox3.Location = New Point(1082, 98)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(477, 51)
+        TextBox3.TabIndex = 13
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Location = New Point(573, 98)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(477, 51)
+        TextBox2.TabIndex = 12
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Location = New Point(68, 98)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(477, 51)
+        TextBox1.TabIndex = 11
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Location = New Point(1584, 41)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(135, 45)
+        Label10.TabIndex = 10
+        Label10.Text = "Suffix:"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(1082, 41)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(220, 45)
+        Label5.TabIndex = 9
+        Label5.Text = "Last Name:"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(573, 41)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(266, 45)
+        Label4.TabIndex = 8
+        Label4.Text = "Middle Name:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(68, 41)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(227, 45)
+        Label2.TabIndex = 7
+        Label2.Text = "First Name:"
+        ' 
+        ' ProfTitle_Panel
+        ' 
+        ProfTitle_Panel.Controls.Add(Label3)
+        ProfTitle_Panel.Controls.Add(Panel8)
+        ProfTitle_Panel.Dock = DockStyle.Top
+        ProfTitle_Panel.Location = New Point(0, 0)
+        ProfTitle_Panel.Name = "ProfTitle_Panel"
+        ProfTitle_Panel.Size = New Size(1902, 177)
+        ProfTitle_Panel.TabIndex = 11
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(132, 48)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(463, 105)
+        Label3.TabIndex = 8
+        Label3.Text = "PROFILE"
+        Label3.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Panel8
+        ' 
+        Panel8.BackColor = Color.Navy
+        Panel8.Location = New Point(68, 48)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(38, 105)
+        Panel8.TabIndex = 10
+        ' 
         ' Internship_Panel
         ' 
         Internship_Panel.Controls.Add(IntStatus_Panel)
@@ -795,313 +1102,6 @@ Partial Class Student_Dashboard
         Panel9.Size = New Size(38, 105)
         Panel9.TabIndex = 12
         ' 
-        ' StudProfile_Panel
-        ' 
-        StudProfile_Panel.Controls.Add(MaskedTextBox4)
-        StudProfile_Panel.Controls.Add(Button5)
-        StudProfile_Panel.Controls.Add(Button4)
-        StudProfile_Panel.Controls.Add(MaskedTextBox3)
-        StudProfile_Panel.Controls.Add(Label18)
-        StudProfile_Panel.Controls.Add(TextBox11)
-        StudProfile_Panel.Controls.Add(Label17)
-        StudProfile_Panel.Controls.Add(MaskedTextBox2)
-        StudProfile_Panel.Controls.Add(MaskedTextBox1)
-        StudProfile_Panel.Controls.Add(TextBox10)
-        StudProfile_Panel.Controls.Add(Label16)
-        StudProfile_Panel.Controls.Add(Label15)
-        StudProfile_Panel.Controls.Add(Label14)
-        StudProfile_Panel.Controls.Add(TextBox7)
-        StudProfile_Panel.Controls.Add(Label13)
-        StudProfile_Panel.Controls.Add(TextBox6)
-        StudProfile_Panel.Controls.Add(Label12)
-        StudProfile_Panel.Controls.Add(Label11)
-        StudProfile_Panel.Controls.Add(TextBox4)
-        StudProfile_Panel.Controls.Add(TextBox3)
-        StudProfile_Panel.Controls.Add(TextBox2)
-        StudProfile_Panel.Controls.Add(TextBox1)
-        StudProfile_Panel.Controls.Add(Label10)
-        StudProfile_Panel.Controls.Add(Label5)
-        StudProfile_Panel.Controls.Add(Label4)
-        StudProfile_Panel.Controls.Add(Label2)
-        StudProfile_Panel.Dock = DockStyle.Fill
-        StudProfile_Panel.Location = New Point(0, 177)
-        StudProfile_Panel.Name = "StudProfile_Panel"
-        StudProfile_Panel.Size = New Size(1902, 653)
-        StudProfile_Panel.TabIndex = 15
-        ' 
-        ' MaskedTextBox4
-        ' 
-        MaskedTextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox4.Location = New Point(71, 264)
-        MaskedTextBox4.Mask = "00-0000"
-        MaskedTextBox4.Name = "MaskedTextBox4"
-        MaskedTextBox4.Size = New Size(296, 51)
-        MaskedTextBox4.TabIndex = 45
-        ' 
-        ' Button5
-        ' 
-        Button5.BackColor = Color.Navy
-        Button5.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.Transparent
-        Button5.Location = New Point(1114, 527)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(362, 76)
-        Button5.TabIndex = 44
-        Button5.Text = "CHANGE PASSWORD"
-        Button5.UseVisualStyleBackColor = False
-        ' 
-        ' Button4
-        ' 
-        Button4.BackColor = Color.Navy
-        Button4.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.Transparent
-        Button4.Location = New Point(1486, 527)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(362, 76)
-        Button4.TabIndex = 43
-        Button4.Text = "UPDATE PROFILE"
-        Button4.UseVisualStyleBackColor = False
-        ' 
-        ' MaskedTextBox3
-        ' 
-        MaskedTextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox3.Location = New Point(71, 420)
-        MaskedTextBox3.Mask = "+63-000-000-0000"
-        MaskedTextBox3.Name = "MaskedTextBox3"
-        MaskedTextBox3.Size = New Size(474, 51)
-        MaskedTextBox3.TabIndex = 42
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label18.Location = New Point(71, 363)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(318, 45)
-        Label18.TabIndex = 41
-        Label18.Text = "Contact Number:"
-        ' 
-        ' TextBox11
-        ' 
-        TextBox11.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox11.Location = New Point(573, 420)
-        TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(477, 51)
-        TextBox11.TabIndex = 40
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label17.Location = New Point(573, 363)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(284, 45)
-        Label17.TabIndex = 39
-        Label17.Text = "Email Address:"
-        ' 
-        ' MaskedTextBox2
-        ' 
-        MaskedTextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox2.Location = New Point(1294, 261)
-        MaskedTextBox2.Mask = "D000"
-        MaskedTextBox2.Name = "MaskedTextBox2"
-        MaskedTextBox2.Size = New Size(264, 51)
-        MaskedTextBox2.TabIndex = 38
-        ' 
-        ' MaskedTextBox1
-        ' 
-        MaskedTextBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox1.Location = New Point(973, 264)
-        MaskedTextBox1.Mask = "F000"
-        MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(296, 51)
-        MaskedTextBox1.TabIndex = 37
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox10.Location = New Point(1584, 264)
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(264, 51)
-        TextBox10.TabIndex = 28
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(1584, 200)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(155, 45)
-        Label16.TabIndex = 27
-        Label16.Text = "Section:"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(1295, 200)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(180, 45)
-        Label15.TabIndex = 23
-        Label15.Text = "Dept. ID:"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(973, 200)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(209, 45)
-        Label14.TabIndex = 21
-        Label14.Text = "Course ID:"
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox7.Location = New Point(683, 264)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(264, 51)
-        TextBox7.TabIndex = 20
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(683, 200)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(154, 45)
-        Label13.TabIndex = 19
-        Label13.Text = "Course:"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox6.Location = New Point(389, 264)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(264, 51)
-        TextBox6.TabIndex = 18
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(389, 200)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(217, 45)
-        Label12.TabIndex = 17
-        Label12.Text = "Year Level:"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(71, 200)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(218, 45)
-        Label11.TabIndex = 15
-        Label11.Text = "Student ID:"
-        ' 
-        ' TextBox4
-        ' 
-        TextBox4.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.Location = New Point(1584, 98)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(268, 51)
-        TextBox4.TabIndex = 14
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.Location = New Point(1082, 98)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(477, 51)
-        TextBox3.TabIndex = 13
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(573, 98)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(477, 51)
-        TextBox2.TabIndex = 12
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(68, 98)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(477, 51)
-        TextBox1.TabIndex = 11
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(1584, 41)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(135, 45)
-        Label10.TabIndex = 10
-        Label10.Text = "Suffix:"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(1082, 41)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(220, 45)
-        Label5.TabIndex = 9
-        Label5.Text = "Last Name:"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(573, 41)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(266, 45)
-        Label4.TabIndex = 8
-        Label4.Text = "Middle Name:"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(68, 41)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(227, 45)
-        Label2.TabIndex = 7
-        Label2.Text = "First Name:"
-        ' 
-        ' ProfTitle_Panel
-        ' 
-        ProfTitle_Panel.Controls.Add(Label3)
-        ProfTitle_Panel.Controls.Add(Panel8)
-        ProfTitle_Panel.Dock = DockStyle.Top
-        ProfTitle_Panel.Location = New Point(0, 0)
-        ProfTitle_Panel.Name = "ProfTitle_Panel"
-        ProfTitle_Panel.Size = New Size(1902, 177)
-        ProfTitle_Panel.TabIndex = 14
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(132, 48)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(463, 105)
-        Label3.TabIndex = 8
-        Label3.Text = "PROFILE"
-        Label3.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Panel8
-        ' 
-        Panel8.BackColor = Color.Navy
-        Panel8.Location = New Point(68, 48)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(38, 105)
-        Panel8.TabIndex = 10
-        ' 
         ' Student_Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -1122,15 +1122,15 @@ Partial Class Student_Dashboard
         Stud_Info_Panel.ResumeLayout(False)
         Stud_Info_Panel.PerformLayout()
         Profile_Panel.ResumeLayout(False)
+        StudProfile_Panel.ResumeLayout(False)
+        StudProfile_Panel.PerformLayout()
+        ProfTitle_Panel.ResumeLayout(False)
+        ProfTitle_Panel.PerformLayout()
         Internship_Panel.ResumeLayout(False)
         IntStatus_Panel.ResumeLayout(False)
         IntStatus_Panel.PerformLayout()
         InternTitle_Panel.ResumeLayout(False)
         InternTitle_Panel.PerformLayout()
-        StudProfile_Panel.ResumeLayout(False)
-        StudProfile_Panel.PerformLayout()
-        ProfTitle_Panel.ResumeLayout(False)
-        ProfTitle_Panel.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -1168,8 +1168,29 @@ Partial Class Student_Dashboard
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Stud_Info_Panel As Panel
     Friend WithEvents Resources_Panel As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Label3 As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents ProfTitle_Panel As Panel
+    Friend WithEvents StudProfile_Panel As Panel
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label16 As Label
     Friend WithEvents InternTitle_Panel As Panel
     Friend WithEvents IntStatus_Panel As Panel
     Friend WithEvents Button2 As Button
@@ -1197,34 +1218,13 @@ Partial Class Student_Dashboard
     Friend WithEvents Label29 As Label
     Friend WithEvents TextBox22 As TextBox
     Friend WithEvents Label28 As Label
-    Friend WithEvents StudProfile_Panel As Panel
-    Friend WithEvents MaskedTextBox4 As MaskedTextBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents MaskedTextBox2 As MaskedTextBox
+    Friend WithEvents MaskedTextBox1 As MaskedTextBox
     Friend WithEvents MaskedTextBox3 As MaskedTextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents Label17 As Label
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ProfTitle_Panel As Panel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents MaskedTextBox4 As MaskedTextBox
 End Class

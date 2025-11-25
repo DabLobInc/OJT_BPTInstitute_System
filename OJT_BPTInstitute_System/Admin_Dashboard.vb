@@ -58,10 +58,10 @@
         Partner_Comp_Linklbl.BackColor = Color.Orange
         Fac_Eval_Linklbl.BackColor = Color.Orange
 
-        Stud_Eval_Panel.Show()
-        Stud_Regis_Panel.Hide()
-        Partner_Comp_Panel.Hide()
-        Fac_Eval_Panel.Hide()
+        Stud_Eval_Panel.Show
+        Stud_Regis_Panel.Hide
+        Partner_Comp_Panel.Hide
+        Fac_Eval_Panel.Hide
     End Sub
 
     Private Sub Stud_Regis_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Stud_Regis_Linklbl.LinkClicked
@@ -80,10 +80,10 @@
         Partner_Comp_Linklbl.BackColor = Color.Orange
         Fac_Eval_Linklbl.BackColor = Color.Orange
 
-        Stud_Eval_Panel.Hide()
-        Stud_Regis_Panel.Show()
-        Partner_Comp_Panel.Hide()
-        Fac_Eval_Panel.Hide()
+        Stud_Eval_Panel.Hide
+        Stud_Regis_Panel.Show
+        Partner_Comp_Panel.Hide
+        Fac_Eval_Panel.Hide
     End Sub
 
     Private Sub Partner_Comp_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Partner_Comp_Linklbl.LinkClicked
@@ -102,10 +102,10 @@
         Partner_Comp_Linklbl.BackColor = Color.White
         Fac_Eval_Linklbl.BackColor = Color.Orange
 
-        Stud_Eval_Panel.Hide()
-        Stud_Regis_Panel.Hide()
-        Partner_Comp_Panel.Show()
-        Fac_Eval_Panel.Hide()
+        Stud_Eval_Panel.Hide
+        Stud_Regis_Panel.Hide
+        Partner_Comp_Panel.Show
+        Fac_Eval_Panel.Hide
     End Sub
 
     Private Sub Fac_Eval_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Fac_Eval_Linklbl.LinkClicked
@@ -124,10 +124,10 @@
         Partner_Comp_Linklbl.BackColor = Color.Orange
         Fac_Eval_Linklbl.BackColor = Color.White
 
-        Stud_Eval_Panel.Hide()
-        Stud_Regis_Panel.Hide()
-        Partner_Comp_Panel.Hide()
-        Fac_Eval_Panel.Show()
+        Stud_Eval_Panel.Hide
+        Stud_Regis_Panel.Hide
+        Partner_Comp_Panel.Hide
+        Fac_Eval_Panel.Show
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

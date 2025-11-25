@@ -24,6 +24,20 @@ Partial Class Faculty_Dashboard
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Screen_Panel = New Panel()
+        Home_Panel = New Panel()
+        Label9 = New Label()
+        DataGridView1 = New DataGridView()
+        LinkLabel1 = New LinkLabel()
+        FacInfo_Panel = New Panel()
+        Panel4 = New Panel()
+        Panel3 = New Panel()
+        Panel2 = New Panel()
+        Panel1 = New Panel()
+        Time_Position_lbl = New Label()
+        Greet_Fac_lbl = New Label()
+        FacName_lbl = New Label()
+        DeptName_lbl = New Label()
+        Faculty_DateTime = New Label()
         Profile_Panel = New Panel()
         FacProfile_Panel = New Panel()
         MaskedTextBox1 = New MaskedTextBox()
@@ -38,20 +52,18 @@ Partial Class Faculty_Dashboard
         MaskedTextBox2 = New MaskedTextBox()
         Label15 = New Label()
         TextBox7 = New TextBox()
-        Label13 = New Label()
-        Label12 = New Label()
-        Label11 = New Label()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
-        Label10 = New Label()
-        Label5 = New Label()
-        Label4 = New Label()
-        Label2 = New Label()
-        ProfTitle_Panel = New Panel()
-        Label3 = New Label()
-        Panel8 = New Panel()
+        Fac_DeptName__lbl = New Label()
+        Fac_DeptID__lbl = New Label()
+        Fac_FacID__lbl = New Label()
+        Fac_Suffix_txt = New TextBox()
+        Fac_LName_txt = New TextBox()
+        Fac_MName_txt = New TextBox()
+        Fac_FName_txt = New TextBox()
+        Fac_Suffix_lbl = New Label()
+        Fac_LName_lbl = New Label()
+        Fac_MName_lbl = New Label()
+        Fac_FName_lbl = New Label()
+        Profile_lbl = New Label()
         Section_Panel = New Panel()
         Button1 = New Button()
         TextBox5 = New TextBox()
@@ -73,6 +85,10 @@ Partial Class Faculty_Dashboard
         Stat_col_lbl = New DataGridViewTextBoxColumn()
         Last_vis_col_lbl = New DataGridViewTextBoxColumn()
         Actions_col_lbl = New DataGridViewTextBoxColumn()
+        Fac_Search_txt = New TextBox()
+        Undecided_Filter = New ComboBox()
+        Fac_SelSec_Cmb = New ComboBox()
+        Section_lbl = New Label()
         MainMenu_Panel = New Panel()
         SchoolTitle_Panel = New Panel()
         Logo_Pic = New PictureBox()
@@ -96,12 +112,10 @@ Partial Class Faculty_Dashboard
         Profile_lbl = New Label()
         Timer1 = New Timer(components)
         Screen_Panel.SuspendLayout()
+        Home_Panel.SuspendLayout()
         Profile_Panel.SuspendLayout()
-        FacProfile_Panel.SuspendLayout()
-        ProfTitle_Panel.SuspendLayout()
         Section_Panel.SuspendLayout()
-        FilterSec_Panel.SuspendLayout()
-        SectionTitle_Panel.SuspendLayout()
+        SecTitle_Panel.SuspendLayout()
         CType(Fac_SecInfo_DTV, ComponentModel.ISupportInitialize).BeginInit()
         MainMenu_Panel.SuspendLayout()
         SchoolTitle_Panel.SuspendLayout()
@@ -121,10 +135,152 @@ Partial Class Faculty_Dashboard
         Screen_Panel.Size = New Size(1902, 1055)
         Screen_Panel.TabIndex = 13
         ' 
+        ' Home_Panel
+        ' 
+        Home_Panel.Controls.Add(Label9)
+        Home_Panel.Controls.Add(DataGridView1)
+        Home_Panel.Controls.Add(LinkLabel1)
+        Home_Panel.Controls.Add(FacInfo_Panel)
+        Home_Panel.Dock = DockStyle.Fill
+        Home_Panel.Location = New Point(0, 225)
+        Home_Panel.Name = "Home_Panel"
+        Home_Panel.Size = New Size(1902, 830)
+        Home_Panel.TabIndex = 16
+        ' 
+        ' Label9
+        ' 
+        Label9.BackColor = Color.Navy
+        Label9.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.Transparent
+        Label9.Location = New Point(68, 449)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(485, 77)
+        Label9.TabIndex = 20
+        Label9.Text = "Pending Evaluations:"
+        Label9.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(68, 529)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 51
+        DataGridView1.Size = New Size(1776, 267)
+        DataGridView1.TabIndex = 19
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.ActiveLinkColor = Color.Goldenrod
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LinkLabel1.LinkColor = Color.Navy
+        LinkLabel1.Location = New Point(146, 356)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(461, 46)
+        LinkLabel1.TabIndex = 18
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Download Evaluation Form"
+        ' 
+        ' FacInfo_Panel
+        ' 
+        FacInfo_Panel.Controls.Add(Panel4)
+        FacInfo_Panel.Controls.Add(Panel3)
+        FacInfo_Panel.Controls.Add(Panel2)
+        FacInfo_Panel.Controls.Add(Panel1)
+        FacInfo_Panel.Controls.Add(Time_Position_lbl)
+        FacInfo_Panel.Controls.Add(Greet_Fac_lbl)
+        FacInfo_Panel.Controls.Add(FacName_lbl)
+        FacInfo_Panel.Controls.Add(DeptName_lbl)
+        FacInfo_Panel.Controls.Add(Faculty_DateTime)
+        FacInfo_Panel.Dock = DockStyle.Top
+        FacInfo_Panel.Location = New Point(0, 0)
+        FacInfo_Panel.Name = "FacInfo_Panel"
+        FacInfo_Panel.Size = New Size(1902, 436)
+        FacInfo_Panel.TabIndex = 9
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.LightBlue
+        Panel4.Location = New Point(68, 356)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(38, 46)
+        Panel4.TabIndex = 15
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.CornflowerBlue
+        Panel3.Location = New Point(68, 300)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(38, 42)
+        Panel3.TabIndex = 14
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.RoyalBlue
+        Panel2.Location = New Point(68, 241)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(38, 46)
+        Panel2.TabIndex = 13
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Navy
+        Panel1.Location = New Point(68, 48)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(38, 156)
+        Panel1.TabIndex = 12
+        ' 
+        ' Time_Position_lbl
+        ' 
+        Time_Position_lbl.AutoSize = True
+        Time_Position_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold)
+        Time_Position_lbl.Location = New Point(146, 241)
+        Time_Position_lbl.Name = "Time_Position_lbl"
+        Time_Position_lbl.Size = New Size(617, 45)
+        Time_Position_lbl.TabIndex = 6
+        Time_Position_lbl.Text = "[FULL/PART TIME - POSITION]"
+        ' 
+        ' Greet_Fac_lbl
+        ' 
+        Greet_Fac_lbl.AutoSize = True
+        Greet_Fac_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Greet_Fac_lbl.Location = New Point(132, 48)
+        Greet_Fac_lbl.Name = "Greet_Fac_lbl"
+        Greet_Fac_lbl.Size = New Size(252, 45)
+        Greet_Fac_lbl.TabIndex = 0
+        Greet_Fac_lbl.Text = "WELCOME!"
+        ' 
+        ' FacName_lbl
+        ' 
+        FacName_lbl.AutoSize = True
+        FacName_lbl.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        FacName_lbl.Location = New Point(121, 90)
+        FacName_lbl.Name = "FacName_lbl"
+        FacName_lbl.Size = New Size(855, 105)
+        FacName_lbl.TabIndex = 5
+        FacName_lbl.Text = "[FACULTY NAME]"
+        ' 
+        ' DeptName_lbl
+        ' 
+        DeptName_lbl.AutoSize = True
+        DeptName_lbl.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold)
+        DeptName_lbl.Location = New Point(146, 300)
+        DeptName_lbl.Name = "DeptName_lbl"
+        DeptName_lbl.Size = New Size(329, 45)
+        DeptName_lbl.TabIndex = 7
+        DeptName_lbl.Text = "[DEPARTMENT]"
+        ' 
+        ' Faculty_DateTime
+        ' 
+        Faculty_DateTime.Font = New Font("Rockwell", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Faculty_DateTime.Location = New Point(1182, 47)
+        Faculty_DateTime.Name = "Faculty_DateTime"
+        Faculty_DateTime.Size = New Size(695, 49)
+        Faculty_DateTime.TabIndex = 8
+        ' 
         ' Profile_Panel
         ' 
         Profile_Panel.Controls.Add(FacProfile_Panel)
-        Profile_Panel.Controls.Add(ProfTitle_Panel)
         Profile_Panel.Dock = DockStyle.Fill
         Profile_Panel.Location = New Point(0, 225)
         Profile_Panel.Name = "Profile_Panel"
@@ -134,18 +290,15 @@ Partial Class Faculty_Dashboard
         ' FacProfile_Panel
         ' 
         FacProfile_Panel.Controls.Add(MaskedTextBox1)
-        FacProfile_Panel.Controls.Add(TextBox6)
-        FacProfile_Panel.Controls.Add(Label8)
+        FacProfile_Panel.Controls.Add(TextBox8)
+        FacProfile_Panel.Controls.Add(TextBox7)
+        FacProfile_Panel.Controls.Add(Label6)
         FacProfile_Panel.Controls.Add(Button5)
         FacProfile_Panel.Controls.Add(Button4)
-        FacProfile_Panel.Controls.Add(MaskedTextBox3)
         FacProfile_Panel.Controls.Add(Label18)
+        FacProfile_Panel.Controls.Add(Label16)
         FacProfile_Panel.Controls.Add(TextBox11)
         FacProfile_Panel.Controls.Add(Label17)
-        FacProfile_Panel.Controls.Add(MaskedTextBox2)
-        FacProfile_Panel.Controls.Add(Label15)
-        FacProfile_Panel.Controls.Add(TextBox7)
-        FacProfile_Panel.Controls.Add(Label13)
         FacProfile_Panel.Controls.Add(Label12)
         FacProfile_Panel.Controls.Add(Label11)
         FacProfile_Panel.Controls.Add(TextBox4)
@@ -157,10 +310,28 @@ Partial Class Faculty_Dashboard
         FacProfile_Panel.Controls.Add(Label4)
         FacProfile_Panel.Controls.Add(Label2)
         FacProfile_Panel.Dock = DockStyle.Fill
-        FacProfile_Panel.Location = New Point(0, 177)
+        FacProfile_Panel.Location = New Point(0, 0)
         FacProfile_Panel.Name = "FacProfile_Panel"
         FacProfile_Panel.Size = New Size(1902, 653)
-        FacProfile_Panel.TabIndex = 13
+        FacProfile_Panel.TabIndex = 26
+        ' 
+        ' MaskedTextBox3
+        ' 
+        MaskedTextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox3.Location = New Point(71, 420)
+        MaskedTextBox3.Mask = "+63-000-000-0000"
+        MaskedTextBox3.Name = "MaskedTextBox3"
+        MaskedTextBox3.Size = New Size(474, 51)
+        MaskedTextBox3.TabIndex = 38
+        ' 
+        ' MaskedTextBox2
+        ' 
+        MaskedTextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox2.Location = New Point(389, 264)
+        MaskedTextBox2.Mask = "D000"
+        MaskedTextBox2.Name = "MaskedTextBox2"
+        MaskedTextBox2.Size = New Size(296, 51)
+        MaskedTextBox2.TabIndex = 37
         ' 
         ' MaskedTextBox1
         ' 
@@ -171,7 +342,7 @@ Partial Class Faculty_Dashboard
         MaskedTextBox1.Size = New Size(264, 51)
         MaskedTextBox1.TabIndex = 47
         ' 
-        ' TextBox6
+        ' Profile_Panel
         ' 
         TextBox6.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TextBox6.Location = New Point(1259, 264)
@@ -179,15 +350,15 @@ Partial Class Faculty_Dashboard
         TextBox6.Size = New Size(593, 51)
         TextBox6.TabIndex = 46
         ' 
-        ' Label8
+        ' Label6
         ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(1259, 200)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(168, 45)
-        Label8.TabIndex = 45
-        Label8.Text = "Position:"
+        Label6.AutoSize = True
+        Label6.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(708, 200)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(239, 45)
+        Label6.TabIndex = 33
+        Label6.Text = "Department:"
         ' 
         ' Button5
         ' 
@@ -197,7 +368,7 @@ Partial Class Faculty_Dashboard
         Button5.Location = New Point(1114, 527)
         Button5.Name = "Button5"
         Button5.Size = New Size(362, 76)
-        Button5.TabIndex = 44
+        Button5.TabIndex = 32
         Button5.Text = "CHANGE PASSWORD"
         Button5.UseVisualStyleBackColor = False
         ' 
@@ -209,18 +380,9 @@ Partial Class Faculty_Dashboard
         Button4.Location = New Point(1486, 527)
         Button4.Name = "Button4"
         Button4.Size = New Size(362, 76)
-        Button4.TabIndex = 43
+        Button4.TabIndex = 31
         Button4.Text = "UPDATE PROFILE"
         Button4.UseVisualStyleBackColor = False
-        ' 
-        ' MaskedTextBox3
-        ' 
-        MaskedTextBox3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox3.Location = New Point(71, 420)
-        MaskedTextBox3.Mask = "+63-000-000-0000"
-        MaskedTextBox3.Name = "MaskedTextBox3"
-        MaskedTextBox3.Size = New Size(474, 51)
-        MaskedTextBox3.TabIndex = 42
         ' 
         ' Label18
         ' 
@@ -229,8 +391,18 @@ Partial Class Faculty_Dashboard
         Label18.Location = New Point(71, 363)
         Label18.Name = "Label18"
         Label18.Size = New Size(318, 45)
-        Label18.TabIndex = 41
+        Label18.TabIndex = 29
         Label18.Text = "Contact Number:"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.Location = New Point(1295, 199)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(168, 45)
+        Label16.TabIndex = 27
+        Label16.Text = "Position:"
         ' 
         ' TextBox11
         ' 
@@ -238,7 +410,7 @@ Partial Class Faculty_Dashboard
         TextBox11.Location = New Point(573, 420)
         TextBox11.Name = "TextBox11"
         TextBox11.Size = New Size(477, 51)
-        TextBox11.TabIndex = 40
+        TextBox11.TabIndex = 26
         ' 
         ' Label17
         ' 
@@ -247,45 +419,8 @@ Partial Class Faculty_Dashboard
         Label17.Location = New Point(573, 363)
         Label17.Name = "Label17"
         Label17.Size = New Size(284, 45)
-        Label17.TabIndex = 39
+        Label17.TabIndex = 25
         Label17.Text = "Email Address:"
-        ' 
-        ' MaskedTextBox2
-        ' 
-        MaskedTextBox2.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox2.Location = New Point(361, 264)
-        MaskedTextBox2.Mask = "D000"
-        MaskedTextBox2.Name = "MaskedTextBox2"
-        MaskedTextBox2.Size = New Size(264, 51)
-        MaskedTextBox2.TabIndex = 38
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(362, 203)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(180, 45)
-        Label15.TabIndex = 23
-        Label15.Text = "Dept. ID:"
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox7.Location = New Point(650, 264)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(593, 51)
-        TextBox7.TabIndex = 20
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(650, 200)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(239, 45)
-        Label13.TabIndex = 19
-        Label13.Text = "Department:"
         ' 
         ' Label12
         ' 
@@ -293,8 +428,9 @@ Partial Class Faculty_Dashboard
         Label12.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.Location = New Point(389, 200)
         Label12.Name = "Label12"
-        Label12.Size = New Size(0, 45)
+        Label12.Size = New Size(180, 45)
         Label12.TabIndex = 17
+        Label12.Text = "Dept. ID:"
         ' 
         ' Label11
         ' 
@@ -380,32 +516,32 @@ Partial Class Faculty_Dashboard
         ' 
         ' ProfTitle_Panel
         ' 
-        ProfTitle_Panel.Controls.Add(Label3)
-        ProfTitle_Panel.Controls.Add(Panel8)
+        ProfTitle_Panel.Controls.Add(Label1)
+        ProfTitle_Panel.Controls.Add(Panel5)
         ProfTitle_Panel.Dock = DockStyle.Top
         ProfTitle_Panel.Location = New Point(0, 0)
         ProfTitle_Panel.Name = "ProfTitle_Panel"
         ProfTitle_Panel.Size = New Size(1902, 177)
-        ProfTitle_Panel.TabIndex = 12
+        ProfTitle_Panel.TabIndex = 25
         ' 
-        ' Label3
+        ' Label1
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(132, 48)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(463, 105)
-        Label3.TabIndex = 8
-        Label3.Text = "PROFILE"
-        Label3.TextAlign = ContentAlignment.MiddleLeft
+        Label1.AutoSize = True
+        Label1.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(132, 48)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(463, 105)
+        Label1.TabIndex = 8
+        Label1.Text = "PROFILE"
+        Label1.TextAlign = ContentAlignment.MiddleLeft
         ' 
-        ' Panel8
+        ' Panel5
         ' 
-        Panel8.BackColor = Color.Navy
-        Panel8.Location = New Point(68, 48)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(38, 105)
-        Panel8.TabIndex = 10
+        Panel5.BackColor = Color.Navy
+        Panel5.Location = New Point(68, 48)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(38, 105)
+        Panel5.TabIndex = 10
         ' 
         ' Section_Panel
         ' 
@@ -416,6 +552,10 @@ Partial Class Faculty_Dashboard
         Section_Panel.Controls.Add(FilterSec_Panel)
         Section_Panel.Controls.Add(SectionTitle_Panel)
         Section_Panel.Controls.Add(Fac_SecInfo_DTV)
+        Section_Panel.Controls.Add(Fac_Search_txt)
+        Section_Panel.Controls.Add(Undecided_Filter)
+        Section_Panel.Controls.Add(Fac_SelSec_Cmb)
+        Section_Panel.Controls.Add(Section_lbl)
         Section_Panel.Dock = DockStyle.Fill
         Section_Panel.Location = New Point(0, 225)
         Section_Panel.Name = "Section_Panel"
@@ -596,6 +736,44 @@ Partial Class Faculty_Dashboard
         Actions_col_lbl.MinimumWidth = 6
         Actions_col_lbl.Name = "Actions_col_lbl"
         Actions_col_lbl.Width = 250
+        ' 
+        ' Fac_Search_txt
+        ' 
+        Fac_Search_txt.Font = New Font("Verdana", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_Search_txt.Location = New Point(1350, 239)
+        Fac_Search_txt.Name = "Fac_Search_txt"
+        Fac_Search_txt.Size = New Size(295, 56)
+        Fac_Search_txt.TabIndex = 3
+        ' 
+        ' Undecided_Filter
+        ' 
+        Undecided_Filter.Font = New Font("Times New Roman", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Undecided_Filter.FormattingEnabled = True
+        Undecided_Filter.Items.AddRange(New Object() {"FILTER BY"})
+        Undecided_Filter.Location = New Point(656, 243)
+        Undecided_Filter.Name = "Undecided_Filter"
+        Undecided_Filter.Size = New Size(206, 54)
+        Undecided_Filter.TabIndex = 2
+        ' 
+        ' Fac_SelSec_Cmb
+        ' 
+        Fac_SelSec_Cmb.Font = New Font("Times New Roman", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Fac_SelSec_Cmb.FormattingEnabled = True
+        Fac_SelSec_Cmb.Items.AddRange(New Object() {"Sections:", "4A", "4B", "4C", "4D"})
+        Fac_SelSec_Cmb.Location = New Point(112, 243)
+        Fac_SelSec_Cmb.Name = "Fac_SelSec_Cmb"
+        Fac_SelSec_Cmb.Size = New Size(386, 53)
+        Fac_SelSec_Cmb.TabIndex = 1
+        ' 
+        ' Section_lbl
+        ' 
+        Section_lbl.AutoSize = True
+        Section_lbl.Font = New Font("Stencil", 48.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Section_lbl.Location = New Point(134, 43)
+        Section_lbl.Name = "Section_lbl"
+        Section_lbl.Size = New Size(409, 95)
+        Section_lbl.TabIndex = 0
+        Section_lbl.Text = "SECTIONS"
         ' 
         ' MainMenu_Panel
         ' 
@@ -808,17 +986,14 @@ Partial Class Faculty_Dashboard
         Text = "w"
         WindowState = FormWindowState.Maximized
         Screen_Panel.ResumeLayout(False)
+        Home_Panel.ResumeLayout(False)
+        Home_Panel.PerformLayout()
         Profile_Panel.ResumeLayout(False)
-        FacProfile_Panel.ResumeLayout(False)
-        FacProfile_Panel.PerformLayout()
-        ProfTitle_Panel.ResumeLayout(False)
-        ProfTitle_Panel.PerformLayout()
+        Profile_Panel.PerformLayout()
         Section_Panel.ResumeLayout(False)
         Section_Panel.PerformLayout()
-        FilterSec_Panel.ResumeLayout(False)
-        FilterSec_Panel.PerformLayout()
-        SectionTitle_Panel.ResumeLayout(False)
-        SectionTitle_Panel.PerformLayout()
+        SecTitle_Panel.ResumeLayout(False)
+        SecTitle_Panel.PerformLayout()
         CType(Fac_SecInfo_DTV, ComponentModel.ISupportInitialize).EndInit()
         MainMenu_Panel.ResumeLayout(False)
         SchoolTitle_Panel.ResumeLayout(False)
