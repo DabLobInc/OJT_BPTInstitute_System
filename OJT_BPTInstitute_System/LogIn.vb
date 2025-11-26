@@ -56,7 +56,7 @@ Public Class LogIn_Form
                             Case "Faculty"
                                 Dim f As New Faculty_Dashboard
                                 f.Show()
-                            Case "admin"
+                            Case "Admin"
                                 Dim f As New Admin_Dashboard
                                 f.Show()
                         End Select

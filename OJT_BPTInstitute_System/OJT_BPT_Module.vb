@@ -103,4 +103,39 @@ Module SecurityModule
 
 End Module
 
+Module UIButtons
+
+    Public Sub RoundedButtons(parent As Control, Optional radius As Integer = 20)
+
+        For Each ctrl As Control In parent.Controls
+
+            If TypeOf ctrl Is Button Then
+                Dim btn As Button = DirectCast(ctrl, Button)
+                ApplyRoundedRegion(btn, radius)
+
+                AddHandler btn.Resize, Sub() ApplyRoundedRegion(btn, radius)
+            End If
+
+            If ctrl.HasChildren Then
+                RoundedButtons(ctrl, radius)
+            End If
+
+        Next
+    End Sub
+
+    Private Sub ApplyRoundedRegion(btn As Button, radius As Integer)
+        Dim path As New Drawing.Drawing2D.GraphicsPath()
+        Dim r As Integer = radius * 2
+
+        path.AddArc(0, 0, r, r, 180, 90)
+        path.AddArc(btn.Width - r, 0, r, r, 270, 90)
+        path.AddArc(btn.Width - r, btn.Height - r, r, r, 0, 90)
+        path.AddArc(0, btn.Height - r, r, r, 90, 90)
+        path.CloseFigure()
+
+        btn.Region = New Region(path)
+    End Sub
+
+End Module
+
 

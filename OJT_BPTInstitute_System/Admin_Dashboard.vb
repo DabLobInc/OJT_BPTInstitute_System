@@ -4,35 +4,42 @@
         Me.FormBorderStyle = FormBorderStyle.None
         Me.WindowState = FormWindowState.Maximized
 
-        DrawPanelBorder(SideFunction_Panel, Color.White, 10)
+        DrawPanelBorder(DashSide_INNER, Color.White, 10)
+
+        Dashboard_Panel.Show()
+        Stud_Eval_Panel.Show()
+        Function_Panel.Hide()
     End Sub
 
     Private Sub Dashboard_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Dashboard_BTN.LinkClicked
         ShowPanel(Screen_Panel, "Content_Panel")
+        Dashboard_Panel.Show()
+        Function_Panel.Hide()
 
-        Adm_Sel1_Panel.BackColor = Color.White
-        Adm_Sel2_Panel.BackColor = Color.Orange
-        Adm_Sel3_Panel.BackColor = Color.Orange
-        Adm_Sel4_Panel.BackColor = Color.Orange
 
-        Student_Eval_LinkLbl.LinkColor = Color.Black
-        Stud_Regis_Linklbl.LinkColor = Color.White
-        Partner_Comp_Linklbl.LinkColor = Color.White
-        Fac_Eval_Linklbl.LinkColor = Color.White
+        SE_BackPan.BackColor = Color.White
+        SR_BackPan.BackColor = Color.Orange
+        PC_BackPan.BackColor = Color.Orange
+        FE_BackPan.BackColor = Color.Orange
+        VL_BackPan.BackColor = Color.Orange
 
-        Student_Eval_LinkLbl.BackColor = Color.White
-        Stud_Regis_Linklbl.BackColor = Color.Orange
-        Partner_Comp_Linklbl.BackColor = Color.Orange
-        Fac_Eval_Linklbl.BackColor = Color.Orange
+        SE_LinkLbl.LinkColor = Color.Black
+        SR_LinkLbl.LinkColor = Color.White
+        PC_LinkLbl.LinkColor = Color.White
+        FE_LinkLbl.LinkColor = Color.White
+        VL_LinkLbl.LinkColor = Color.White
+
+        SE_LinkLbl.BackColor = Color.White
+        SR_LinkLbl.BackColor = Color.Orange
+        PC_LinkLbl.BackColor = Color.Orange
+        FE_LinkLbl.BackColor = Color.Orange
+        VL_LinkLbl.BackColor = Color.Orange
 
         Stud_Eval_Panel.Show()
         Stud_Regis_Panel.Hide()
         Partner_Comp_Panel.Hide()
         Fac_Eval_Panel.Hide()
-    End Sub
-
-    Private Sub FunctionOperation_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FunctionOperation_BTN.LinkClicked
-        ShowPanel(Screen_Panel, "Functions_Panel")
+        Visit_LogPanel.Hide()
     End Sub
 
     Private Sub DrawPanelBorder(ByVal pnl As Panel, ByVal borderColor As Color, ByVal borderWidth As Integer)
@@ -40,94 +47,6 @@
                                   Dim pen As New Pen(borderColor, borderWidth)
                                   e.Graphics.DrawRectangle(pen, 0, 0, pnl.Width - 1, pnl.Height - 1)
                               End Sub
-    End Sub
-
-    Private Sub Student_Eval_LinkLbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Student_Eval_LinkLbl.LinkClicked
-        Adm_Sel1_Panel.BackColor = Color.White
-        Adm_Sel2_Panel.BackColor = Color.Orange
-        Adm_Sel3_Panel.BackColor = Color.Orange
-        Adm_Sel4_Panel.BackColor = Color.Orange
-
-        Student_Eval_LinkLbl.LinkColor = Color.Black
-        Stud_Regis_Linklbl.LinkColor = Color.White
-        Partner_Comp_Linklbl.LinkColor = Color.White
-        Fac_Eval_Linklbl.LinkColor = Color.White
-
-        Student_Eval_LinkLbl.BackColor = Color.White
-        Stud_Regis_Linklbl.BackColor = Color.Orange
-        Partner_Comp_Linklbl.BackColor = Color.Orange
-        Fac_Eval_Linklbl.BackColor = Color.Orange
-
-        Stud_Eval_Panel.Show()
-        Stud_Regis_Panel.Hide()
-        Partner_Comp_Panel.Hide()
-        Fac_Eval_Panel.Hide()
-    End Sub
-
-    Private Sub Stud_Regis_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Stud_Regis_Linklbl.LinkClicked
-        Adm_Sel1_Panel.BackColor = Color.Orange
-        Adm_Sel2_Panel.BackColor = Color.White
-        Adm_Sel3_Panel.BackColor = Color.Orange
-        Adm_Sel4_Panel.BackColor = Color.Orange
-
-        Student_Eval_LinkLbl.LinkColor = Color.White
-        Stud_Regis_Linklbl.LinkColor = Color.Black
-        Partner_Comp_Linklbl.LinkColor = Color.White
-        Fac_Eval_Linklbl.LinkColor = Color.White
-
-        Student_Eval_LinkLbl.BackColor = Color.Orange
-        Stud_Regis_Linklbl.BackColor = Color.White
-        Partner_Comp_Linklbl.BackColor = Color.Orange
-        Fac_Eval_Linklbl.BackColor = Color.Orange
-
-        Stud_Eval_Panel.Hide()
-        Stud_Regis_Panel.Show()
-        Partner_Comp_Panel.Hide()
-        Fac_Eval_Panel.Hide()
-    End Sub
-
-    Private Sub Partner_Comp_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Partner_Comp_Linklbl.LinkClicked
-        Adm_Sel1_Panel.BackColor = Color.Orange
-        Adm_Sel2_Panel.BackColor = Color.Orange
-        Adm_Sel3_Panel.BackColor = Color.White
-        Adm_Sel4_Panel.BackColor = Color.Orange
-
-        Student_Eval_LinkLbl.LinkColor = Color.White
-        Stud_Regis_Linklbl.LinkColor = Color.White
-        Partner_Comp_Linklbl.LinkColor = Color.Black
-        Fac_Eval_Linklbl.LinkColor = Color.White
-
-        Student_Eval_LinkLbl.BackColor = Color.Orange
-        Stud_Regis_Linklbl.BackColor = Color.Orange
-        Partner_Comp_Linklbl.BackColor = Color.White
-        Fac_Eval_Linklbl.BackColor = Color.Orange
-
-        Stud_Eval_Panel.Hide()
-        Stud_Regis_Panel.Hide()
-        Partner_Comp_Panel.Show()
-        Fac_Eval_Panel.Hide()
-    End Sub
-
-    Private Sub Fac_Eval_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Fac_Eval_Linklbl.LinkClicked
-        Adm_Sel1_Panel.BackColor = Color.Orange
-        Adm_Sel2_Panel.BackColor = Color.Orange
-        Adm_Sel3_Panel.BackColor = Color.Orange
-        Adm_Sel4_Panel.BackColor = Color.White
-
-        Student_Eval_LinkLbl.LinkColor = Color.White
-        Stud_Regis_Linklbl.LinkColor = Color.White
-        Partner_Comp_Linklbl.LinkColor = Color.White
-        Fac_Eval_Linklbl.LinkColor = Color.Black
-
-        Student_Eval_LinkLbl.BackColor = Color.Orange
-        Stud_Regis_Linklbl.BackColor = Color.Orange
-        Partner_Comp_Linklbl.BackColor = Color.Orange
-        Fac_Eval_Linklbl.BackColor = Color.White
-
-        Stud_Eval_Panel.Hide()
-        Stud_Regis_Panel.Hide()
-        Partner_Comp_Panel.Hide()
-        Fac_Eval_Panel.Show()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -150,6 +69,404 @@
             LogIn_Form.Pass_Input.Clear()
         End If
     End Sub
+
+    Private Sub Functions_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Functions_BTN.LinkClicked
+        Dashboard_Panel.Hide()
+        Function_Panel.Show()
+
+        RoundedButtons(Me, 25)
+
+        DrawPanelBorder(FuncSidePanel_INNER, Color.White, 10)
+    End Sub
+
+    Private Sub SE_LinkLbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles SE_LinkLbl.LinkClicked
+
+        SE_BackPan.BackColor = Color.White
+        SR_BackPan.BackColor = Color.Orange
+        PC_BackPan.BackColor = Color.Orange
+        FE_BackPan.BackColor = Color.Orange
+        VL_BackPan.BackColor = Color.Orange
+
+        SE_LinkLbl.LinkColor = Color.Black
+        SR_LinkLbl.LinkColor = Color.White
+        PC_LinkLbl.LinkColor = Color.White
+        FE_LinkLbl.LinkColor = Color.White
+        VL_LinkLbl.LinkColor = Color.White
+
+        SE_LinkLbl.BackColor = Color.White
+        SR_LinkLbl.BackColor = Color.Orange
+        PC_LinkLbl.BackColor = Color.Orange
+        FE_LinkLbl.BackColor = Color.Orange
+        VL_LinkLbl.BackColor = Color.Orange
+
+        Stud_Eval_Panel.Show()
+        Stud_Regis_Panel.Hide()
+        Partner_Comp_Panel.Hide()
+        Fac_Eval_Panel.Hide()
+        Visit_LogPanel.Hide()
+    End Sub
+
+    Private Sub SR_LinkLbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles SR_LinkLbl.LinkClicked
+
+        SE_BackPan.BackColor = Color.Orange
+        SR_BackPan.BackColor = Color.White
+        PC_BackPan.BackColor = Color.Orange
+        FE_BackPan.BackColor = Color.Orange
+        VL_BackPan.BackColor = Color.Orange
+
+        SE_LinkLbl.LinkColor = Color.White
+        SR_LinkLbl.LinkColor = Color.Black
+        PC_LinkLbl.LinkColor = Color.White
+        FE_LinkLbl.LinkColor = Color.White
+        VL_LinkLbl.LinkColor = Color.White
+
+        SE_LinkLbl.BackColor = Color.Orange
+        SR_LinkLbl.BackColor = Color.White
+        PC_LinkLbl.BackColor = Color.Orange
+        FE_LinkLbl.BackColor = Color.Orange
+        VL_LinkLbl.BackColor = Color.Orange
+
+        Stud_Eval_Panel.Hide()
+        Stud_Regis_Panel.Show()
+        Partner_Comp_Panel.Hide()
+        Fac_Eval_Panel.Hide()
+        Visit_LogPanel.Hide()
+    End Sub
+
+    Private Sub PC_LinkLbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles PC_LinkLbl.LinkClicked
+
+        SE_BackPan.BackColor = Color.Orange
+        SR_BackPan.BackColor = Color.Orange
+        PC_BackPan.BackColor = Color.White
+        FE_BackPan.BackColor = Color.Orange
+        VL_BackPan.BackColor = Color.Orange
+
+        SE_LinkLbl.LinkColor = Color.White
+        SR_LinkLbl.LinkColor = Color.White
+        PC_LinkLbl.LinkColor = Color.Black
+        FE_LinkLbl.LinkColor = Color.White
+        VL_LinkLbl.LinkColor = Color.White
+
+        SE_LinkLbl.BackColor = Color.Orange
+        SR_LinkLbl.BackColor = Color.Orange
+        PC_LinkLbl.BackColor = Color.White
+        FE_LinkLbl.BackColor = Color.Orange
+        VL_LinkLbl.BackColor = Color.Orange
+
+        Stud_Eval_Panel.Hide()
+        Stud_Regis_Panel.Hide()
+        Partner_Comp_Panel.Show()
+        Fac_Eval_Panel.Hide()
+        Visit_LogPanel.Hide()
+    End Sub
+
+    Private Sub FE_LinkLbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FE_LinkLbl.LinkClicked
+
+        SE_BackPan.BackColor = Color.Orange
+        SR_BackPan.BackColor = Color.Orange
+        PC_BackPan.BackColor = Color.Orange
+        FE_BackPan.BackColor = Color.White
+        VL_BackPan.BackColor = Color.Orange
+
+        SE_LinkLbl.LinkColor = Color.White
+        SR_LinkLbl.LinkColor = Color.White
+        PC_LinkLbl.LinkColor = Color.White
+        FE_LinkLbl.LinkColor = Color.Black
+        VL_LinkLbl.LinkColor = Color.White
+
+        SE_LinkLbl.BackColor = Color.Orange
+        SR_LinkLbl.BackColor = Color.Orange
+        PC_LinkLbl.BackColor = Color.Orange
+        FE_LinkLbl.BackColor = Color.White
+        VL_LinkLbl.BackColor = Color.Orange
+
+        Stud_Eval_Panel.Hide()
+        Stud_Regis_Panel.Hide()
+        Partner_Comp_Panel.Hide()
+        Fac_Eval_Panel.Show()
+        Visit_LogPanel.Hide()
+    End Sub
+
+    Private Sub VL_LinkLbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles VL_LinkLbl.LinkClicked
+
+        SE_BackPan.BackColor = Color.Orange
+        SR_BackPan.BackColor = Color.Orange
+        PC_BackPan.BackColor = Color.Orange
+        FE_BackPan.BackColor = Color.Orange
+        VL_BackPan.BackColor = Color.White
+
+        SE_LinkLbl.LinkColor = Color.White
+        SR_LinkLbl.LinkColor = Color.White
+        PC_LinkLbl.LinkColor = Color.White
+        FE_LinkLbl.LinkColor = Color.White
+        VL_LinkLbl.LinkColor = Color.Black
+
+        SE_LinkLbl.BackColor = Color.Orange
+        SR_LinkLbl.BackColor = Color.Orange
+        PC_LinkLbl.BackColor = Color.Orange
+        FE_LinkLbl.BackColor = Color.Orange
+        VL_LinkLbl.BackColor = Color.White
+
+        Stud_Eval_Panel.Hide()
+        Stud_Regis_Panel.Hide()
+        Partner_Comp_Panel.Hide()
+        Fac_Eval_Panel.Hide()
+        Visit_LogPanel.Show()
+
+    End Sub
+
+    Private Sub FuncStudLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncStudLink.LinkClicked
+
+        FuncStudPnl.BackColor = Color.White
+        FuncFacPnl.BackColor = Color.Orange
+        FuncDepPnl.BackColor = Color.Orange
+        FuncCoursePnl.BackColor = Color.Orange
+        FuncComPnl.BackColor = Color.Orange
+        FuncSupPnl.BackColor = Color.Orange
+        FuncIntPnl.BackColor = Color.Orange
+
+        FuncStudLink.LinkColor = Color.Black
+        FuncFacLink.LinkColor = Color.White
+        FuncDepLink.LinkColor = Color.White
+        FuncCourseLink.LinkColor = Color.White
+        FuncComLink.LinkColor = Color.White
+        FuncSupLink.LinkColor = Color.White
+        FuncIntLink.LinkColor = Color.White
+
+        FuncStudLink.BackColor = Color.White
+        FuncFacLink.BackColor = Color.Orange
+        FuncDepLink.BackColor = Color.Orange
+        FuncCourseLink.BackColor = Color.Orange
+        FuncComLink.BackColor = Color.Orange
+        FuncSupLink.BackColor = Color.Orange
+        FuncIntLink.BackColor = Color.Orange
+
+        ADM_STUDPAN.Show()
+        ADM_FACPAN.Hide()
+        ADM_DEPTPAN.Hide()
+        ADM_COURSEPAN.Hide()
+        ADM_COMPAN.Hide()
+        ADM_SUPERPAN.Hide()
+        ADM_INTERPAN.Hide()
+    End Sub
+
+    Private Sub FuncFacLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncFacLink.LinkClicked
+        FuncStudPnl.BackColor = Color.Orange
+        FuncFacPnl.BackColor = Color.White
+        FuncDepPnl.BackColor = Color.Orange
+        FuncCoursePnl.BackColor = Color.Orange
+        FuncComPnl.BackColor = Color.Orange
+        FuncSupPnl.BackColor = Color.Orange
+        FuncIntPnl.BackColor = Color.Orange
+
+        FuncStudLink.LinkColor = Color.White
+        FuncFacLink.LinkColor = Color.Black
+        FuncDepLink.LinkColor = Color.White
+        FuncCourseLink.LinkColor = Color.White
+        FuncComLink.LinkColor = Color.White
+        FuncSupLink.LinkColor = Color.White
+        FuncIntLink.LinkColor = Color.White
+
+        FuncStudLink.BackColor = Color.Orange
+        FuncFacLink.BackColor = Color.White
+        FuncDepLink.BackColor = Color.Orange
+        FuncCourseLink.BackColor = Color.Orange
+        FuncComLink.BackColor = Color.Orange
+        FuncSupLink.BackColor = Color.Orange
+        FuncIntLink.BackColor = Color.Orange
+
+        ADM_STUDPAN.Hide()
+        ADM_FACPAN.Show()
+        ADM_DEPTPAN.Hide()
+        ADM_COURSEPAN.Hide()
+        ADM_COMPAN.Hide()
+        ADM_SUPERPAN.Hide()
+        ADM_INTERPAN.Hide()
+    End Sub
+
+    Private Sub FuncDepLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncDepLink.LinkClicked
+        FuncStudPnl.BackColor = Color.Orange
+        FuncFacPnl.BackColor = Color.Orange
+        FuncDepPnl.BackColor = Color.White
+        FuncCoursePnl.BackColor = Color.Orange
+        FuncComPnl.BackColor = Color.Orange
+        FuncSupPnl.BackColor = Color.Orange
+        FuncIntPnl.BackColor = Color.Orange
+
+        FuncStudLink.LinkColor = Color.White
+        FuncFacLink.LinkColor = Color.White
+        FuncDepLink.LinkColor = Color.Black
+        FuncCourseLink.LinkColor = Color.White
+        FuncComLink.LinkColor = Color.White
+        FuncSupLink.LinkColor = Color.White
+        FuncIntLink.LinkColor = Color.White
+
+        FuncStudLink.BackColor = Color.Orange
+        FuncFacLink.BackColor = Color.Orange
+        FuncDepLink.BackColor = Color.White
+        FuncCourseLink.BackColor = Color.Orange
+        FuncComLink.BackColor = Color.Orange
+        FuncSupLink.BackColor = Color.Orange
+        FuncIntLink.BackColor = Color.Orange
+
+        ADM_STUDPAN.Hide()
+        ADM_FACPAN.Hide()
+        ADM_DEPTPAN.Show()
+        ADM_COURSEPAN.Hide()
+        ADM_COMPAN.Hide()
+        ADM_SUPERPAN.Hide()
+        ADM_INTERPAN.Hide()
+    End Sub
+
+    Private Sub FuncCourseLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncCourseLink.LinkClicked
+        FuncStudPnl.BackColor = Color.Orange
+        FuncFacPnl.BackColor = Color.Orange
+        FuncDepPnl.BackColor = Color.Orange
+        FuncCoursePnl.BackColor = Color.White
+        FuncComPnl.BackColor = Color.Orange
+        FuncSupPnl.BackColor = Color.Orange
+        FuncIntPnl.BackColor = Color.Orange
+
+        FuncStudLink.LinkColor = Color.White
+        FuncFacLink.LinkColor = Color.White
+        FuncDepLink.LinkColor = Color.White
+        FuncCourseLink.LinkColor = Color.Black
+        FuncComLink.LinkColor = Color.White
+        FuncSupLink.LinkColor = Color.White
+        FuncIntLink.LinkColor = Color.White
+
+        FuncStudLink.BackColor = Color.Orange
+        FuncFacLink.BackColor = Color.Orange
+        FuncDepLink.BackColor = Color.Orange
+        FuncCourseLink.BackColor = Color.White
+        FuncComLink.BackColor = Color.Orange
+        FuncSupLink.BackColor = Color.Orange
+        FuncIntLink.BackColor = Color.Orange
+
+        ADM_STUDPAN.Hide()
+        ADM_FACPAN.Hide()
+        ADM_DEPTPAN.Hide()
+        ADM_COURSEPAN.Show()
+        ADM_COMPAN.Hide()
+        ADM_SUPERPAN.Hide()
+        ADM_INTERPAN.Hide()
+    End Sub
+
+    Private Sub FuncComLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncComLink.LinkClicked
+        FuncStudPnl.BackColor = Color.Orange
+        FuncFacPnl.BackColor = Color.Orange
+        FuncDepPnl.BackColor = Color.Orange
+        FuncCoursePnl.BackColor = Color.Orange
+        FuncComPnl.BackColor = Color.White
+        FuncSupPnl.BackColor = Color.Orange
+        FuncIntPnl.BackColor = Color.Orange
+
+        FuncStudLink.LinkColor = Color.White
+        FuncFacLink.LinkColor = Color.White
+        FuncDepLink.LinkColor = Color.White
+        FuncCourseLink.LinkColor = Color.White
+        FuncComLink.LinkColor = Color.Black
+        FuncSupLink.LinkColor = Color.White
+        FuncIntLink.LinkColor = Color.White
+
+        FuncStudLink.BackColor = Color.Orange
+        FuncFacLink.BackColor = Color.Orange
+        FuncDepLink.BackColor = Color.Orange
+        FuncCourseLink.BackColor = Color.Orange
+        FuncComLink.BackColor = Color.White
+        FuncSupLink.BackColor = Color.Orange
+        FuncIntLink.BackColor = Color.Orange
+
+        ADM_STUDPAN.Hide()
+        ADM_FACPAN.Hide()
+        ADM_DEPTPAN.Hide()
+        ADM_COURSEPAN.Hide()
+        ADM_COMPAN.Show()
+        ADM_SUPERPAN.Hide()
+        ADM_INTERPAN.Hide()
+    End Sub
+
+    Private Sub FuncSupLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncSupLink.LinkClicked
+        FuncStudPnl.BackColor = Color.Orange
+        FuncFacPnl.BackColor = Color.Orange
+        FuncDepPnl.BackColor = Color.Orange
+        FuncCoursePnl.BackColor = Color.Orange
+        FuncComPnl.BackColor = Color.Orange
+        FuncSupPnl.BackColor = Color.White
+        FuncIntPnl.BackColor = Color.Orange
+
+        FuncStudLink.LinkColor = Color.White
+        FuncFacLink.LinkColor = Color.White
+        FuncDepLink.LinkColor = Color.White
+        FuncCourseLink.LinkColor = Color.White
+        FuncComLink.LinkColor = Color.White
+        FuncSupLink.LinkColor = Color.Black
+        FuncIntLink.LinkColor = Color.White
+
+        FuncStudLink.BackColor = Color.Orange
+        FuncFacLink.BackColor = Color.Orange
+        FuncDepLink.BackColor = Color.Orange
+        FuncCourseLink.BackColor = Color.Orange
+        FuncComLink.BackColor = Color.Orange
+        FuncSupLink.BackColor = Color.White
+        FuncIntLink.BackColor = Color.Orange
+
+        ADM_STUDPAN.Hide()
+        ADM_FACPAN.Hide()
+        ADM_DEPTPAN.Hide()
+        ADM_COURSEPAN.Hide()
+        ADM_COMPAN.Hide()
+        ADM_SUPERPAN.Show()
+        ADM_INTERPAN.Hide()
+    End Sub
+
+    Private Sub FuncIntLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles FuncIntLink.LinkClicked
+        FuncStudPnl.BackColor = Color.Orange
+        FuncFacPnl.BackColor = Color.Orange
+        FuncDepPnl.BackColor = Color.Orange
+        FuncCoursePnl.BackColor = Color.Orange
+        FuncComPnl.BackColor = Color.Orange
+        FuncSupPnl.BackColor = Color.Orange
+        FuncIntPnl.BackColor = Color.White
+
+        FuncStudLink.LinkColor = Color.White
+        FuncFacLink.LinkColor = Color.White
+        FuncDepLink.LinkColor = Color.White
+        FuncCourseLink.LinkColor = Color.White
+        FuncComLink.LinkColor = Color.White
+        FuncSupLink.LinkColor = Color.White
+        FuncIntLink.LinkColor = Color.Black
+
+        FuncStudLink.BackColor = Color.Orange
+        FuncFacLink.BackColor = Color.Orange
+        FuncDepLink.BackColor = Color.Orange
+        FuncCourseLink.BackColor = Color.Orange
+        FuncComLink.BackColor = Color.Orange
+        FuncSupLink.BackColor = Color.Orange
+        FuncIntLink.BackColor = Color.White
+
+        ADM_STUDPAN.Hide()
+        ADM_FACPAN.Hide()
+        ADM_DEPTPAN.Hide()
+        ADM_COURSEPAN.Hide()
+        ADM_COMPAN.Hide()
+        ADM_SUPERPAN.Hide()
+        ADM_INTERPAN.Show()
+    End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     'tugay
 
 End Class
