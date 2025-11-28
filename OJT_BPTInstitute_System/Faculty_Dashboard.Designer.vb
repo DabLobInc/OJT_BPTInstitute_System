@@ -47,6 +47,9 @@ Partial Class Faculty_Dashboard
         Blue_Design = New Panel()
         DBlue_Design = New Panel()
         Profile_Panel = New Panel()
+        ProfTitle_Panel = New Panel()
+        Fac_Profiletitle = New Label()
+        Design = New Panel()
         FacProfile_Panel = New Panel()
         Faculty_FacEmpStat_txt = New TextBox()
         Faculty_FacEmpStat_lbl = New Label()
@@ -72,9 +75,6 @@ Partial Class Faculty_Dashboard
         Faculty_LName_lbl = New Label()
         Faculty_MName_lbl = New Label()
         Faculty_FName_lbl = New Label()
-        ProfTitle_Panel = New Panel()
-        Fac_Profiletitle = New Label()
-        Design = New Panel()
         Section_Panel = New Panel()
         Fac_SecSearch_btn = New Button()
         Fac_SecSearch_txt = New TextBox()
@@ -112,8 +112,8 @@ Partial Class Faculty_Dashboard
         CType(DataGridView8, ComponentModel.ISupportInitialize).BeginInit()
         Fac_Info_Panel.SuspendLayout()
         Profile_Panel.SuspendLayout()
-        FacProfile_Panel.SuspendLayout()
         ProfTitle_Panel.SuspendLayout()
+        FacProfile_Panel.SuspendLayout()
         Section_Panel.SuspendLayout()
         FilterSec_Panel.SuspendLayout()
         SectionTitle_Panel.SuspendLayout()
@@ -349,6 +349,35 @@ Partial Class Faculty_Dashboard
         Profile_Panel.Name = "Profile_Panel"
         Profile_Panel.Size = New Size(1902, 830)
         Profile_Panel.TabIndex = 8
+        ' 
+        ' ProfTitle_Panel
+        ' 
+        ProfTitle_Panel.Controls.Add(Fac_Profiletitle)
+        ProfTitle_Panel.Controls.Add(Design)
+        ProfTitle_Panel.Dock = DockStyle.Top
+        ProfTitle_Panel.Location = New Point(0, 0)
+        ProfTitle_Panel.Name = "ProfTitle_Panel"
+        ProfTitle_Panel.Size = New Size(1902, 177)
+        ProfTitle_Panel.TabIndex = 12
+        ' 
+        ' Fac_Profiletitle
+        ' 
+        Fac_Profiletitle.AutoSize = True
+        Fac_Profiletitle.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Fac_Profiletitle.Location = New Point(132, 48)
+        Fac_Profiletitle.Name = "Fac_Profiletitle"
+        Fac_Profiletitle.Size = New Size(463, 105)
+        Fac_Profiletitle.TabIndex = 8
+        Fac_Profiletitle.Text = "PROFILE"
+        Fac_Profiletitle.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Design
+        ' 
+        Design.BackColor = Color.Navy
+        Design.Location = New Point(68, 48)
+        Design.Name = "Design"
+        Design.Size = New Size(38, 105)
+        Design.TabIndex = 10
         ' 
         ' FacProfile_Panel
         ' 
@@ -617,35 +646,6 @@ Partial Class Faculty_Dashboard
         Faculty_FName_lbl.Size = New Size(227, 45)
         Faculty_FName_lbl.TabIndex = 48
         Faculty_FName_lbl.Text = "First Name:"
-        ' 
-        ' ProfTitle_Panel
-        ' 
-        ProfTitle_Panel.Controls.Add(Fac_Profiletitle)
-        ProfTitle_Panel.Controls.Add(Design)
-        ProfTitle_Panel.Dock = DockStyle.Top
-        ProfTitle_Panel.Location = New Point(0, 0)
-        ProfTitle_Panel.Name = "ProfTitle_Panel"
-        ProfTitle_Panel.Size = New Size(1902, 177)
-        ProfTitle_Panel.TabIndex = 12
-        ' 
-        ' Fac_Profiletitle
-        ' 
-        Fac_Profiletitle.AutoSize = True
-        Fac_Profiletitle.Font = New Font("Times New Roman", 55.8000031F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Fac_Profiletitle.Location = New Point(132, 48)
-        Fac_Profiletitle.Name = "Fac_Profiletitle"
-        Fac_Profiletitle.Size = New Size(463, 105)
-        Fac_Profiletitle.TabIndex = 8
-        Fac_Profiletitle.Text = "PROFILE"
-        Fac_Profiletitle.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Design
-        ' 
-        Design.BackColor = Color.Navy
-        Design.Location = New Point(68, 48)
-        Design.Name = "Design"
-        Design.Size = New Size(38, 105)
-        Design.TabIndex = 10
         ' 
         ' Section_Panel
         ' 
@@ -977,10 +977,10 @@ Partial Class Faculty_Dashboard
         Fac_Info_Panel.ResumeLayout(False)
         Fac_Info_Panel.PerformLayout()
         Profile_Panel.ResumeLayout(False)
-        FacProfile_Panel.ResumeLayout(False)
-        FacProfile_Panel.PerformLayout()
         ProfTitle_Panel.ResumeLayout(False)
         ProfTitle_Panel.PerformLayout()
+        FacProfile_Panel.ResumeLayout(False)
+        FacProfile_Panel.PerformLayout()
         Section_Panel.ResumeLayout(False)
         Section_Panel.PerformLayout()
         FilterSec_Panel.ResumeLayout(False)

@@ -2,10 +2,41 @@
 
 Public Class Update_Account
     Dim user As String = LogIn_Form.LoggedInUser
+    Private _targetPanel As String = Nothing
+
+    Public Sub New(targetPanel As String)
+        InitializeComponent()
+        _targetPanel = targetPanel
+    End Sub
+
+    Private Sub Update_Account_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        ShowPanel(Me.Update_Panel, _targetPanel)
+    End Sub
 
     Private Sub Update_Account_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadStudentProfile()
-        LoadFacultyProfile()
+        Try
+            Using con As New MySqlConnection(connString)
+                con.Open()
+                Dim usertype = "SELECT UserType FROM users WHERE Username = @id"
+
+                Using cmdt As New MySqlCommand(usertype, con)
+                    cmdt.Parameters.AddWithValue("@id", user)
+
+                    Using reader = cmdt.ExecuteReader()
+                        If reader.Read() Then
+                            Select Case reader("UserType")
+                                Case "Student"
+                                    LoadStudentProfile()
+                                Case "Faculty"
+                                    LoadFacultyProfile()
+                            End Select
+                        End If
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     ' Show/Hide Passwords based on checkbox
@@ -33,14 +64,25 @@ Public Class Update_Account
     End Sub
 
     Private Sub ChangePass_Save_btn_Click(sender As Object, e As EventArgs) Handles ChangePass_Save_btn.Click
-        Dim oldPassword = HashPassword(ChangePass_OldPass_txt.Text.Trim)
-        Dim newPassword = HashPassword(ChangePass_NewPass_txt.Text.Trim)
-        Dim conPassword = HashPassword(ChangePass_Conpass_txt.Text.Trim)
+        Dim newPasswordRaw As String = ChangePass_NewPass_txt.Text.Trim
+        Dim conPasswordRaw As String = ChangePass_Conpass_txt.Text.Trim
 
-        If newPassword <> conPassword Then
-            MsgBox("New password and confirm password doesn\'t match!", MsgBoxStyle.Exclamation, "Invalid")
+        ' Check empty
+        If String.IsNullOrWhiteSpace(newPasswordRaw) OrElse String.IsNullOrWhiteSpace(conPasswordRaw) Then
+            MsgBox("Password fields cannot be empty!", MsgBoxStyle.Exclamation, "Invalid")
             Return
         End If
+
+        ' Check mismatch
+        If newPasswordRaw <> conPasswordRaw Then
+            MsgBox("New password and confirm password doesn't match!", MsgBoxStyle.Exclamation, "Invalid")
+            Return
+        End If
+
+        ' Hash ONLY after validation
+        Dim oldPassword As String = HashPassword(ChangePass_OldPass_txt.Text.Trim)
+        Dim newPassword As String = HashPassword(newPasswordRaw)
+        Dim conPassword As String = HashPassword(conPasswordRaw)
 
         Try
             Using con As New MySqlConnection(connString)
@@ -352,14 +394,22 @@ Public Class Update_Account
     End Sub
 
     Private Sub Fac_ChangePass_Save_btn_Click(sender As Object, e As EventArgs) Handles Fac_ChangePass_Save_btn.Click
-        Dim oldPassword = HashPassword(Fac_ChangePass_OldPass_txt.Text.Trim)
-        Dim newPassword = HashPassword(Fac_ChangePass_NewPass_txt.Text.Trim)
-        Dim conPassword = HashPassword(Fac_ChangePass_ConPass_txt.Text.Trim)
+        Dim newPasswordRaw As String = Fac_ChangePass_NewPass_txt.Text.Trim
+        Dim conPasswordRaw As String = Fac_ChangePass_ConPass_txt.Text.Trim
 
-        If newPassword <> conPassword Then
-            MsgBox("New password and confirm password doesn\'t match!", MsgBoxStyle.Exclamation, "Invalid")
+        ' Check empty
+        If String.IsNullOrWhiteSpace(newPasswordRaw) OrElse String.IsNullOrWhiteSpace(conPasswordRaw) Then
+            MsgBox("Password fields cannot be empty!", MsgBoxStyle.Exclamation, "Invalid")
             Return
         End If
+
+        ' Check mismatch
+        If newPasswordRaw <> conPasswordRaw Then
+            MsgBox("New password and confirm password doesn't match!", MsgBoxStyle.Exclamation, "Invalid")
+            Return
+        End If
+        Dim newPassword As String = HashPassword(newPasswordRaw)
+        Dim conPassword As String = HashPassword(conPasswordRaw)
 
         Try
             Using con As New MySqlConnection(connString)

@@ -143,18 +143,14 @@ Public Class Faculty_Dashboard
 
     Private Sub Faculty_FacCPass_btn_Click(sender As Object, e As EventArgs) Handles Faculty_FacCPass_btn.Click
         Me.TopMost = False
-        Dim f As New Update_Account
-        ShowPanel(f.Update_Panel, "Fac_ChangePassContainer_pnl")
-
+        Dim f As New Update_Account("Fac_ChangePass_Container_pnl")
         f.ShowDialog()
         Me.TopMost = True
     End Sub
 
     Private Sub Faculty_FacUpd_btn_Click(sender As Object, e As EventArgs) Handles Faculty_FacUpd_btn.Click
         Me.TopMost = False
-        Dim f As New Update_Account
-        ShowPanel(f.Update_Panel, "Fac_Update_Profile_pnl")
-
+        Dim f As New Update_Account("Fac_Update_Profile_pnl")
         f.ShowDialog()
         Me.TopMost = True
     End Sub

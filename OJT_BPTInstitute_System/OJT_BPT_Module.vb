@@ -13,31 +13,32 @@ Module PanelManager
 
     Public Sub ShowPanel(root As Panel, targetName As String)
 
-        ' 1. Find the target panel
-        Dim targetPanel As Panel = FindPanel(root, targetName)
-        If targetPanel Is Nothing Then Exit Sub
+        ' 1. Find the target
+        Dim target As Panel = FindPanel(root, targetName)
+        If target Is Nothing Then Exit Sub
 
-        ' 2. Hide all panels EXCEPT MainMenu_Panel
-        HideAllPanels(root)
+        ' 2. Hide ONLY direct child panels of root EXCEPT MainMenu & Logout
+        For Each ctrl As Control In root.Controls
+            If TypeOf ctrl Is Panel Then
+                If ctrl.Name <> MainMenuName Then
+                    ctrl.Visible = False
+                End If
+            End If
+        Next
 
-        ' 3. Ensure MainMenu_Panel is always visible
-        Dim mainMenu = FindPanel(root, MainMenuName)
-        If mainMenu IsNot Nothing Then ShowPanelAndChildren(mainMenu)
-
-        Dim logout = FindPanel(root, LogOutName)
-        If logout IsNot Nothing Then ShowPanelAndChildren(logout)
-
-        ' 4. Show the target panel and all its parent panels
-        Dim cur As Control = targetPanel
+        ' 3. Show target and all parent panels
+        Dim cur As Control = target
         While cur IsNot Nothing AndAlso TypeOf cur Is Panel
-            ShowPanelAndChildren(DirectCast(cur, Panel))
+            cur.Visible = True
             cur = cur.Parent
         End While
 
-        ' 5. Bring the selected panel to front
-        targetPanel.BringToFront()
+        ' 4. Bring target to front
+        target.BringToFront()
 
     End Sub
+
+
 
     '==================== HELPERS =========================
 
@@ -70,7 +71,7 @@ Module PanelManager
     End Sub
 
     ' Recursively find a panel by name
-    Private Function FindPanel(container As Control, name As String) As Panel
+    Public Function FindPanel(container As Control, name As String) As Panel
         For Each ctrl As Control In container.Controls
             If TypeOf ctrl Is Panel Then
                 If ctrl.Name.Equals(name, StringComparison.OrdinalIgnoreCase) Then

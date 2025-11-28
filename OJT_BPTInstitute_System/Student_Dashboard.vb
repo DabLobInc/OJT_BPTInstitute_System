@@ -258,18 +258,14 @@ Public Class Student_Dashboard
 
     Private Sub Stud_ChangePass_btn_Click(sender As Object, e As EventArgs) Handles Stud_ChangePass_btn.Click
         Me.TopMost = False
-        Dim f As New Update_Account
-        ShowPanel(f.Update_Panel, "ChangePass_Container_pnl")
-
+        Dim f As New Update_Account("Stud_ChangePass_Container_pnl")
         f.ShowDialog()
         Me.TopMost = True
     End Sub
 
     Private Sub Stud_UpdateProfile_btn_Click(sender As Object, e As EventArgs) Handles Stud_UpdateProfile_btn.Click
         Me.TopMost = False
-        Dim f As New Update_Account
-        ShowPanel(f.Update_Panel, "Update_Profile_pnl")
-
+        Dim f As New Update_Account("Stud_Update_Profile_pnl")
         f.ShowDialog()
         Me.TopMost = True
     End Sub
