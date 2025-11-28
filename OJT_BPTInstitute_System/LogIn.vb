@@ -4,6 +4,8 @@ Imports System.Text
 
 Public Class LogIn_Form
 
+    Public Shared LoggedInUser As String
+
     ' Hash function (SHA-256)
     Private Function HashPassword(password As String) As String
         Using sha256 As SHA256 = SHA256.Create()
@@ -33,6 +35,9 @@ Public Class LogIn_Form
 
         ' Hash the entered password
         Dim hashedPassword As String = HashPassword(password)
+
+        LoggedInUser = username
+
 
         ' Query Users table
         Dim query As String = "SELECT UserType FROM Users WHERE Username=@username AND PasswordHash=@password"
