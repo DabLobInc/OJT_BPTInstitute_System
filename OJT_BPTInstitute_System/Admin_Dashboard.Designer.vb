@@ -107,6 +107,90 @@ Partial Class Admin_Dashboard
         SE_LinkLbl = New LinkLabel()
         Function_Panel = New Panel()
         Func_Container = New Panel()
+        ADM_STUDPAN = New Panel()
+        Stud_SecCmb = New ComboBox()
+        Stud_SemCmb = New ComboBox()
+        Stud_CourseCmb = New ComboBox()
+        STUD_ClrBtn = New Button()
+        STUD_AddBtn = New Button()
+        Stud_EmailTB = New TextBox()
+        Stud_SuffixTB = New TextBox()
+        Stud_MidTB = New TextBox()
+        Stud_FirstTB = New TextBox()
+        Stud_LastTB = New TextBox()
+        Stud_ConLbl = New Label()
+        Stud_ConMTB = New MaskedTextBox()
+        Stud_EmLbl = New Label()
+        Stud_SemLbl = New Label()
+        Stud_CourseLbl = New Label()
+        Stud_SufLbl = New Label()
+        Stud_MidLbl = New Label()
+        Stud_FirstLbl = New Label()
+        Stud_LastLbl = New Label()
+        Stud_SecLbl = New Label()
+        Stud_StudIDPnl = New Label()
+        MaskedTextBox1 = New MaskedTextBox()
+        STUD_DelBtn = New Button()
+        STUD_EdBtn = New Button()
+        StudBot_Pnl = New Panel()
+        StudTop_Pnl = New Panel()
+        FuncStud_NewEnt = New Label()
+        FuncStudSPan = New Panel()
+        STUD_DGV = New DataGridView()
+        Stud_DGV_SID = New DataGridViewTextBoxColumn()
+        Stud_DGV_LastN = New DataGridViewTextBoxColumn()
+        Stud_DGV_FirstN = New DataGridViewTextBoxColumn()
+        Stud_DGV_MidN = New DataGridViewTextBoxColumn()
+        Stud_DGV_Suf = New DataGridViewTextBoxColumn()
+        Stud_DGV_Course = New DataGridViewTextBoxColumn()
+        Stud_DGV_Sem = New DataGridViewTextBoxColumn()
+        Stud_DGV_Sec = New DataGridViewTextBoxColumn()
+        Stud_DGV_Email = New DataGridViewTextBoxColumn()
+        Stud_DGV_Con = New DataGridViewTextBoxColumn()
+        STUD_Lbl = New Label()
+        Adm_Func_StudDateTime_lbl = New Label()
+        ADM_FACPAN = New Panel()
+        Fac_PosTB = New TextBox()
+        FAC_ClrBtn = New Button()
+        FAC_AddBtn = New Button()
+        Fac_EmpCmb = New ComboBox()
+        Fac_EmpLbl = New Label()
+        Fac_ConLbl = New Label()
+        Fac_ConMTB = New MaskedTextBox()
+        Fac_DeptCmb = New ComboBox()
+        Fac_PosLbl = New Label()
+        Fac_SufTB = New TextBox()
+        Fac_MidTB = New TextBox()
+        Fac_SufLbl = New Label()
+        Fac_MidLbl = New Label()
+        Fac_EmailTB = New TextBox()
+        Fac_FirstNTB = New TextBox()
+        Fac_LastNTB = New TextBox()
+        Fac_EmailLbl = New Label()
+        Fac_DeptLbl = New Label()
+        Fac_FirstNLbl = New Label()
+        Fac_LastNLbl = New Label()
+        Fac_FIDLbl = New Label()
+        Fac_FID_MTB = New MaskedTextBox()
+        FAC_DelBtn = New Button()
+        FAC_EdBtn = New Button()
+        Fac_BotPnl = New Panel()
+        Fac_TopPnl = New Panel()
+        Fac_NewEntLbl = New Label()
+        FAC_DGV = New DataGridView()
+        Fac_DGV_FID = New DataGridViewTextBoxColumn()
+        Fac_DGV_LastN = New DataGridViewTextBoxColumn()
+        Fac_DGV_FirstN = New DataGridViewTextBoxColumn()
+        Fac_DGV_MidN = New DataGridViewTextBoxColumn()
+        Fac_DGV_Suf = New DataGridViewTextBoxColumn()
+        Fac_DGV_Dept = New DataGridViewTextBoxColumn()
+        Fac_DGV_Pos = New DataGridViewTextBoxColumn()
+        Fac_DGV_Emp = New DataGridViewTextBoxColumn()
+        Fac_DGV_Email = New DataGridViewTextBoxColumn()
+        Fac_DGV_Con = New DataGridViewTextBoxColumn()
+        Fac_SidePnl = New Panel()
+        FAC_Lbl = New Label()
+        Adm_func_FacDateTime_lbl = New Label()
         ADM_INTERPAN = New Panel()
         Adm_Intern_Stud_ID = New Label()
         Adm_Intern_SY_Mtx = New MaskedTextBox()
@@ -158,48 +242,6 @@ Partial Class Admin_Dashboard
         Adm_Intern_design = New Panel()
         Adm_InternTitle_lbl = New Label()
         Adm_Intern_DateTime_lbl = New Label()
-        ADM_STUDPAN = New Panel()
-        Stud_SecCmb = New ComboBox()
-        Stud_SemCmb = New ComboBox()
-        Stud_CourseCmb = New ComboBox()
-        STUD_ClrBtn = New Button()
-        STUD_AddBtn = New Button()
-        Stud_EmailTB = New TextBox()
-        Stud_SuffixTB = New TextBox()
-        Stud_MidTB = New TextBox()
-        Stud_FirstTB = New TextBox()
-        Stud_LastTB = New TextBox()
-        Stud_ConLbl = New Label()
-        Stud_ConMTB = New MaskedTextBox()
-        Stud_EmLbl = New Label()
-        Stud_SemLbl = New Label()
-        Stud_CourseLbl = New Label()
-        Stud_SufLbl = New Label()
-        Stud_MidLbl = New Label()
-        Stud_FirstLbl = New Label()
-        Stud_LastLbl = New Label()
-        Stud_SecLbl = New Label()
-        Stud_StudIDPnl = New Label()
-        MaskedTextBox1 = New MaskedTextBox()
-        STUD_DelBtn = New Button()
-        STUD_EdBtn = New Button()
-        StudBot_Pnl = New Panel()
-        StudTop_Pnl = New Panel()
-        FuncStud_NewEnt = New Label()
-        FuncStudSPan = New Panel()
-        STUD_DGV = New DataGridView()
-        Stud_DGV_SID = New DataGridViewTextBoxColumn()
-        Stud_DGV_LastN = New DataGridViewTextBoxColumn()
-        Stud_DGV_FirstN = New DataGridViewTextBoxColumn()
-        Stud_DGV_MidN = New DataGridViewTextBoxColumn()
-        Stud_DGV_Suf = New DataGridViewTextBoxColumn()
-        Stud_DGV_Course = New DataGridViewTextBoxColumn()
-        Stud_DGV_Sem = New DataGridViewTextBoxColumn()
-        Stud_DGV_Sec = New DataGridViewTextBoxColumn()
-        Stud_DGV_Email = New DataGridViewTextBoxColumn()
-        Stud_DGV_Con = New DataGridViewTextBoxColumn()
-        STUD_Lbl = New Label()
-        Adm_Func_StudDateTime_lbl = New Label()
         ADM_SUPERPAN = New Panel()
         Adm_Sup_Supervisor_cmb = New ComboBox()
         Adm_Sup_Supervisor_lbl = New Label()
@@ -319,48 +361,6 @@ Partial Class Admin_Dashboard
         Adm_DeptTitle_lbl = New Label()
         Adm_design = New Panel()
         Adm_Dept_DateTime_lbl = New Label()
-        ADM_FACPAN = New Panel()
-        Fac_PosTB = New TextBox()
-        FAC_ClrBtn = New Button()
-        FAC_AddBtn = New Button()
-        Fac_EmpCmb = New ComboBox()
-        Fac_EmpLbl = New Label()
-        Fac_ConLbl = New Label()
-        Fac_ConMTB = New MaskedTextBox()
-        Fac_DeptCmb = New ComboBox()
-        Fac_PosLbl = New Label()
-        Fac_SufTB = New TextBox()
-        Fac_MidTB = New TextBox()
-        Fac_SufLbl = New Label()
-        Fac_MidLbl = New Label()
-        Fac_EmailTB = New TextBox()
-        Fac_FirstNTB = New TextBox()
-        Fac_LastNTB = New TextBox()
-        Fac_EmailLbl = New Label()
-        Fac_DeptLbl = New Label()
-        Fac_FirstNLbl = New Label()
-        Fac_LastNLbl = New Label()
-        Fac_FIDLbl = New Label()
-        Fac_FID_MTB = New MaskedTextBox()
-        FAC_DelBtn = New Button()
-        FAC_EdBtn = New Button()
-        Fac_BotPnl = New Panel()
-        Fac_TopPnl = New Panel()
-        Fac_NewEntLbl = New Label()
-        FAC_DGV = New DataGridView()
-        Fac_DGV_FID = New DataGridViewTextBoxColumn()
-        Fac_DGV_LastN = New DataGridViewTextBoxColumn()
-        Fac_DGV_FirstN = New DataGridViewTextBoxColumn()
-        Fac_DGV_MidN = New DataGridViewTextBoxColumn()
-        Fac_DGV_Suf = New DataGridViewTextBoxColumn()
-        Fac_DGV_Dept = New DataGridViewTextBoxColumn()
-        Fac_DGV_Pos = New DataGridViewTextBoxColumn()
-        Fac_DGV_Emp = New DataGridViewTextBoxColumn()
-        Fac_DGV_Email = New DataGridViewTextBoxColumn()
-        Fac_DGV_Con = New DataGridViewTextBoxColumn()
-        Fac_SidePnl = New Panel()
-        FAC_Lbl = New Label()
-        Adm_func_FacDateTime_lbl = New Label()
         FuncSideBar_Panel = New Panel()
         SideCon_BASE = New Panel()
         FuncSidePanel_OUTER = New Panel()
@@ -417,10 +417,12 @@ Partial Class Admin_Dashboard
         SE_BackPan.SuspendLayout()
         Function_Panel.SuspendLayout()
         Func_Container.SuspendLayout()
-        ADM_INTERPAN.SuspendLayout()
-        CType(Adm_Intern_DGV, ComponentModel.ISupportInitialize).BeginInit()
         ADM_STUDPAN.SuspendLayout()
         CType(STUD_DGV, ComponentModel.ISupportInitialize).BeginInit()
+        ADM_FACPAN.SuspendLayout()
+        CType(FAC_DGV, ComponentModel.ISupportInitialize).BeginInit()
+        ADM_INTERPAN.SuspendLayout()
+        CType(Adm_Intern_DGV, ComponentModel.ISupportInitialize).BeginInit()
         ADM_SUPERPAN.SuspendLayout()
         CType(Adm_Sup_DGV, ComponentModel.ISupportInitialize).BeginInit()
         ADM_COMPAN.SuspendLayout()
@@ -429,8 +431,6 @@ Partial Class Admin_Dashboard
         CType(Adm_Course_DGV, ComponentModel.ISupportInitialize).BeginInit()
         ADM_DEPTPAN.SuspendLayout()
         CType(Adm_Dept_DGV, ComponentModel.ISupportInitialize).BeginInit()
-        ADM_FACPAN.SuspendLayout()
-        CType(FAC_DGV, ComponentModel.ISupportInitialize).BeginInit()
         FuncSideBar_Panel.SuspendLayout()
         SideCon_BASE.SuspendLayout()
         FuncSidePanel_OUTER.SuspendLayout()
@@ -599,9 +599,9 @@ Partial Class Admin_Dashboard
         PE_Lbl.ForeColor = SystemColors.MenuText
         PE_Lbl.Location = New Point(10, 14)
         PE_Lbl.Name = "PE_Lbl"
-        PE_Lbl.Size = New Size(358, 32)
+        PE_Lbl.Size = New Size(360, 32)
         PE_Lbl.TabIndex = 6
-        PE_Lbl.Text = "PENDING EVALUATIONS"
+        PE_Lbl.Text = "STUDENT INFORMATION"
         ' 
         ' WelcomeLbl
         ' 
@@ -1182,10 +1182,10 @@ Partial Class Admin_Dashboard
         SE_LinkLbl.LinkColor = Color.Black
         SE_LinkLbl.Location = New Point(63, 14)
         SE_LinkLbl.Name = "SE_LinkLbl"
-        SE_LinkLbl.Size = New Size(215, 70)
+        SE_LinkLbl.Size = New Size(220, 70)
         SE_LinkLbl.TabIndex = 11
         SE_LinkLbl.TabStop = True
-        SE_LinkLbl.Text = "STUDENT" & vbCrLf & "EVALUATION"
+        SE_LinkLbl.Text = "STUDENT" & vbCrLf & "INFORMATION"
         SE_LinkLbl.TextAlign = ContentAlignment.BottomCenter
         ' 
         ' Function_Panel
@@ -1212,6 +1212,827 @@ Partial Class Admin_Dashboard
         Func_Container.Name = "Func_Container"
         Func_Container.Size = New Size(1548, 830)
         Func_Container.TabIndex = 17
+        ' 
+        ' ADM_STUDPAN
+        ' 
+        ADM_STUDPAN.BackColor = Color.WhiteSmoke
+        ADM_STUDPAN.Controls.Add(Stud_SecCmb)
+        ADM_STUDPAN.Controls.Add(Stud_SemCmb)
+        ADM_STUDPAN.Controls.Add(Stud_CourseCmb)
+        ADM_STUDPAN.Controls.Add(STUD_ClrBtn)
+        ADM_STUDPAN.Controls.Add(STUD_AddBtn)
+        ADM_STUDPAN.Controls.Add(Stud_EmailTB)
+        ADM_STUDPAN.Controls.Add(Stud_SuffixTB)
+        ADM_STUDPAN.Controls.Add(Stud_MidTB)
+        ADM_STUDPAN.Controls.Add(Stud_FirstTB)
+        ADM_STUDPAN.Controls.Add(Stud_LastTB)
+        ADM_STUDPAN.Controls.Add(Stud_ConLbl)
+        ADM_STUDPAN.Controls.Add(Stud_ConMTB)
+        ADM_STUDPAN.Controls.Add(Stud_EmLbl)
+        ADM_STUDPAN.Controls.Add(Stud_SemLbl)
+        ADM_STUDPAN.Controls.Add(Stud_CourseLbl)
+        ADM_STUDPAN.Controls.Add(Stud_SufLbl)
+        ADM_STUDPAN.Controls.Add(Stud_MidLbl)
+        ADM_STUDPAN.Controls.Add(Stud_FirstLbl)
+        ADM_STUDPAN.Controls.Add(Stud_LastLbl)
+        ADM_STUDPAN.Controls.Add(Stud_SecLbl)
+        ADM_STUDPAN.Controls.Add(Stud_StudIDPnl)
+        ADM_STUDPAN.Controls.Add(MaskedTextBox1)
+        ADM_STUDPAN.Controls.Add(STUD_DelBtn)
+        ADM_STUDPAN.Controls.Add(STUD_EdBtn)
+        ADM_STUDPAN.Controls.Add(StudBot_Pnl)
+        ADM_STUDPAN.Controls.Add(StudTop_Pnl)
+        ADM_STUDPAN.Controls.Add(FuncStud_NewEnt)
+        ADM_STUDPAN.Controls.Add(FuncStudSPan)
+        ADM_STUDPAN.Controls.Add(STUD_DGV)
+        ADM_STUDPAN.Controls.Add(STUD_Lbl)
+        ADM_STUDPAN.Controls.Add(Adm_Func_StudDateTime_lbl)
+        ADM_STUDPAN.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ADM_STUDPAN.Location = New Point(17, 25)
+        ADM_STUDPAN.Name = "ADM_STUDPAN"
+        ADM_STUDPAN.Size = New Size(1515, 793)
+        ADM_STUDPAN.TabIndex = 1
+        ' 
+        ' Stud_SecCmb
+        ' 
+        Stud_SecCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_SecCmb.FormattingEnabled = True
+        Stud_SecCmb.Location = New Point(222, 681)
+        Stud_SecCmb.Name = "Stud_SecCmb"
+        Stud_SecCmb.Size = New Size(142, 40)
+        Stud_SecCmb.TabIndex = 45
+        ' 
+        ' Stud_SemCmb
+        ' 
+        Stud_SemCmb.FormattingEnabled = True
+        Stud_SemCmb.Location = New Point(62, 681)
+        Stud_SemCmb.Name = "Stud_SemCmb"
+        Stud_SemCmb.Size = New Size(136, 39)
+        Stud_SemCmb.TabIndex = 44
+        ' 
+        ' Stud_CourseCmb
+        ' 
+        Stud_CourseCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_CourseCmb.FormattingEnabled = True
+        Stud_CourseCmb.Location = New Point(1267, 591)
+        Stud_CourseCmb.Name = "Stud_CourseCmb"
+        Stud_CourseCmb.Size = New Size(187, 40)
+        Stud_CourseCmb.TabIndex = 43
+        ' 
+        ' STUD_ClrBtn
+        ' 
+        STUD_ClrBtn.BackColor = Color.Orange
+        STUD_ClrBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        STUD_ClrBtn.ForeColor = SystemColors.ButtonHighlight
+        STUD_ClrBtn.Location = New Point(1303, 669)
+        STUD_ClrBtn.Name = "STUD_ClrBtn"
+        STUD_ClrBtn.Size = New Size(151, 60)
+        STUD_ClrBtn.TabIndex = 42
+        STUD_ClrBtn.Text = "CLEAR"
+        STUD_ClrBtn.UseVisualStyleBackColor = False
+        ' 
+        ' STUD_AddBtn
+        ' 
+        STUD_AddBtn.BackColor = Color.ForestGreen
+        STUD_AddBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        STUD_AddBtn.ForeColor = SystemColors.ButtonHighlight
+        STUD_AddBtn.Location = New Point(1137, 669)
+        STUD_AddBtn.Name = "STUD_AddBtn"
+        STUD_AddBtn.Size = New Size(151, 60)
+        STUD_AddBtn.TabIndex = 41
+        STUD_AddBtn.Text = "ADD"
+        STUD_AddBtn.UseVisualStyleBackColor = False
+        ' 
+        ' Stud_EmailTB
+        ' 
+        Stud_EmailTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_EmailTB.Location = New Point(389, 680)
+        Stud_EmailTB.Name = "Stud_EmailTB"
+        Stud_EmailTB.Size = New Size(453, 39)
+        Stud_EmailTB.TabIndex = 40
+        ' 
+        ' Stud_SuffixTB
+        ' 
+        Stud_SuffixTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_SuffixTB.Location = New Point(1129, 590)
+        Stud_SuffixTB.Name = "Stud_SuffixTB"
+        Stud_SuffixTB.Size = New Size(114, 39)
+        Stud_SuffixTB.TabIndex = 36
+        ' 
+        ' Stud_MidTB
+        ' 
+        Stud_MidTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_MidTB.Location = New Point(865, 590)
+        Stud_MidTB.Name = "Stud_MidTB"
+        Stud_MidTB.Size = New Size(240, 39)
+        Stud_MidTB.TabIndex = 35
+        ' 
+        ' Stud_FirstTB
+        ' 
+        Stud_FirstTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_FirstTB.Location = New Point(485, 590)
+        Stud_FirstTB.Name = "Stud_FirstTB"
+        Stud_FirstTB.Size = New Size(357, 39)
+        Stud_FirstTB.TabIndex = 34
+        ' 
+        ' Stud_LastTB
+        ' 
+        Stud_LastTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_LastTB.Location = New Point(273, 590)
+        Stud_LastTB.Name = "Stud_LastTB"
+        Stud_LastTB.Size = New Size(186, 39)
+        Stud_LastTB.TabIndex = 33
+        ' 
+        ' Stud_ConLbl
+        ' 
+        Stud_ConLbl.AutoSize = True
+        Stud_ConLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_ConLbl.Location = New Point(865, 652)
+        Stud_ConLbl.Name = "Stud_ConLbl"
+        Stud_ConLbl.Size = New Size(145, 27)
+        Stud_ConLbl.TabIndex = 32
+        Stud_ConLbl.Text = "Contact No."
+        Stud_ConLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_ConMTB
+        ' 
+        Stud_ConMTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_ConMTB.Location = New Point(865, 680)
+        Stud_ConMTB.Name = "Stud_ConMTB"
+        Stud_ConMTB.Size = New Size(240, 39)
+        Stud_ConMTB.TabIndex = 31
+        ' 
+        ' Stud_EmLbl
+        ' 
+        Stud_EmLbl.AutoSize = True
+        Stud_EmLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_EmLbl.Location = New Point(389, 652)
+        Stud_EmLbl.Name = "Stud_EmLbl"
+        Stud_EmLbl.Size = New Size(179, 27)
+        Stud_EmLbl.TabIndex = 30
+        Stud_EmLbl.Text = "Email Address:"
+        Stud_EmLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_SemLbl
+        ' 
+        Stud_SemLbl.AutoSize = True
+        Stud_SemLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_SemLbl.Location = New Point(62, 652)
+        Stud_SemLbl.Name = "Stud_SemLbl"
+        Stud_SemLbl.Size = New Size(126, 27)
+        Stud_SemLbl.TabIndex = 28
+        Stud_SemLbl.Text = "Semester:"
+        Stud_SemLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_CourseLbl
+        ' 
+        Stud_CourseLbl.AutoSize = True
+        Stud_CourseLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_CourseLbl.Location = New Point(1267, 561)
+        Stud_CourseLbl.Name = "Stud_CourseLbl"
+        Stud_CourseLbl.Size = New Size(100, 27)
+        Stud_CourseLbl.TabIndex = 26
+        Stud_CourseLbl.Text = "Course:"
+        Stud_CourseLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_SufLbl
+        ' 
+        Stud_SufLbl.AutoSize = True
+        Stud_SufLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_SufLbl.Location = New Point(1129, 561)
+        Stud_SufLbl.Name = "Stud_SufLbl"
+        Stud_SufLbl.Size = New Size(82, 27)
+        Stud_SufLbl.TabIndex = 24
+        Stud_SufLbl.Text = "Suffix:"
+        Stud_SufLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_MidLbl
+        ' 
+        Stud_MidLbl.AutoSize = True
+        Stud_MidLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_MidLbl.Location = New Point(865, 561)
+        Stud_MidLbl.Name = "Stud_MidLbl"
+        Stud_MidLbl.Size = New Size(163, 27)
+        Stud_MidLbl.TabIndex = 22
+        Stud_MidLbl.Text = "Middle Name:"
+        Stud_MidLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_FirstLbl
+        ' 
+        Stud_FirstLbl.AutoSize = True
+        Stud_FirstLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_FirstLbl.Location = New Point(485, 561)
+        Stud_FirstLbl.Name = "Stud_FirstLbl"
+        Stud_FirstLbl.Size = New Size(140, 27)
+        Stud_FirstLbl.TabIndex = 20
+        Stud_FirstLbl.Text = "First Name:"
+        Stud_FirstLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_LastLbl
+        ' 
+        Stud_LastLbl.AutoSize = True
+        Stud_LastLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_LastLbl.Location = New Point(273, 561)
+        Stud_LastLbl.Name = "Stud_LastLbl"
+        Stud_LastLbl.Size = New Size(138, 27)
+        Stud_LastLbl.TabIndex = 18
+        Stud_LastLbl.Text = "Last Name:"
+        Stud_LastLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_SecLbl
+        ' 
+        Stud_SecLbl.AutoSize = True
+        Stud_SecLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_SecLbl.Location = New Point(222, 652)
+        Stud_SecLbl.Name = "Stud_SecLbl"
+        Stud_SecLbl.Size = New Size(104, 27)
+        Stud_SecLbl.TabIndex = 16
+        Stud_SecLbl.Text = "Section:"
+        Stud_SecLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Stud_StudIDPnl
+        ' 
+        Stud_StudIDPnl.AutoSize = True
+        Stud_StudIDPnl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Stud_StudIDPnl.Location = New Point(62, 561)
+        Stud_StudIDPnl.Name = "Stud_StudIDPnl"
+        Stud_StudIDPnl.Size = New Size(136, 27)
+        Stud_StudIDPnl.TabIndex = 14
+        Stud_StudIDPnl.Text = "Student ID:"
+        Stud_StudIDPnl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' MaskedTextBox1
+        ' 
+        MaskedTextBox1.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox1.Location = New Point(62, 590)
+        MaskedTextBox1.Name = "MaskedTextBox1"
+        MaskedTextBox1.Size = New Size(186, 39)
+        MaskedTextBox1.TabIndex = 13
+        ' 
+        ' STUD_DelBtn
+        ' 
+        STUD_DelBtn.BackColor = Color.DarkRed
+        STUD_DelBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        STUD_DelBtn.ForeColor = SystemColors.ButtonHighlight
+        STUD_DelBtn.Location = New Point(1303, 464)
+        STUD_DelBtn.Name = "STUD_DelBtn"
+        STUD_DelBtn.Size = New Size(151, 60)
+        STUD_DelBtn.TabIndex = 12
+        STUD_DelBtn.Text = "DELETE"
+        STUD_DelBtn.UseVisualStyleBackColor = False
+        ' 
+        ' STUD_EdBtn
+        ' 
+        STUD_EdBtn.BackColor = Color.Navy
+        STUD_EdBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        STUD_EdBtn.ForeColor = SystemColors.ButtonHighlight
+        STUD_EdBtn.Location = New Point(1137, 464)
+        STUD_EdBtn.Name = "STUD_EdBtn"
+        STUD_EdBtn.Size = New Size(151, 60)
+        STUD_EdBtn.TabIndex = 11
+        STUD_EdBtn.Text = "EDIT"
+        STUD_EdBtn.UseVisualStyleBackColor = False
+        ' 
+        ' StudBot_Pnl
+        ' 
+        StudBot_Pnl.BackColor = Color.Black
+        StudBot_Pnl.Location = New Point(51, 526)
+        StudBot_Pnl.Name = "StudBot_Pnl"
+        StudBot_Pnl.Size = New Size(1054, 10)
+        StudBot_Pnl.TabIndex = 10
+        ' 
+        ' StudTop_Pnl
+        ' 
+        StudTop_Pnl.BackColor = Color.Black
+        StudTop_Pnl.Location = New Point(51, 450)
+        StudTop_Pnl.Name = "StudTop_Pnl"
+        StudTop_Pnl.Size = New Size(1054, 10)
+        StudTop_Pnl.TabIndex = 9
+        ' 
+        ' FuncStud_NewEnt
+        ' 
+        FuncStud_NewEnt.AutoSize = True
+        FuncStud_NewEnt.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FuncStud_NewEnt.Location = New Point(482, 473)
+        FuncStud_NewEnt.Name = "FuncStud_NewEnt"
+        FuncStud_NewEnt.Size = New Size(222, 39)
+        FuncStud_NewEnt.TabIndex = 8
+        FuncStud_NewEnt.Text = "NEW ENTRY"
+        ' 
+        ' FuncStudSPan
+        ' 
+        FuncStudSPan.BackColor = Color.Navy
+        FuncStudSPan.Location = New Point(51, 41)
+        FuncStudSPan.Name = "FuncStudSPan"
+        FuncStudSPan.Size = New Size(39, 72)
+        FuncStudSPan.TabIndex = 7
+        ' 
+        ' STUD_DGV
+        ' 
+        STUD_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        STUD_DGV.Columns.AddRange(New DataGridViewColumn() {Stud_DGV_SID, Stud_DGV_LastN, Stud_DGV_FirstN, Stud_DGV_MidN, Stud_DGV_Suf, Stud_DGV_Course, Stud_DGV_Sem, Stud_DGV_Sec, Stud_DGV_Email, Stud_DGV_Con})
+        STUD_DGV.Location = New Point(51, 182)
+        STUD_DGV.Name = "STUD_DGV"
+        STUD_DGV.RowHeadersWidth = 51
+        STUD_DGV.Size = New Size(1403, 252)
+        STUD_DGV.TabIndex = 6
+        ' 
+        ' Stud_DGV_SID
+        ' 
+        Stud_DGV_SID.HeaderText = "STUDENT ID"
+        Stud_DGV_SID.MinimumWidth = 6
+        Stud_DGV_SID.Name = "Stud_DGV_SID"
+        Stud_DGV_SID.Width = 135
+        ' 
+        ' Stud_DGV_LastN
+        ' 
+        Stud_DGV_LastN.HeaderText = "LAST NAME"
+        Stud_DGV_LastN.MinimumWidth = 6
+        Stud_DGV_LastN.Name = "Stud_DGV_LastN"
+        Stud_DGV_LastN.Width = 135
+        ' 
+        ' Stud_DGV_FirstN
+        ' 
+        Stud_DGV_FirstN.HeaderText = "FIRST NAME"
+        Stud_DGV_FirstN.MinimumWidth = 6
+        Stud_DGV_FirstN.Name = "Stud_DGV_FirstN"
+        Stud_DGV_FirstN.Width = 135
+        ' 
+        ' Stud_DGV_MidN
+        ' 
+        Stud_DGV_MidN.HeaderText = "MIDDLE NAME"
+        Stud_DGV_MidN.MinimumWidth = 6
+        Stud_DGV_MidN.Name = "Stud_DGV_MidN"
+        Stud_DGV_MidN.Width = 135
+        ' 
+        ' Stud_DGV_Suf
+        ' 
+        Stud_DGV_Suf.HeaderText = "SUFFIX"
+        Stud_DGV_Suf.MinimumWidth = 6
+        Stud_DGV_Suf.Name = "Stud_DGV_Suf"
+        Stud_DGV_Suf.Width = 135
+        ' 
+        ' Stud_DGV_Course
+        ' 
+        Stud_DGV_Course.HeaderText = "COURSE"
+        Stud_DGV_Course.MinimumWidth = 6
+        Stud_DGV_Course.Name = "Stud_DGV_Course"
+        Stud_DGV_Course.Width = 135
+        ' 
+        ' Stud_DGV_Sem
+        ' 
+        Stud_DGV_Sem.HeaderText = "SEMESTER"
+        Stud_DGV_Sem.MinimumWidth = 6
+        Stud_DGV_Sem.Name = "Stud_DGV_Sem"
+        Stud_DGV_Sem.Width = 135
+        ' 
+        ' Stud_DGV_Sec
+        ' 
+        Stud_DGV_Sec.HeaderText = "SECTION"
+        Stud_DGV_Sec.MinimumWidth = 6
+        Stud_DGV_Sec.Name = "Stud_DGV_Sec"
+        Stud_DGV_Sec.Width = 135
+        ' 
+        ' Stud_DGV_Email
+        ' 
+        Stud_DGV_Email.HeaderText = "EMAIL"
+        Stud_DGV_Email.MinimumWidth = 6
+        Stud_DGV_Email.Name = "Stud_DGV_Email"
+        Stud_DGV_Email.Width = 135
+        ' 
+        ' Stud_DGV_Con
+        ' 
+        Stud_DGV_Con.HeaderText = "CONTACT NO."
+        Stud_DGV_Con.MinimumWidth = 6
+        Stud_DGV_Con.Name = "Stud_DGV_Con"
+        Stud_DGV_Con.Width = 135
+        ' 
+        ' STUD_Lbl
+        ' 
+        STUD_Lbl.Font = New Font("Times New Roman", 54F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        STUD_Lbl.Location = New Point(96, 22)
+        STUD_Lbl.Name = "STUD_Lbl"
+        STUD_Lbl.Size = New Size(608, 105)
+        STUD_Lbl.TabIndex = 4
+        STUD_Lbl.Text = "STUDENTS"
+        ' 
+        ' Adm_Func_StudDateTime_lbl
+        ' 
+        Adm_Func_StudDateTime_lbl.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Adm_Func_StudDateTime_lbl.Location = New Point(735, 32)
+        Adm_Func_StudDateTime_lbl.Name = "Adm_Func_StudDateTime_lbl"
+        Adm_Func_StudDateTime_lbl.Size = New Size(695, 49)
+        Adm_Func_StudDateTime_lbl.TabIndex = 3
+        ' 
+        ' ADM_FACPAN
+        ' 
+        ADM_FACPAN.BackColor = Color.WhiteSmoke
+        ADM_FACPAN.Controls.Add(Fac_PosTB)
+        ADM_FACPAN.Controls.Add(FAC_ClrBtn)
+        ADM_FACPAN.Controls.Add(FAC_AddBtn)
+        ADM_FACPAN.Controls.Add(Fac_EmpCmb)
+        ADM_FACPAN.Controls.Add(Fac_EmpLbl)
+        ADM_FACPAN.Controls.Add(Fac_ConLbl)
+        ADM_FACPAN.Controls.Add(Fac_ConMTB)
+        ADM_FACPAN.Controls.Add(Fac_DeptCmb)
+        ADM_FACPAN.Controls.Add(Fac_PosLbl)
+        ADM_FACPAN.Controls.Add(Fac_SufTB)
+        ADM_FACPAN.Controls.Add(Fac_MidTB)
+        ADM_FACPAN.Controls.Add(Fac_SufLbl)
+        ADM_FACPAN.Controls.Add(Fac_MidLbl)
+        ADM_FACPAN.Controls.Add(Fac_EmailTB)
+        ADM_FACPAN.Controls.Add(Fac_FirstNTB)
+        ADM_FACPAN.Controls.Add(Fac_LastNTB)
+        ADM_FACPAN.Controls.Add(Fac_EmailLbl)
+        ADM_FACPAN.Controls.Add(Fac_DeptLbl)
+        ADM_FACPAN.Controls.Add(Fac_FirstNLbl)
+        ADM_FACPAN.Controls.Add(Fac_LastNLbl)
+        ADM_FACPAN.Controls.Add(Fac_FIDLbl)
+        ADM_FACPAN.Controls.Add(Fac_FID_MTB)
+        ADM_FACPAN.Controls.Add(FAC_DelBtn)
+        ADM_FACPAN.Controls.Add(FAC_EdBtn)
+        ADM_FACPAN.Controls.Add(Fac_BotPnl)
+        ADM_FACPAN.Controls.Add(Fac_TopPnl)
+        ADM_FACPAN.Controls.Add(Fac_NewEntLbl)
+        ADM_FACPAN.Controls.Add(FAC_DGV)
+        ADM_FACPAN.Controls.Add(Fac_SidePnl)
+        ADM_FACPAN.Controls.Add(FAC_Lbl)
+        ADM_FACPAN.Controls.Add(Adm_func_FacDateTime_lbl)
+        ADM_FACPAN.Location = New Point(17, 25)
+        ADM_FACPAN.Name = "ADM_FACPAN"
+        ADM_FACPAN.Size = New Size(1515, 793)
+        ADM_FACPAN.TabIndex = 2
+        ' 
+        ' Fac_PosTB
+        ' 
+        Fac_PosTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_PosTB.Location = New Point(1266, 590)
+        Fac_PosTB.Name = "Fac_PosTB"
+        Fac_PosTB.Size = New Size(189, 39)
+        Fac_PosTB.TabIndex = 72
+        ' 
+        ' FAC_ClrBtn
+        ' 
+        FAC_ClrBtn.BackColor = Color.Orange
+        FAC_ClrBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FAC_ClrBtn.ForeColor = SystemColors.ButtonHighlight
+        FAC_ClrBtn.Location = New Point(1303, 725)
+        FAC_ClrBtn.Name = "FAC_ClrBtn"
+        FAC_ClrBtn.Size = New Size(151, 60)
+        FAC_ClrBtn.TabIndex = 71
+        FAC_ClrBtn.Text = "CLEAR"
+        FAC_ClrBtn.UseVisualStyleBackColor = False
+        ' 
+        ' FAC_AddBtn
+        ' 
+        FAC_AddBtn.BackColor = Color.ForestGreen
+        FAC_AddBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FAC_AddBtn.ForeColor = SystemColors.ButtonHighlight
+        FAC_AddBtn.Location = New Point(1137, 725)
+        FAC_AddBtn.Name = "FAC_AddBtn"
+        FAC_AddBtn.Size = New Size(151, 60)
+        FAC_AddBtn.TabIndex = 70
+        FAC_AddBtn.Text = "ADD"
+        FAC_AddBtn.UseVisualStyleBackColor = False
+        ' 
+        ' Fac_EmpCmb
+        ' 
+        Fac_EmpCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_EmpCmb.FormattingEnabled = True
+        Fac_EmpCmb.Location = New Point(62, 680)
+        Fac_EmpCmb.Name = "Fac_EmpCmb"
+        Fac_EmpCmb.Size = New Size(186, 40)
+        Fac_EmpCmb.TabIndex = 69
+        ' 
+        ' Fac_EmpLbl
+        ' 
+        Fac_EmpLbl.AutoSize = True
+        Fac_EmpLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_EmpLbl.Location = New Point(63, 652)
+        Fac_EmpLbl.Name = "Fac_EmpLbl"
+        Fac_EmpLbl.Size = New Size(156, 27)
+        Fac_EmpLbl.TabIndex = 68
+        Fac_EmpLbl.Text = "Employment:"
+        Fac_EmpLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_ConLbl
+        ' 
+        Fac_ConLbl.AutoSize = True
+        Fac_ConLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_ConLbl.Location = New Point(962, 653)
+        Fac_ConLbl.Name = "Fac_ConLbl"
+        Fac_ConLbl.Size = New Size(145, 27)
+        Fac_ConLbl.TabIndex = 67
+        Fac_ConLbl.Text = "Contact No."
+        Fac_ConLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_ConMTB
+        ' 
+        Fac_ConMTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_ConMTB.Location = New Point(962, 682)
+        Fac_ConMTB.Name = "Fac_ConMTB"
+        Fac_ConMTB.Size = New Size(355, 39)
+        Fac_ConMTB.TabIndex = 66
+        ' 
+        ' Fac_DeptCmb
+        ' 
+        Fac_DeptCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_DeptCmb.FormattingEnabled = True
+        Fac_DeptCmb.Location = New Point(273, 680)
+        Fac_DeptCmb.Name = "Fac_DeptCmb"
+        Fac_DeptCmb.Size = New Size(186, 40)
+        Fac_DeptCmb.TabIndex = 65
+        ' 
+        ' Fac_PosLbl
+        ' 
+        Fac_PosLbl.AutoSize = True
+        Fac_PosLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_PosLbl.Location = New Point(1267, 563)
+        Fac_PosLbl.Name = "Fac_PosLbl"
+        Fac_PosLbl.Size = New Size(108, 27)
+        Fac_PosLbl.TabIndex = 62
+        Fac_PosLbl.Text = "Position:"
+        Fac_PosLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_SufTB
+        ' 
+        Fac_SufTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_SufTB.Location = New Point(1129, 590)
+        Fac_SufTB.Name = "Fac_SufTB"
+        Fac_SufTB.Size = New Size(114, 39)
+        Fac_SufTB.TabIndex = 61
+        ' 
+        ' Fac_MidTB
+        ' 
+        Fac_MidTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_MidTB.Location = New Point(865, 590)
+        Fac_MidTB.Name = "Fac_MidTB"
+        Fac_MidTB.Size = New Size(240, 39)
+        Fac_MidTB.TabIndex = 60
+        ' 
+        ' Fac_SufLbl
+        ' 
+        Fac_SufLbl.AutoSize = True
+        Fac_SufLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_SufLbl.Location = New Point(1129, 561)
+        Fac_SufLbl.Name = "Fac_SufLbl"
+        Fac_SufLbl.Size = New Size(82, 27)
+        Fac_SufLbl.TabIndex = 59
+        Fac_SufLbl.Text = "Suffix:"
+        Fac_SufLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_MidLbl
+        ' 
+        Fac_MidLbl.AutoSize = True
+        Fac_MidLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_MidLbl.Location = New Point(865, 561)
+        Fac_MidLbl.Name = "Fac_MidLbl"
+        Fac_MidLbl.Size = New Size(163, 27)
+        Fac_MidLbl.TabIndex = 58
+        Fac_MidLbl.Text = "Middle Name:"
+        Fac_MidLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_EmailTB
+        ' 
+        Fac_EmailTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_EmailTB.Location = New Point(485, 681)
+        Fac_EmailTB.Name = "Fac_EmailTB"
+        Fac_EmailTB.Size = New Size(453, 39)
+        Fac_EmailTB.TabIndex = 55
+        ' 
+        ' Fac_FirstNTB
+        ' 
+        Fac_FirstNTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_FirstNTB.Location = New Point(485, 590)
+        Fac_FirstNTB.Name = "Fac_FirstNTB"
+        Fac_FirstNTB.Size = New Size(357, 39)
+        Fac_FirstNTB.TabIndex = 54
+        ' 
+        ' Fac_LastNTB
+        ' 
+        Fac_LastNTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_LastNTB.Location = New Point(273, 590)
+        Fac_LastNTB.Name = "Fac_LastNTB"
+        Fac_LastNTB.Size = New Size(186, 39)
+        Fac_LastNTB.TabIndex = 53
+        ' 
+        ' Fac_EmailLbl
+        ' 
+        Fac_EmailLbl.AutoSize = True
+        Fac_EmailLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_EmailLbl.Location = New Point(485, 653)
+        Fac_EmailLbl.Name = "Fac_EmailLbl"
+        Fac_EmailLbl.Size = New Size(179, 27)
+        Fac_EmailLbl.TabIndex = 52
+        Fac_EmailLbl.Text = "Email Address:"
+        Fac_EmailLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_DeptLbl
+        ' 
+        Fac_DeptLbl.AutoSize = True
+        Fac_DeptLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_DeptLbl.Location = New Point(273, 653)
+        Fac_DeptLbl.Name = "Fac_DeptLbl"
+        Fac_DeptLbl.Size = New Size(152, 27)
+        Fac_DeptLbl.TabIndex = 51
+        Fac_DeptLbl.Text = "Department:"
+        Fac_DeptLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_FirstNLbl
+        ' 
+        Fac_FirstNLbl.AutoSize = True
+        Fac_FirstNLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_FirstNLbl.Location = New Point(485, 561)
+        Fac_FirstNLbl.Name = "Fac_FirstNLbl"
+        Fac_FirstNLbl.Size = New Size(140, 27)
+        Fac_FirstNLbl.TabIndex = 50
+        Fac_FirstNLbl.Text = "First Name:"
+        Fac_FirstNLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_LastNLbl
+        ' 
+        Fac_LastNLbl.AutoSize = True
+        Fac_LastNLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_LastNLbl.Location = New Point(273, 561)
+        Fac_LastNLbl.Name = "Fac_LastNLbl"
+        Fac_LastNLbl.Size = New Size(138, 27)
+        Fac_LastNLbl.TabIndex = 49
+        Fac_LastNLbl.Text = "Last Name:"
+        Fac_LastNLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_FIDLbl
+        ' 
+        Fac_FIDLbl.AutoSize = True
+        Fac_FIDLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_FIDLbl.Location = New Point(62, 561)
+        Fac_FIDLbl.Name = "Fac_FIDLbl"
+        Fac_FIDLbl.Size = New Size(131, 27)
+        Fac_FIDLbl.TabIndex = 47
+        Fac_FIDLbl.Text = "Faculty ID:"
+        Fac_FIDLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Fac_FID_MTB
+        ' 
+        Fac_FID_MTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_FID_MTB.Location = New Point(62, 590)
+        Fac_FID_MTB.Name = "Fac_FID_MTB"
+        Fac_FID_MTB.Size = New Size(186, 39)
+        Fac_FID_MTB.TabIndex = 46
+        ' 
+        ' FAC_DelBtn
+        ' 
+        FAC_DelBtn.BackColor = Color.DarkRed
+        FAC_DelBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FAC_DelBtn.ForeColor = SystemColors.ButtonHighlight
+        FAC_DelBtn.Location = New Point(1303, 464)
+        FAC_DelBtn.Name = "FAC_DelBtn"
+        FAC_DelBtn.Size = New Size(151, 60)
+        FAC_DelBtn.TabIndex = 15
+        FAC_DelBtn.Text = "DELETE"
+        FAC_DelBtn.UseVisualStyleBackColor = False
+        ' 
+        ' FAC_EdBtn
+        ' 
+        FAC_EdBtn.BackColor = Color.Navy
+        FAC_EdBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FAC_EdBtn.ForeColor = SystemColors.ButtonHighlight
+        FAC_EdBtn.Location = New Point(1137, 464)
+        FAC_EdBtn.Name = "FAC_EdBtn"
+        FAC_EdBtn.Size = New Size(151, 60)
+        FAC_EdBtn.TabIndex = 14
+        FAC_EdBtn.Text = "EDIT"
+        FAC_EdBtn.UseVisualStyleBackColor = False
+        ' 
+        ' Fac_BotPnl
+        ' 
+        Fac_BotPnl.BackColor = Color.Black
+        Fac_BotPnl.Location = New Point(51, 526)
+        Fac_BotPnl.Name = "Fac_BotPnl"
+        Fac_BotPnl.Size = New Size(1054, 10)
+        Fac_BotPnl.TabIndex = 13
+        ' 
+        ' Fac_TopPnl
+        ' 
+        Fac_TopPnl.BackColor = Color.Black
+        Fac_TopPnl.Location = New Point(51, 450)
+        Fac_TopPnl.Name = "Fac_TopPnl"
+        Fac_TopPnl.Size = New Size(1054, 10)
+        Fac_TopPnl.TabIndex = 12
+        ' 
+        ' Fac_NewEntLbl
+        ' 
+        Fac_NewEntLbl.AutoSize = True
+        Fac_NewEntLbl.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_NewEntLbl.Location = New Point(482, 473)
+        Fac_NewEntLbl.Name = "Fac_NewEntLbl"
+        Fac_NewEntLbl.Size = New Size(222, 39)
+        Fac_NewEntLbl.TabIndex = 11
+        Fac_NewEntLbl.Text = "NEW ENTRY"
+        ' 
+        ' FAC_DGV
+        ' 
+        FAC_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        FAC_DGV.Columns.AddRange(New DataGridViewColumn() {Fac_DGV_FID, Fac_DGV_LastN, Fac_DGV_FirstN, Fac_DGV_MidN, Fac_DGV_Suf, Fac_DGV_Dept, Fac_DGV_Pos, Fac_DGV_Emp, Fac_DGV_Email, Fac_DGV_Con})
+        FAC_DGV.Location = New Point(51, 182)
+        FAC_DGV.Name = "FAC_DGV"
+        FAC_DGV.RowHeadersWidth = 51
+        FAC_DGV.Size = New Size(1403, 252)
+        FAC_DGV.TabIndex = 9
+        ' 
+        ' Fac_DGV_FID
+        ' 
+        Fac_DGV_FID.HeaderText = "FACULTY ID"
+        Fac_DGV_FID.MinimumWidth = 6
+        Fac_DGV_FID.Name = "Fac_DGV_FID"
+        Fac_DGV_FID.Width = 135
+        ' 
+        ' Fac_DGV_LastN
+        ' 
+        Fac_DGV_LastN.HeaderText = "LAST NAME"
+        Fac_DGV_LastN.MinimumWidth = 6
+        Fac_DGV_LastN.Name = "Fac_DGV_LastN"
+        Fac_DGV_LastN.Width = 135
+        ' 
+        ' Fac_DGV_FirstN
+        ' 
+        Fac_DGV_FirstN.HeaderText = "FIRST NAME"
+        Fac_DGV_FirstN.MinimumWidth = 6
+        Fac_DGV_FirstN.Name = "Fac_DGV_FirstN"
+        Fac_DGV_FirstN.Width = 135
+        ' 
+        ' Fac_DGV_MidN
+        ' 
+        Fac_DGV_MidN.HeaderText = "MIDDLE NAME"
+        Fac_DGV_MidN.MinimumWidth = 6
+        Fac_DGV_MidN.Name = "Fac_DGV_MidN"
+        Fac_DGV_MidN.Width = 135
+        ' 
+        ' Fac_DGV_Suf
+        ' 
+        Fac_DGV_Suf.HeaderText = "SUFFIX"
+        Fac_DGV_Suf.MinimumWidth = 6
+        Fac_DGV_Suf.Name = "Fac_DGV_Suf"
+        Fac_DGV_Suf.Width = 135
+        ' 
+        ' Fac_DGV_Dept
+        ' 
+        Fac_DGV_Dept.HeaderText = "DEPARTMENT"
+        Fac_DGV_Dept.MinimumWidth = 6
+        Fac_DGV_Dept.Name = "Fac_DGV_Dept"
+        Fac_DGV_Dept.Width = 135
+        ' 
+        ' Fac_DGV_Pos
+        ' 
+        Fac_DGV_Pos.HeaderText = "POSITION"
+        Fac_DGV_Pos.MinimumWidth = 6
+        Fac_DGV_Pos.Name = "Fac_DGV_Pos"
+        Fac_DGV_Pos.Width = 135
+        ' 
+        ' Fac_DGV_Emp
+        ' 
+        Fac_DGV_Emp.HeaderText = "EMPLOYMENT"
+        Fac_DGV_Emp.MinimumWidth = 6
+        Fac_DGV_Emp.Name = "Fac_DGV_Emp"
+        Fac_DGV_Emp.Width = 135
+        ' 
+        ' Fac_DGV_Email
+        ' 
+        Fac_DGV_Email.HeaderText = "EMAIL"
+        Fac_DGV_Email.MinimumWidth = 6
+        Fac_DGV_Email.Name = "Fac_DGV_Email"
+        Fac_DGV_Email.Width = 135
+        ' 
+        ' Fac_DGV_Con
+        ' 
+        Fac_DGV_Con.HeaderText = "CONTACT NO."
+        Fac_DGV_Con.MinimumWidth = 6
+        Fac_DGV_Con.Name = "Fac_DGV_Con"
+        Fac_DGV_Con.Width = 135
+        ' 
+        ' Fac_SidePnl
+        ' 
+        Fac_SidePnl.BackColor = Color.Navy
+        Fac_SidePnl.Location = New Point(51, 41)
+        Fac_SidePnl.Name = "Fac_SidePnl"
+        Fac_SidePnl.Size = New Size(39, 72)
+        Fac_SidePnl.TabIndex = 8
+        ' 
+        ' FAC_Lbl
+        ' 
+        FAC_Lbl.Font = New Font("Times New Roman", 54F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        FAC_Lbl.Location = New Point(96, 22)
+        FAC_Lbl.Name = "FAC_Lbl"
+        FAC_Lbl.Size = New Size(608, 105)
+        FAC_Lbl.TabIndex = 6
+        FAC_Lbl.Text = "FACULTY"
+        ' 
+        ' Adm_func_FacDateTime_lbl
+        ' 
+        Adm_func_FacDateTime_lbl.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Adm_func_FacDateTime_lbl.Location = New Point(735, 32)
+        Adm_func_FacDateTime_lbl.Name = "Adm_func_FacDateTime_lbl"
+        Adm_func_FacDateTime_lbl.Size = New Size(695, 49)
+        Adm_func_FacDateTime_lbl.TabIndex = 3
         ' 
         ' ADM_INTERPAN
         ' 
@@ -1722,417 +2543,6 @@ Partial Class Admin_Dashboard
         Adm_Intern_DateTime_lbl.Name = "Adm_Intern_DateTime_lbl"
         Adm_Intern_DateTime_lbl.Size = New Size(695, 49)
         Adm_Intern_DateTime_lbl.TabIndex = 3
-        ' 
-        ' ADM_STUDPAN
-        ' 
-        ADM_STUDPAN.BackColor = Color.WhiteSmoke
-        ADM_STUDPAN.Controls.Add(Stud_SecCmb)
-        ADM_STUDPAN.Controls.Add(Stud_SemCmb)
-        ADM_STUDPAN.Controls.Add(Stud_CourseCmb)
-        ADM_STUDPAN.Controls.Add(STUD_ClrBtn)
-        ADM_STUDPAN.Controls.Add(STUD_AddBtn)
-        ADM_STUDPAN.Controls.Add(Stud_EmailTB)
-        ADM_STUDPAN.Controls.Add(Stud_SuffixTB)
-        ADM_STUDPAN.Controls.Add(Stud_MidTB)
-        ADM_STUDPAN.Controls.Add(Stud_FirstTB)
-        ADM_STUDPAN.Controls.Add(Stud_LastTB)
-        ADM_STUDPAN.Controls.Add(Stud_ConLbl)
-        ADM_STUDPAN.Controls.Add(Stud_ConMTB)
-        ADM_STUDPAN.Controls.Add(Stud_EmLbl)
-        ADM_STUDPAN.Controls.Add(Stud_SemLbl)
-        ADM_STUDPAN.Controls.Add(Stud_CourseLbl)
-        ADM_STUDPAN.Controls.Add(Stud_SufLbl)
-        ADM_STUDPAN.Controls.Add(Stud_MidLbl)
-        ADM_STUDPAN.Controls.Add(Stud_FirstLbl)
-        ADM_STUDPAN.Controls.Add(Stud_LastLbl)
-        ADM_STUDPAN.Controls.Add(Stud_SecLbl)
-        ADM_STUDPAN.Controls.Add(Stud_StudIDPnl)
-        ADM_STUDPAN.Controls.Add(MaskedTextBox1)
-        ADM_STUDPAN.Controls.Add(STUD_DelBtn)
-        ADM_STUDPAN.Controls.Add(STUD_EdBtn)
-        ADM_STUDPAN.Controls.Add(StudBot_Pnl)
-        ADM_STUDPAN.Controls.Add(StudTop_Pnl)
-        ADM_STUDPAN.Controls.Add(FuncStud_NewEnt)
-        ADM_STUDPAN.Controls.Add(FuncStudSPan)
-        ADM_STUDPAN.Controls.Add(STUD_DGV)
-        ADM_STUDPAN.Controls.Add(STUD_Lbl)
-        ADM_STUDPAN.Controls.Add(Adm_Func_StudDateTime_lbl)
-        ADM_STUDPAN.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ADM_STUDPAN.Location = New Point(17, 25)
-        ADM_STUDPAN.Name = "ADM_STUDPAN"
-        ADM_STUDPAN.Size = New Size(1515, 793)
-        ADM_STUDPAN.TabIndex = 1
-        ' 
-        ' Stud_SecCmb
-        ' 
-        Stud_SecCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_SecCmb.FormattingEnabled = True
-        Stud_SecCmb.Location = New Point(222, 681)
-        Stud_SecCmb.Name = "Stud_SecCmb"
-        Stud_SecCmb.Size = New Size(142, 40)
-        Stud_SecCmb.TabIndex = 45
-        ' 
-        ' Stud_SemCmb
-        ' 
-        Stud_SemCmb.FormattingEnabled = True
-        Stud_SemCmb.Location = New Point(62, 681)
-        Stud_SemCmb.Name = "Stud_SemCmb"
-        Stud_SemCmb.Size = New Size(136, 39)
-        Stud_SemCmb.TabIndex = 44
-        ' 
-        ' Stud_CourseCmb
-        ' 
-        Stud_CourseCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_CourseCmb.FormattingEnabled = True
-        Stud_CourseCmb.Location = New Point(1267, 591)
-        Stud_CourseCmb.Name = "Stud_CourseCmb"
-        Stud_CourseCmb.Size = New Size(187, 40)
-        Stud_CourseCmb.TabIndex = 43
-        ' 
-        ' STUD_ClrBtn
-        ' 
-        STUD_ClrBtn.BackColor = Color.Orange
-        STUD_ClrBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        STUD_ClrBtn.ForeColor = SystemColors.ButtonHighlight
-        STUD_ClrBtn.Location = New Point(1303, 669)
-        STUD_ClrBtn.Name = "STUD_ClrBtn"
-        STUD_ClrBtn.Size = New Size(151, 60)
-        STUD_ClrBtn.TabIndex = 42
-        STUD_ClrBtn.Text = "CLEAR"
-        STUD_ClrBtn.UseVisualStyleBackColor = False
-        ' 
-        ' STUD_AddBtn
-        ' 
-        STUD_AddBtn.BackColor = Color.ForestGreen
-        STUD_AddBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        STUD_AddBtn.ForeColor = SystemColors.ButtonHighlight
-        STUD_AddBtn.Location = New Point(1137, 669)
-        STUD_AddBtn.Name = "STUD_AddBtn"
-        STUD_AddBtn.Size = New Size(151, 60)
-        STUD_AddBtn.TabIndex = 41
-        STUD_AddBtn.Text = "ADD"
-        STUD_AddBtn.UseVisualStyleBackColor = False
-        ' 
-        ' Stud_EmailTB
-        ' 
-        Stud_EmailTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_EmailTB.Location = New Point(389, 680)
-        Stud_EmailTB.Name = "Stud_EmailTB"
-        Stud_EmailTB.Size = New Size(453, 39)
-        Stud_EmailTB.TabIndex = 40
-        ' 
-        ' Stud_SuffixTB
-        ' 
-        Stud_SuffixTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_SuffixTB.Location = New Point(1129, 590)
-        Stud_SuffixTB.Name = "Stud_SuffixTB"
-        Stud_SuffixTB.Size = New Size(114, 39)
-        Stud_SuffixTB.TabIndex = 36
-        ' 
-        ' Stud_MidTB
-        ' 
-        Stud_MidTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_MidTB.Location = New Point(865, 590)
-        Stud_MidTB.Name = "Stud_MidTB"
-        Stud_MidTB.Size = New Size(240, 39)
-        Stud_MidTB.TabIndex = 35
-        ' 
-        ' Stud_FirstTB
-        ' 
-        Stud_FirstTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_FirstTB.Location = New Point(485, 590)
-        Stud_FirstTB.Name = "Stud_FirstTB"
-        Stud_FirstTB.Size = New Size(357, 39)
-        Stud_FirstTB.TabIndex = 34
-        ' 
-        ' Stud_LastTB
-        ' 
-        Stud_LastTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_LastTB.Location = New Point(273, 590)
-        Stud_LastTB.Name = "Stud_LastTB"
-        Stud_LastTB.Size = New Size(186, 39)
-        Stud_LastTB.TabIndex = 33
-        ' 
-        ' Stud_ConLbl
-        ' 
-        Stud_ConLbl.AutoSize = True
-        Stud_ConLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_ConLbl.Location = New Point(865, 652)
-        Stud_ConLbl.Name = "Stud_ConLbl"
-        Stud_ConLbl.Size = New Size(145, 27)
-        Stud_ConLbl.TabIndex = 32
-        Stud_ConLbl.Text = "Contact No."
-        Stud_ConLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_ConMTB
-        ' 
-        Stud_ConMTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_ConMTB.Location = New Point(865, 680)
-        Stud_ConMTB.Name = "Stud_ConMTB"
-        Stud_ConMTB.Size = New Size(240, 39)
-        Stud_ConMTB.TabIndex = 31
-        ' 
-        ' Stud_EmLbl
-        ' 
-        Stud_EmLbl.AutoSize = True
-        Stud_EmLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_EmLbl.Location = New Point(389, 652)
-        Stud_EmLbl.Name = "Stud_EmLbl"
-        Stud_EmLbl.Size = New Size(179, 27)
-        Stud_EmLbl.TabIndex = 30
-        Stud_EmLbl.Text = "Email Address:"
-        Stud_EmLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_SemLbl
-        ' 
-        Stud_SemLbl.AutoSize = True
-        Stud_SemLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_SemLbl.Location = New Point(62, 652)
-        Stud_SemLbl.Name = "Stud_SemLbl"
-        Stud_SemLbl.Size = New Size(126, 27)
-        Stud_SemLbl.TabIndex = 28
-        Stud_SemLbl.Text = "Semester:"
-        Stud_SemLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_CourseLbl
-        ' 
-        Stud_CourseLbl.AutoSize = True
-        Stud_CourseLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_CourseLbl.Location = New Point(1267, 561)
-        Stud_CourseLbl.Name = "Stud_CourseLbl"
-        Stud_CourseLbl.Size = New Size(100, 27)
-        Stud_CourseLbl.TabIndex = 26
-        Stud_CourseLbl.Text = "Course:"
-        Stud_CourseLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_SufLbl
-        ' 
-        Stud_SufLbl.AutoSize = True
-        Stud_SufLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_SufLbl.Location = New Point(1129, 561)
-        Stud_SufLbl.Name = "Stud_SufLbl"
-        Stud_SufLbl.Size = New Size(82, 27)
-        Stud_SufLbl.TabIndex = 24
-        Stud_SufLbl.Text = "Suffix:"
-        Stud_SufLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_MidLbl
-        ' 
-        Stud_MidLbl.AutoSize = True
-        Stud_MidLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_MidLbl.Location = New Point(865, 561)
-        Stud_MidLbl.Name = "Stud_MidLbl"
-        Stud_MidLbl.Size = New Size(163, 27)
-        Stud_MidLbl.TabIndex = 22
-        Stud_MidLbl.Text = "Middle Name:"
-        Stud_MidLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_FirstLbl
-        ' 
-        Stud_FirstLbl.AutoSize = True
-        Stud_FirstLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_FirstLbl.Location = New Point(485, 561)
-        Stud_FirstLbl.Name = "Stud_FirstLbl"
-        Stud_FirstLbl.Size = New Size(140, 27)
-        Stud_FirstLbl.TabIndex = 20
-        Stud_FirstLbl.Text = "First Name:"
-        Stud_FirstLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_LastLbl
-        ' 
-        Stud_LastLbl.AutoSize = True
-        Stud_LastLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_LastLbl.Location = New Point(273, 561)
-        Stud_LastLbl.Name = "Stud_LastLbl"
-        Stud_LastLbl.Size = New Size(138, 27)
-        Stud_LastLbl.TabIndex = 18
-        Stud_LastLbl.Text = "Last Name:"
-        Stud_LastLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_SecLbl
-        ' 
-        Stud_SecLbl.AutoSize = True
-        Stud_SecLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_SecLbl.Location = New Point(222, 652)
-        Stud_SecLbl.Name = "Stud_SecLbl"
-        Stud_SecLbl.Size = New Size(104, 27)
-        Stud_SecLbl.TabIndex = 16
-        Stud_SecLbl.Text = "Section:"
-        Stud_SecLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Stud_StudIDPnl
-        ' 
-        Stud_StudIDPnl.AutoSize = True
-        Stud_StudIDPnl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Stud_StudIDPnl.Location = New Point(62, 561)
-        Stud_StudIDPnl.Name = "Stud_StudIDPnl"
-        Stud_StudIDPnl.Size = New Size(136, 27)
-        Stud_StudIDPnl.TabIndex = 14
-        Stud_StudIDPnl.Text = "Student ID:"
-        Stud_StudIDPnl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' MaskedTextBox1
-        ' 
-        MaskedTextBox1.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox1.Location = New Point(62, 590)
-        MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(186, 39)
-        MaskedTextBox1.TabIndex = 13
-        ' 
-        ' STUD_DelBtn
-        ' 
-        STUD_DelBtn.BackColor = Color.DarkRed
-        STUD_DelBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        STUD_DelBtn.ForeColor = SystemColors.ButtonHighlight
-        STUD_DelBtn.Location = New Point(1303, 464)
-        STUD_DelBtn.Name = "STUD_DelBtn"
-        STUD_DelBtn.Size = New Size(151, 60)
-        STUD_DelBtn.TabIndex = 12
-        STUD_DelBtn.Text = "DELETE"
-        STUD_DelBtn.UseVisualStyleBackColor = False
-        ' 
-        ' STUD_EdBtn
-        ' 
-        STUD_EdBtn.BackColor = Color.Navy
-        STUD_EdBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        STUD_EdBtn.ForeColor = SystemColors.ButtonHighlight
-        STUD_EdBtn.Location = New Point(1137, 464)
-        STUD_EdBtn.Name = "STUD_EdBtn"
-        STUD_EdBtn.Size = New Size(151, 60)
-        STUD_EdBtn.TabIndex = 11
-        STUD_EdBtn.Text = "EDIT"
-        STUD_EdBtn.UseVisualStyleBackColor = False
-        ' 
-        ' StudBot_Pnl
-        ' 
-        StudBot_Pnl.BackColor = Color.Black
-        StudBot_Pnl.Location = New Point(51, 526)
-        StudBot_Pnl.Name = "StudBot_Pnl"
-        StudBot_Pnl.Size = New Size(1054, 10)
-        StudBot_Pnl.TabIndex = 10
-        ' 
-        ' StudTop_Pnl
-        ' 
-        StudTop_Pnl.BackColor = Color.Black
-        StudTop_Pnl.Location = New Point(51, 450)
-        StudTop_Pnl.Name = "StudTop_Pnl"
-        StudTop_Pnl.Size = New Size(1054, 10)
-        StudTop_Pnl.TabIndex = 9
-        ' 
-        ' FuncStud_NewEnt
-        ' 
-        FuncStud_NewEnt.AutoSize = True
-        FuncStud_NewEnt.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FuncStud_NewEnt.Location = New Point(482, 473)
-        FuncStud_NewEnt.Name = "FuncStud_NewEnt"
-        FuncStud_NewEnt.Size = New Size(222, 39)
-        FuncStud_NewEnt.TabIndex = 8
-        FuncStud_NewEnt.Text = "NEW ENTRY"
-        ' 
-        ' FuncStudSPan
-        ' 
-        FuncStudSPan.BackColor = Color.Navy
-        FuncStudSPan.Location = New Point(51, 41)
-        FuncStudSPan.Name = "FuncStudSPan"
-        FuncStudSPan.Size = New Size(39, 72)
-        FuncStudSPan.TabIndex = 7
-        ' 
-        ' STUD_DGV
-        ' 
-        STUD_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        STUD_DGV.Columns.AddRange(New DataGridViewColumn() {Stud_DGV_SID, Stud_DGV_LastN, Stud_DGV_FirstN, Stud_DGV_MidN, Stud_DGV_Suf, Stud_DGV_Course, Stud_DGV_Sem, Stud_DGV_Sec, Stud_DGV_Email, Stud_DGV_Con})
-        STUD_DGV.Location = New Point(51, 182)
-        STUD_DGV.Name = "STUD_DGV"
-        STUD_DGV.RowHeadersWidth = 51
-        STUD_DGV.Size = New Size(1403, 252)
-        STUD_DGV.TabIndex = 6
-        ' 
-        ' Stud_DGV_SID
-        ' 
-        Stud_DGV_SID.HeaderText = "STUDENT ID"
-        Stud_DGV_SID.MinimumWidth = 6
-        Stud_DGV_SID.Name = "Stud_DGV_SID"
-        Stud_DGV_SID.Width = 135
-        ' 
-        ' Stud_DGV_LastN
-        ' 
-        Stud_DGV_LastN.HeaderText = "LAST NAME"
-        Stud_DGV_LastN.MinimumWidth = 6
-        Stud_DGV_LastN.Name = "Stud_DGV_LastN"
-        Stud_DGV_LastN.Width = 135
-        ' 
-        ' Stud_DGV_FirstN
-        ' 
-        Stud_DGV_FirstN.HeaderText = "FIRST NAME"
-        Stud_DGV_FirstN.MinimumWidth = 6
-        Stud_DGV_FirstN.Name = "Stud_DGV_FirstN"
-        Stud_DGV_FirstN.Width = 135
-        ' 
-        ' Stud_DGV_MidN
-        ' 
-        Stud_DGV_MidN.HeaderText = "MIDDLE NAME"
-        Stud_DGV_MidN.MinimumWidth = 6
-        Stud_DGV_MidN.Name = "Stud_DGV_MidN"
-        Stud_DGV_MidN.Width = 135
-        ' 
-        ' Stud_DGV_Suf
-        ' 
-        Stud_DGV_Suf.HeaderText = "SUFFIX"
-        Stud_DGV_Suf.MinimumWidth = 6
-        Stud_DGV_Suf.Name = "Stud_DGV_Suf"
-        Stud_DGV_Suf.Width = 135
-        ' 
-        ' Stud_DGV_Course
-        ' 
-        Stud_DGV_Course.HeaderText = "COURSE"
-        Stud_DGV_Course.MinimumWidth = 6
-        Stud_DGV_Course.Name = "Stud_DGV_Course"
-        Stud_DGV_Course.Width = 135
-        ' 
-        ' Stud_DGV_Sem
-        ' 
-        Stud_DGV_Sem.HeaderText = "SEMESTER"
-        Stud_DGV_Sem.MinimumWidth = 6
-        Stud_DGV_Sem.Name = "Stud_DGV_Sem"
-        Stud_DGV_Sem.Width = 135
-        ' 
-        ' Stud_DGV_Sec
-        ' 
-        Stud_DGV_Sec.HeaderText = "SECTION"
-        Stud_DGV_Sec.MinimumWidth = 6
-        Stud_DGV_Sec.Name = "Stud_DGV_Sec"
-        Stud_DGV_Sec.Width = 135
-        ' 
-        ' Stud_DGV_Email
-        ' 
-        Stud_DGV_Email.HeaderText = "EMAIL"
-        Stud_DGV_Email.MinimumWidth = 6
-        Stud_DGV_Email.Name = "Stud_DGV_Email"
-        Stud_DGV_Email.Width = 135
-        ' 
-        ' Stud_DGV_Con
-        ' 
-        Stud_DGV_Con.HeaderText = "CONTACT NO."
-        Stud_DGV_Con.MinimumWidth = 6
-        Stud_DGV_Con.Name = "Stud_DGV_Con"
-        Stud_DGV_Con.Width = 135
-        ' 
-        ' STUD_Lbl
-        ' 
-        STUD_Lbl.Font = New Font("Times New Roman", 54F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        STUD_Lbl.Location = New Point(96, 22)
-        STUD_Lbl.Name = "STUD_Lbl"
-        STUD_Lbl.Size = New Size(608, 105)
-        STUD_Lbl.TabIndex = 4
-        STUD_Lbl.Text = "STUDENTS"
-        ' 
-        ' Adm_Func_StudDateTime_lbl
-        ' 
-        Adm_Func_StudDateTime_lbl.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Adm_Func_StudDateTime_lbl.Location = New Point(735, 32)
-        Adm_Func_StudDateTime_lbl.Name = "Adm_Func_StudDateTime_lbl"
-        Adm_Func_StudDateTime_lbl.Size = New Size(695, 49)
-        Adm_Func_StudDateTime_lbl.TabIndex = 3
         ' 
         ' ADM_SUPERPAN
         ' 
@@ -3325,416 +3735,6 @@ Partial Class Admin_Dashboard
         Adm_Dept_DateTime_lbl.Size = New Size(695, 49)
         Adm_Dept_DateTime_lbl.TabIndex = 3
         ' 
-        ' ADM_FACPAN
-        ' 
-        ADM_FACPAN.BackColor = Color.WhiteSmoke
-        ADM_FACPAN.Controls.Add(Fac_PosTB)
-        ADM_FACPAN.Controls.Add(FAC_ClrBtn)
-        ADM_FACPAN.Controls.Add(FAC_AddBtn)
-        ADM_FACPAN.Controls.Add(Fac_EmpCmb)
-        ADM_FACPAN.Controls.Add(Fac_EmpLbl)
-        ADM_FACPAN.Controls.Add(Fac_ConLbl)
-        ADM_FACPAN.Controls.Add(Fac_ConMTB)
-        ADM_FACPAN.Controls.Add(Fac_DeptCmb)
-        ADM_FACPAN.Controls.Add(Fac_PosLbl)
-        ADM_FACPAN.Controls.Add(Fac_SufTB)
-        ADM_FACPAN.Controls.Add(Fac_MidTB)
-        ADM_FACPAN.Controls.Add(Fac_SufLbl)
-        ADM_FACPAN.Controls.Add(Fac_MidLbl)
-        ADM_FACPAN.Controls.Add(Fac_EmailTB)
-        ADM_FACPAN.Controls.Add(Fac_FirstNTB)
-        ADM_FACPAN.Controls.Add(Fac_LastNTB)
-        ADM_FACPAN.Controls.Add(Fac_EmailLbl)
-        ADM_FACPAN.Controls.Add(Fac_DeptLbl)
-        ADM_FACPAN.Controls.Add(Fac_FirstNLbl)
-        ADM_FACPAN.Controls.Add(Fac_LastNLbl)
-        ADM_FACPAN.Controls.Add(Fac_FIDLbl)
-        ADM_FACPAN.Controls.Add(Fac_FID_MTB)
-        ADM_FACPAN.Controls.Add(FAC_DelBtn)
-        ADM_FACPAN.Controls.Add(FAC_EdBtn)
-        ADM_FACPAN.Controls.Add(Fac_BotPnl)
-        ADM_FACPAN.Controls.Add(Fac_TopPnl)
-        ADM_FACPAN.Controls.Add(Fac_NewEntLbl)
-        ADM_FACPAN.Controls.Add(FAC_DGV)
-        ADM_FACPAN.Controls.Add(Fac_SidePnl)
-        ADM_FACPAN.Controls.Add(FAC_Lbl)
-        ADM_FACPAN.Controls.Add(Adm_func_FacDateTime_lbl)
-        ADM_FACPAN.Location = New Point(17, 25)
-        ADM_FACPAN.Name = "ADM_FACPAN"
-        ADM_FACPAN.Size = New Size(1515, 793)
-        ADM_FACPAN.TabIndex = 2
-        ' 
-        ' Fac_PosTB
-        ' 
-        Fac_PosTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_PosTB.Location = New Point(1266, 590)
-        Fac_PosTB.Name = "Fac_PosTB"
-        Fac_PosTB.Size = New Size(189, 39)
-        Fac_PosTB.TabIndex = 72
-        ' 
-        ' FAC_ClrBtn
-        ' 
-        FAC_ClrBtn.BackColor = Color.Orange
-        FAC_ClrBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FAC_ClrBtn.ForeColor = SystemColors.ButtonHighlight
-        FAC_ClrBtn.Location = New Point(1303, 725)
-        FAC_ClrBtn.Name = "FAC_ClrBtn"
-        FAC_ClrBtn.Size = New Size(151, 60)
-        FAC_ClrBtn.TabIndex = 71
-        FAC_ClrBtn.Text = "CLEAR"
-        FAC_ClrBtn.UseVisualStyleBackColor = False
-        ' 
-        ' FAC_AddBtn
-        ' 
-        FAC_AddBtn.BackColor = Color.ForestGreen
-        FAC_AddBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FAC_AddBtn.ForeColor = SystemColors.ButtonHighlight
-        FAC_AddBtn.Location = New Point(1137, 725)
-        FAC_AddBtn.Name = "FAC_AddBtn"
-        FAC_AddBtn.Size = New Size(151, 60)
-        FAC_AddBtn.TabIndex = 70
-        FAC_AddBtn.Text = "ADD"
-        FAC_AddBtn.UseVisualStyleBackColor = False
-        ' 
-        ' Fac_EmpCmb
-        ' 
-        Fac_EmpCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_EmpCmb.FormattingEnabled = True
-        Fac_EmpCmb.Location = New Point(62, 680)
-        Fac_EmpCmb.Name = "Fac_EmpCmb"
-        Fac_EmpCmb.Size = New Size(186, 40)
-        Fac_EmpCmb.TabIndex = 69
-        ' 
-        ' Fac_EmpLbl
-        ' 
-        Fac_EmpLbl.AutoSize = True
-        Fac_EmpLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_EmpLbl.Location = New Point(63, 652)
-        Fac_EmpLbl.Name = "Fac_EmpLbl"
-        Fac_EmpLbl.Size = New Size(156, 27)
-        Fac_EmpLbl.TabIndex = 68
-        Fac_EmpLbl.Text = "Employment:"
-        Fac_EmpLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_ConLbl
-        ' 
-        Fac_ConLbl.AutoSize = True
-        Fac_ConLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_ConLbl.Location = New Point(962, 653)
-        Fac_ConLbl.Name = "Fac_ConLbl"
-        Fac_ConLbl.Size = New Size(145, 27)
-        Fac_ConLbl.TabIndex = 67
-        Fac_ConLbl.Text = "Contact No."
-        Fac_ConLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_ConMTB
-        ' 
-        Fac_ConMTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_ConMTB.Location = New Point(962, 682)
-        Fac_ConMTB.Name = "Fac_ConMTB"
-        Fac_ConMTB.Size = New Size(355, 39)
-        Fac_ConMTB.TabIndex = 66
-        ' 
-        ' Fac_DeptCmb
-        ' 
-        Fac_DeptCmb.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_DeptCmb.FormattingEnabled = True
-        Fac_DeptCmb.Location = New Point(273, 680)
-        Fac_DeptCmb.Name = "Fac_DeptCmb"
-        Fac_DeptCmb.Size = New Size(186, 40)
-        Fac_DeptCmb.TabIndex = 65
-        ' 
-        ' Fac_PosLbl
-        ' 
-        Fac_PosLbl.AutoSize = True
-        Fac_PosLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_PosLbl.Location = New Point(1267, 563)
-        Fac_PosLbl.Name = "Fac_PosLbl"
-        Fac_PosLbl.Size = New Size(108, 27)
-        Fac_PosLbl.TabIndex = 62
-        Fac_PosLbl.Text = "Position:"
-        Fac_PosLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_SufTB
-        ' 
-        Fac_SufTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_SufTB.Location = New Point(1129, 590)
-        Fac_SufTB.Name = "Fac_SufTB"
-        Fac_SufTB.Size = New Size(114, 39)
-        Fac_SufTB.TabIndex = 61
-        ' 
-        ' Fac_MidTB
-        ' 
-        Fac_MidTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_MidTB.Location = New Point(865, 590)
-        Fac_MidTB.Name = "Fac_MidTB"
-        Fac_MidTB.Size = New Size(240, 39)
-        Fac_MidTB.TabIndex = 60
-        ' 
-        ' Fac_SufLbl
-        ' 
-        Fac_SufLbl.AutoSize = True
-        Fac_SufLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_SufLbl.Location = New Point(1129, 561)
-        Fac_SufLbl.Name = "Fac_SufLbl"
-        Fac_SufLbl.Size = New Size(82, 27)
-        Fac_SufLbl.TabIndex = 59
-        Fac_SufLbl.Text = "Suffix:"
-        Fac_SufLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_MidLbl
-        ' 
-        Fac_MidLbl.AutoSize = True
-        Fac_MidLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_MidLbl.Location = New Point(865, 561)
-        Fac_MidLbl.Name = "Fac_MidLbl"
-        Fac_MidLbl.Size = New Size(163, 27)
-        Fac_MidLbl.TabIndex = 58
-        Fac_MidLbl.Text = "Middle Name:"
-        Fac_MidLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_EmailTB
-        ' 
-        Fac_EmailTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_EmailTB.Location = New Point(485, 681)
-        Fac_EmailTB.Name = "Fac_EmailTB"
-        Fac_EmailTB.Size = New Size(453, 39)
-        Fac_EmailTB.TabIndex = 55
-        ' 
-        ' Fac_FirstNTB
-        ' 
-        Fac_FirstNTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_FirstNTB.Location = New Point(485, 590)
-        Fac_FirstNTB.Name = "Fac_FirstNTB"
-        Fac_FirstNTB.Size = New Size(357, 39)
-        Fac_FirstNTB.TabIndex = 54
-        ' 
-        ' Fac_LastNTB
-        ' 
-        Fac_LastNTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_LastNTB.Location = New Point(273, 590)
-        Fac_LastNTB.Name = "Fac_LastNTB"
-        Fac_LastNTB.Size = New Size(186, 39)
-        Fac_LastNTB.TabIndex = 53
-        ' 
-        ' Fac_EmailLbl
-        ' 
-        Fac_EmailLbl.AutoSize = True
-        Fac_EmailLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_EmailLbl.Location = New Point(485, 653)
-        Fac_EmailLbl.Name = "Fac_EmailLbl"
-        Fac_EmailLbl.Size = New Size(179, 27)
-        Fac_EmailLbl.TabIndex = 52
-        Fac_EmailLbl.Text = "Email Address:"
-        Fac_EmailLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_DeptLbl
-        ' 
-        Fac_DeptLbl.AutoSize = True
-        Fac_DeptLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_DeptLbl.Location = New Point(273, 653)
-        Fac_DeptLbl.Name = "Fac_DeptLbl"
-        Fac_DeptLbl.Size = New Size(152, 27)
-        Fac_DeptLbl.TabIndex = 51
-        Fac_DeptLbl.Text = "Department:"
-        Fac_DeptLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_FirstNLbl
-        ' 
-        Fac_FirstNLbl.AutoSize = True
-        Fac_FirstNLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_FirstNLbl.Location = New Point(485, 561)
-        Fac_FirstNLbl.Name = "Fac_FirstNLbl"
-        Fac_FirstNLbl.Size = New Size(140, 27)
-        Fac_FirstNLbl.TabIndex = 50
-        Fac_FirstNLbl.Text = "First Name:"
-        Fac_FirstNLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_LastNLbl
-        ' 
-        Fac_LastNLbl.AutoSize = True
-        Fac_LastNLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_LastNLbl.Location = New Point(273, 561)
-        Fac_LastNLbl.Name = "Fac_LastNLbl"
-        Fac_LastNLbl.Size = New Size(138, 27)
-        Fac_LastNLbl.TabIndex = 49
-        Fac_LastNLbl.Text = "Last Name:"
-        Fac_LastNLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_FIDLbl
-        ' 
-        Fac_FIDLbl.AutoSize = True
-        Fac_FIDLbl.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_FIDLbl.Location = New Point(62, 561)
-        Fac_FIDLbl.Name = "Fac_FIDLbl"
-        Fac_FIDLbl.Size = New Size(131, 27)
-        Fac_FIDLbl.TabIndex = 47
-        Fac_FIDLbl.Text = "Faculty ID:"
-        Fac_FIDLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Fac_FID_MTB
-        ' 
-        Fac_FID_MTB.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_FID_MTB.Location = New Point(62, 590)
-        Fac_FID_MTB.Name = "Fac_FID_MTB"
-        Fac_FID_MTB.Size = New Size(186, 39)
-        Fac_FID_MTB.TabIndex = 46
-        ' 
-        ' FAC_DelBtn
-        ' 
-        FAC_DelBtn.BackColor = Color.DarkRed
-        FAC_DelBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FAC_DelBtn.ForeColor = SystemColors.ButtonHighlight
-        FAC_DelBtn.Location = New Point(1303, 464)
-        FAC_DelBtn.Name = "FAC_DelBtn"
-        FAC_DelBtn.Size = New Size(151, 60)
-        FAC_DelBtn.TabIndex = 15
-        FAC_DelBtn.Text = "DELETE"
-        FAC_DelBtn.UseVisualStyleBackColor = False
-        ' 
-        ' FAC_EdBtn
-        ' 
-        FAC_EdBtn.BackColor = Color.Navy
-        FAC_EdBtn.Font = New Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FAC_EdBtn.ForeColor = SystemColors.ButtonHighlight
-        FAC_EdBtn.Location = New Point(1137, 464)
-        FAC_EdBtn.Name = "FAC_EdBtn"
-        FAC_EdBtn.Size = New Size(151, 60)
-        FAC_EdBtn.TabIndex = 14
-        FAC_EdBtn.Text = "EDIT"
-        FAC_EdBtn.UseVisualStyleBackColor = False
-        ' 
-        ' Fac_BotPnl
-        ' 
-        Fac_BotPnl.BackColor = Color.Black
-        Fac_BotPnl.Location = New Point(51, 526)
-        Fac_BotPnl.Name = "Fac_BotPnl"
-        Fac_BotPnl.Size = New Size(1054, 10)
-        Fac_BotPnl.TabIndex = 13
-        ' 
-        ' Fac_TopPnl
-        ' 
-        Fac_TopPnl.BackColor = Color.Black
-        Fac_TopPnl.Location = New Point(51, 450)
-        Fac_TopPnl.Name = "Fac_TopPnl"
-        Fac_TopPnl.Size = New Size(1054, 10)
-        Fac_TopPnl.TabIndex = 12
-        ' 
-        ' Fac_NewEntLbl
-        ' 
-        Fac_NewEntLbl.AutoSize = True
-        Fac_NewEntLbl.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_NewEntLbl.Location = New Point(482, 473)
-        Fac_NewEntLbl.Name = "Fac_NewEntLbl"
-        Fac_NewEntLbl.Size = New Size(222, 39)
-        Fac_NewEntLbl.TabIndex = 11
-        Fac_NewEntLbl.Text = "NEW ENTRY"
-        ' 
-        ' FAC_DGV
-        ' 
-        FAC_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        FAC_DGV.Columns.AddRange(New DataGridViewColumn() {Fac_DGV_FID, Fac_DGV_LastN, Fac_DGV_FirstN, Fac_DGV_MidN, Fac_DGV_Suf, Fac_DGV_Dept, Fac_DGV_Pos, Fac_DGV_Emp, Fac_DGV_Email, Fac_DGV_Con})
-        FAC_DGV.Location = New Point(51, 182)
-        FAC_DGV.Name = "FAC_DGV"
-        FAC_DGV.RowHeadersWidth = 51
-        FAC_DGV.Size = New Size(1403, 252)
-        FAC_DGV.TabIndex = 9
-        ' 
-        ' Fac_DGV_FID
-        ' 
-        Fac_DGV_FID.HeaderText = "FACULTY ID"
-        Fac_DGV_FID.MinimumWidth = 6
-        Fac_DGV_FID.Name = "Fac_DGV_FID"
-        Fac_DGV_FID.Width = 135
-        ' 
-        ' Fac_DGV_LastN
-        ' 
-        Fac_DGV_LastN.HeaderText = "LAST NAME"
-        Fac_DGV_LastN.MinimumWidth = 6
-        Fac_DGV_LastN.Name = "Fac_DGV_LastN"
-        Fac_DGV_LastN.Width = 135
-        ' 
-        ' Fac_DGV_FirstN
-        ' 
-        Fac_DGV_FirstN.HeaderText = "FIRST NAME"
-        Fac_DGV_FirstN.MinimumWidth = 6
-        Fac_DGV_FirstN.Name = "Fac_DGV_FirstN"
-        Fac_DGV_FirstN.Width = 135
-        ' 
-        ' Fac_DGV_MidN
-        ' 
-        Fac_DGV_MidN.HeaderText = "MIDDLE NAME"
-        Fac_DGV_MidN.MinimumWidth = 6
-        Fac_DGV_MidN.Name = "Fac_DGV_MidN"
-        Fac_DGV_MidN.Width = 135
-        ' 
-        ' Fac_DGV_Suf
-        ' 
-        Fac_DGV_Suf.HeaderText = "SUFFIX"
-        Fac_DGV_Suf.MinimumWidth = 6
-        Fac_DGV_Suf.Name = "Fac_DGV_Suf"
-        Fac_DGV_Suf.Width = 135
-        ' 
-        ' Fac_DGV_Dept
-        ' 
-        Fac_DGV_Dept.HeaderText = "DEPARTMENT"
-        Fac_DGV_Dept.MinimumWidth = 6
-        Fac_DGV_Dept.Name = "Fac_DGV_Dept"
-        Fac_DGV_Dept.Width = 135
-        ' 
-        ' Fac_DGV_Pos
-        ' 
-        Fac_DGV_Pos.HeaderText = "POSITION"
-        Fac_DGV_Pos.MinimumWidth = 6
-        Fac_DGV_Pos.Name = "Fac_DGV_Pos"
-        Fac_DGV_Pos.Width = 135
-        ' 
-        ' Fac_DGV_Emp
-        ' 
-        Fac_DGV_Emp.HeaderText = "EMPLOYMENT"
-        Fac_DGV_Emp.MinimumWidth = 6
-        Fac_DGV_Emp.Name = "Fac_DGV_Emp"
-        Fac_DGV_Emp.Width = 135
-        ' 
-        ' Fac_DGV_Email
-        ' 
-        Fac_DGV_Email.HeaderText = "EMAIL"
-        Fac_DGV_Email.MinimumWidth = 6
-        Fac_DGV_Email.Name = "Fac_DGV_Email"
-        Fac_DGV_Email.Width = 135
-        ' 
-        ' Fac_DGV_Con
-        ' 
-        Fac_DGV_Con.HeaderText = "CONTACT NO."
-        Fac_DGV_Con.MinimumWidth = 6
-        Fac_DGV_Con.Name = "Fac_DGV_Con"
-        Fac_DGV_Con.Width = 135
-        ' 
-        ' Fac_SidePnl
-        ' 
-        Fac_SidePnl.BackColor = Color.Navy
-        Fac_SidePnl.Location = New Point(51, 41)
-        Fac_SidePnl.Name = "Fac_SidePnl"
-        Fac_SidePnl.Size = New Size(39, 72)
-        Fac_SidePnl.TabIndex = 8
-        ' 
-        ' FAC_Lbl
-        ' 
-        FAC_Lbl.Font = New Font("Times New Roman", 54F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        FAC_Lbl.Location = New Point(96, 22)
-        FAC_Lbl.Name = "FAC_Lbl"
-        FAC_Lbl.Size = New Size(608, 105)
-        FAC_Lbl.TabIndex = 6
-        FAC_Lbl.Text = "FACULTY"
-        ' 
-        ' Adm_func_FacDateTime_lbl
-        ' 
-        Adm_func_FacDateTime_lbl.Font = New Font("Rockwell", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Adm_func_FacDateTime_lbl.Location = New Point(735, 32)
-        Adm_func_FacDateTime_lbl.Name = "Adm_func_FacDateTime_lbl"
-        Adm_func_FacDateTime_lbl.Size = New Size(695, 49)
-        Adm_func_FacDateTime_lbl.TabIndex = 3
-        ' 
         ' FuncSideBar_Panel
         ' 
         FuncSideBar_Panel.BackColor = SystemColors.Info
@@ -3977,7 +3977,7 @@ Partial Class Admin_Dashboard
         Logout_BTN.BackColor = Color.Navy
         Logout_BTN.Font = New Font("Arial Rounded MT Bold", 16.2F)
         Logout_BTN.LinkColor = Color.White
-        Logout_BTN.Location = New Point(718, 95)
+        Logout_BTN.Location = New Point(775, 131)
         Logout_BTN.Name = "Logout_BTN"
         Logout_BTN.Size = New Size(159, 36)
         Logout_BTN.TabIndex = 9
@@ -3991,7 +3991,7 @@ Partial Class Admin_Dashboard
         Dashboard_BTN.BackColor = Color.Navy
         Dashboard_BTN.Font = New Font("Arial Rounded MT Bold", 16.2F)
         Dashboard_BTN.LinkColor = Color.White
-        Dashboard_BTN.Location = New Point(87, 95)
+        Dashboard_BTN.Location = New Point(353, 131)
         Dashboard_BTN.Name = "Dashboard_BTN"
         Dashboard_BTN.Size = New Size(203, 36)
         Dashboard_BTN.TabIndex = 0
@@ -4005,9 +4005,9 @@ Partial Class Admin_Dashboard
         Functions_BTN.BackColor = Color.Navy
         Functions_BTN.Font = New Font("Arial Rounded MT Bold", 16.2F)
         Functions_BTN.LinkColor = Color.White
-        Functions_BTN.Location = New Point(296, 95)
+        Functions_BTN.Location = New Point(553, 131)
         Functions_BTN.Name = "Functions_BTN"
-        Functions_BTN.Size = New Size(416, 36)
+        Functions_BTN.Size = New Size(233, 36)
         Functions_BTN.TabIndex = 8
         Functions_BTN.TabStop = True
         Functions_BTN.Text = "FUNCTIONS"
@@ -4088,12 +4088,15 @@ Partial Class Admin_Dashboard
         SE_BackPan.ResumeLayout(False)
         Function_Panel.ResumeLayout(False)
         Func_Container.ResumeLayout(False)
-        ADM_INTERPAN.ResumeLayout(False)
-        ADM_INTERPAN.PerformLayout()
-        CType(Adm_Intern_DGV, ComponentModel.ISupportInitialize).EndInit()
         ADM_STUDPAN.ResumeLayout(False)
         ADM_STUDPAN.PerformLayout()
         CType(STUD_DGV, ComponentModel.ISupportInitialize).EndInit()
+        ADM_FACPAN.ResumeLayout(False)
+        ADM_FACPAN.PerformLayout()
+        CType(FAC_DGV, ComponentModel.ISupportInitialize).EndInit()
+        ADM_INTERPAN.ResumeLayout(False)
+        ADM_INTERPAN.PerformLayout()
+        CType(Adm_Intern_DGV, ComponentModel.ISupportInitialize).EndInit()
         ADM_SUPERPAN.ResumeLayout(False)
         ADM_SUPERPAN.PerformLayout()
         CType(Adm_Sup_DGV, ComponentModel.ISupportInitialize).EndInit()
@@ -4106,9 +4109,6 @@ Partial Class Admin_Dashboard
         ADM_DEPTPAN.ResumeLayout(False)
         ADM_DEPTPAN.PerformLayout()
         CType(Adm_Dept_DGV, ComponentModel.ISupportInitialize).EndInit()
-        ADM_FACPAN.ResumeLayout(False)
-        ADM_FACPAN.PerformLayout()
-        CType(FAC_DGV, ComponentModel.ISupportInitialize).EndInit()
         FuncSideBar_Panel.ResumeLayout(False)
         SideCon_BASE.ResumeLayout(False)
         FuncSidePanel_OUTER.ResumeLayout(False)

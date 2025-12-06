@@ -1,4 +1,6 @@
-﻿Public Class Admin_Dashboard
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Admin_Dashboard
     Private Sub Admin_Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.TopMost = True
         Me.FormBorderStyle = FormBorderStyle.None
@@ -9,6 +11,22 @@
         Dashboard_Panel.Show()
         Stud_Eval_Panel.Show()
         Function_Panel.Hide()
+
+        Faculty_Dashboard.StyleDGV(SE_DGV)
+        Faculty_Dashboard.StyleDGV(VL_DGV)
+        Faculty_Dashboard.StyleDGV(FE_DGV)
+        Faculty_Dashboard.StyleDGV(SR_DGV)
+        Faculty_Dashboard.StyleDGV(PC_DGV)
+
+        Faculty_Dashboard.StyleDGV(STUD_DGV)
+        Faculty_Dashboard.StyleDGV(FAC_DGV)
+        Faculty_Dashboard.StyleDGV(Adm_Intern_DGV)
+        Faculty_Dashboard.StyleDGV(Adm_Sup_DGV)
+        Faculty_Dashboard.StyleDGV(Adm_Comp_DGV)
+        Faculty_Dashboard.StyleDGV(Adm_Course_DGV)
+        Faculty_Dashboard.StyleDGV(Adm_Dept_DGV)
+
+        LoadEvaluations()
     End Sub
 
     Private Sub Dashboard_BTN_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Dashboard_BTN.LinkClicked
@@ -64,6 +82,7 @@
         Dim result = MessageBox.Show("Do you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo)
         If result = DialogResult.Yes Then
             Hide()
+            LogIn_Form.ShowPass_BTN.Checked = False
             LogIn_Form.Show()
             LogIn_Form.Name_Input.Clear()
             LogIn_Form.Pass_Input.Clear()
@@ -454,18 +473,59 @@
         ADM_INTERPAN.Show()
     End Sub
 
+    Public Sub LoadEvaluations()
+        Using con As New MySqlConnection(connString)
+            Try
+                con.Open()
 
+                Dim evalQuery As String = "
+                    SELECT i.InternID,
+                    CONCAT(s.StudLName, ', ', s.StudFName, ' ',
+                    CASE WHEN s.StudMName IS NULL OR s.StudMName = '' 
+                    THEN '' ELSE CONCAT(LEFT(s.StudMName, 1), '.') END) AS StudentName,
+                            p.ProgramName,
+                            s.StudSection,
+                            c.CompanyName,
+                            sup.SupervisorName,
+                            CONCAT(f.FacLName, ', ', f.FacFName, ' ', f.FacMName) AS FacultyEvaluator,
+                            i.Status
+                    FROM internship i
+                    JOIN students s ON s.StudentID = i.StudentID
+                    JOIN programs p ON p.ProgramID = s.ProgramID
+                    JOIN company c ON c.CompanyID = i.CompanyID
+                    JOIN supervisors sup ON sup.SupervisorID = i.SupervisorID
+                    JOIN faculty f ON f.FacultyID = i.FacultyID
+                    "
 
+                Using cmd As New MySqlCommand(evalQuery, con)
 
+                    Using da As New MySqlDataAdapter(cmd)
+                        Dim dt As New DataTable()
+                        da.Fill(dt)
 
+                        ' Prevent automatic generation of columns
+                        SE_DGV.AutoGenerateColumns = False
 
+                        ' Map DataTable columns to existing DGV columns
+                        SE_DGV_IntID.DataPropertyName = "InternID"
+                        SE_DGV_StudName.DataPropertyName = "StudentName"
+                        SE_DGV_Course.DataPropertyName = "ProgramName"
+                        SE_DGV_Section.DataPropertyName = "StudSection"
+                        SE_DGV_CompName.DataPropertyName = "CompanyName"
+                        SE_DGV_SVisor.DataPropertyName = "SupervisorName"
+                        SE_DGV_FacEval.DataPropertyName = "FacultyEvaluator"
+                        SE_DGV_Stat.DataPropertyName = "Status"
 
+                        ' Bind DataTable to DGV
+                        SE_DGV.DataSource = dt
+                    End Using
+                End Using
 
-
-
-
-
-
+            Catch ex As Exception
+                MessageBox.Show("Error: " & ex.Message)
+            End Try
+        End Using
+    End Sub
 
     'tugay
 

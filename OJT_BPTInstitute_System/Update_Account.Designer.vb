@@ -24,19 +24,6 @@ Partial Class Update_Account
     Private Sub InitializeComponent()
         Update_Panel = New Panel()
         Faculty_Update = New Panel()
-        Fac_ChangePass_Container_pnl = New Panel()
-        Fac_ChangePassword_pnl = New Panel()
-        Fac_ChangePass_Cancel_btn = New Button()
-        Fac_ChangePass_Save_btn = New Button()
-        Fac_ChangePass_ShowPass_cb = New CheckBox()
-        Fac_ChangePass_ConPass_lbl = New Label()
-        Fac_ChangePass_NewPass_lbl = New Label()
-        Fac_ChangePass_OldPass_lbl = New Label()
-        Fac_ChangePass_ConPass_txt = New TextBox()
-        Fac_ChangePass_NewPass_txt = New TextBox()
-        Fac_ChangePass_OldPass_txt = New TextBox()
-        Fac_ChangePass_Header = New Panel()
-        Fac_ChangePass_lbl = New Label()
         Fac_Update_Profile_pnl = New Panel()
         FacUpdate_DeptID_cmb = New ComboBox()
         FacUpdate_Cancel_btn = New Button()
@@ -64,6 +51,19 @@ Partial Class Update_Account
         FacUpdate_FName_lbl = New Label()
         FacUpdate_Header = New Panel()
         FacUpdateTitle_lbl = New Label()
+        Fac_ChangePass_Container_pnl = New Panel()
+        Fac_ChangePassword_pnl = New Panel()
+        Fac_ChangePass_Cancel_btn = New Button()
+        Fac_ChangePass_Save_btn = New Button()
+        Fac_ChangePass_ShowPass_cb = New CheckBox()
+        Fac_ChangePass_ConPass_lbl = New Label()
+        Fac_ChangePass_NewPass_lbl = New Label()
+        Fac_ChangePass_OldPass_lbl = New Label()
+        Fac_ChangePass_ConPass_txt = New TextBox()
+        Fac_ChangePass_NewPass_txt = New TextBox()
+        Fac_ChangePass_OldPass_txt = New TextBox()
+        Fac_ChangePass_Header = New Panel()
+        Fac_ChangePass_lbl = New Label()
         Student_Update = New Panel()
         Stud_Update_Profile_pnl = New Panel()
         UpProf_SProgID_cmb = New ComboBox()
@@ -107,11 +107,11 @@ Partial Class Update_Account
         ChangePass_lbl = New Label()
         Update_Panel.SuspendLayout()
         Faculty_Update.SuspendLayout()
+        Fac_Update_Profile_pnl.SuspendLayout()
+        FacUpdate_Header.SuspendLayout()
         Fac_ChangePass_Container_pnl.SuspendLayout()
         Fac_ChangePassword_pnl.SuspendLayout()
         Fac_ChangePass_Header.SuspendLayout()
-        Fac_Update_Profile_pnl.SuspendLayout()
-        FacUpdate_Header.SuspendLayout()
         Student_Update.SuspendLayout()
         Stud_Update_Profile_pnl.SuspendLayout()
         UpProfile_Header_Pnl.SuspendLayout()
@@ -122,8 +122,8 @@ Partial Class Update_Account
         ' 
         ' Update_Panel
         ' 
-        Update_Panel.Controls.Add(Faculty_Update)
         Update_Panel.Controls.Add(Student_Update)
+        Update_Panel.Controls.Add(Faculty_Update)
         Update_Panel.Dock = DockStyle.Fill
         Update_Panel.Location = New Point(0, 0)
         Update_Panel.Name = "Update_Panel"
@@ -139,142 +139,6 @@ Partial Class Update_Account
         Faculty_Update.Name = "Faculty_Update"
         Faculty_Update.Size = New Size(864, 495)
         Faculty_Update.TabIndex = 1
-        ' 
-        ' Fac_ChangePass_Container_pnl
-        ' 
-        Fac_ChangePass_Container_pnl.Controls.Add(Fac_ChangePassword_pnl)
-        Fac_ChangePass_Container_pnl.Controls.Add(Fac_ChangePass_Header)
-        Fac_ChangePass_Container_pnl.Dock = DockStyle.Fill
-        Fac_ChangePass_Container_pnl.Location = New Point(0, 0)
-        Fac_ChangePass_Container_pnl.Name = "Fac_ChangePass_Container_pnl"
-        Fac_ChangePass_Container_pnl.Size = New Size(864, 495)
-        Fac_ChangePass_Container_pnl.TabIndex = 4
-        ' 
-        ' Fac_ChangePassword_pnl
-        ' 
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_Cancel_btn)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_Save_btn)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_ShowPass_cb)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_ConPass_lbl)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_NewPass_lbl)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_OldPass_lbl)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_ConPass_txt)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_NewPass_txt)
-        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_OldPass_txt)
-        Fac_ChangePassword_pnl.Dock = DockStyle.Fill
-        Fac_ChangePassword_pnl.Location = New Point(0, 100)
-        Fac_ChangePassword_pnl.Name = "Fac_ChangePassword_pnl"
-        Fac_ChangePassword_pnl.Size = New Size(864, 395)
-        Fac_ChangePassword_pnl.TabIndex = 3
-        ' 
-        ' Fac_ChangePass_Cancel_btn
-        ' 
-        Fac_ChangePass_Cancel_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Fac_ChangePass_Cancel_btn.Location = New Point(739, 319)
-        Fac_ChangePass_Cancel_btn.Name = "Fac_ChangePass_Cancel_btn"
-        Fac_ChangePass_Cancel_btn.Size = New Size(96, 45)
-        Fac_ChangePass_Cancel_btn.TabIndex = 8
-        Fac_ChangePass_Cancel_btn.Text = "CANCEL"
-        Fac_ChangePass_Cancel_btn.UseVisualStyleBackColor = True
-        ' 
-        ' Fac_ChangePass_Save_btn
-        ' 
-        Fac_ChangePass_Save_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Fac_ChangePass_Save_btn.Location = New Point(637, 319)
-        Fac_ChangePass_Save_btn.Name = "Fac_ChangePass_Save_btn"
-        Fac_ChangePass_Save_btn.Size = New Size(96, 45)
-        Fac_ChangePass_Save_btn.TabIndex = 7
-        Fac_ChangePass_Save_btn.Text = "SAVE"
-        Fac_ChangePass_Save_btn.UseVisualStyleBackColor = True
-        ' 
-        ' Fac_ChangePass_ShowPass_cb
-        ' 
-        Fac_ChangePass_ShowPass_cb.AutoSize = True
-        Fac_ChangePass_ShowPass_cb.Font = New Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Fac_ChangePass_ShowPass_cb.Location = New Point(254, 319)
-        Fac_ChangePass_ShowPass_cb.Name = "Fac_ChangePass_ShowPass_cb"
-        Fac_ChangePass_ShowPass_cb.Size = New Size(130, 24)
-        Fac_ChangePass_ShowPass_cb.TabIndex = 6
-        Fac_ChangePass_ShowPass_cb.Text = "Show Password"
-        Fac_ChangePass_ShowPass_cb.UseVisualStyleBackColor = True
-        ' 
-        ' Fac_ChangePass_ConPass_lbl
-        ' 
-        Fac_ChangePass_ConPass_lbl.AutoSize = True
-        Fac_ChangePass_ConPass_lbl.Font = New Font("Segoe UI", 14F)
-        Fac_ChangePass_ConPass_lbl.Location = New Point(254, 235)
-        Fac_ChangePass_ConPass_lbl.Name = "Fac_ChangePass_ConPass_lbl"
-        Fac_ChangePass_ConPass_lbl.Size = New Size(209, 32)
-        Fac_ChangePass_ConPass_lbl.TabIndex = 5
-        Fac_ChangePass_ConPass_lbl.Text = "Confirm Password:"
-        ' 
-        ' Fac_ChangePass_NewPass_lbl
-        ' 
-        Fac_ChangePass_NewPass_lbl.AutoSize = True
-        Fac_ChangePass_NewPass_lbl.Font = New Font("Segoe UI", 14F)
-        Fac_ChangePass_NewPass_lbl.Location = New Point(254, 130)
-        Fac_ChangePass_NewPass_lbl.Name = "Fac_ChangePass_NewPass_lbl"
-        Fac_ChangePass_NewPass_lbl.Size = New Size(171, 32)
-        Fac_ChangePass_NewPass_lbl.TabIndex = 4
-        Fac_ChangePass_NewPass_lbl.Text = "New Password:"
-        ' 
-        ' Fac_ChangePass_OldPass_lbl
-        ' 
-        Fac_ChangePass_OldPass_lbl.AutoSize = True
-        Fac_ChangePass_OldPass_lbl.Font = New Font("Segoe UI", 14F)
-        Fac_ChangePass_OldPass_lbl.Location = New Point(254, 22)
-        Fac_ChangePass_OldPass_lbl.Name = "Fac_ChangePass_OldPass_lbl"
-        Fac_ChangePass_OldPass_lbl.Size = New Size(161, 32)
-        Fac_ChangePass_OldPass_lbl.TabIndex = 3
-        Fac_ChangePass_OldPass_lbl.Text = "Old Password:"
-        ' 
-        ' Fac_ChangePass_ConPass_txt
-        ' 
-        Fac_ChangePass_ConPass_txt.Font = New Font("Segoe UI", 16F)
-        Fac_ChangePass_ConPass_txt.Location = New Point(254, 270)
-        Fac_ChangePass_ConPass_txt.Name = "Fac_ChangePass_ConPass_txt"
-        Fac_ChangePass_ConPass_txt.PasswordChar = "*"c
-        Fac_ChangePass_ConPass_txt.Size = New Size(360, 43)
-        Fac_ChangePass_ConPass_txt.TabIndex = 2
-        ' 
-        ' Fac_ChangePass_NewPass_txt
-        ' 
-        Fac_ChangePass_NewPass_txt.Font = New Font("Segoe UI", 16F)
-        Fac_ChangePass_NewPass_txt.Location = New Point(254, 165)
-        Fac_ChangePass_NewPass_txt.Name = "Fac_ChangePass_NewPass_txt"
-        Fac_ChangePass_NewPass_txt.PasswordChar = "*"c
-        Fac_ChangePass_NewPass_txt.Size = New Size(360, 43)
-        Fac_ChangePass_NewPass_txt.TabIndex = 1
-        ' 
-        ' Fac_ChangePass_OldPass_txt
-        ' 
-        Fac_ChangePass_OldPass_txt.Font = New Font("Segoe UI", 16F)
-        Fac_ChangePass_OldPass_txt.Location = New Point(254, 57)
-        Fac_ChangePass_OldPass_txt.Name = "Fac_ChangePass_OldPass_txt"
-        Fac_ChangePass_OldPass_txt.PasswordChar = "*"c
-        Fac_ChangePass_OldPass_txt.Size = New Size(360, 43)
-        Fac_ChangePass_OldPass_txt.TabIndex = 0
-        ' 
-        ' Fac_ChangePass_Header
-        ' 
-        Fac_ChangePass_Header.BackColor = Color.MidnightBlue
-        Fac_ChangePass_Header.Controls.Add(Fac_ChangePass_lbl)
-        Fac_ChangePass_Header.Dock = DockStyle.Top
-        Fac_ChangePass_Header.Location = New Point(0, 0)
-        Fac_ChangePass_Header.Name = "Fac_ChangePass_Header"
-        Fac_ChangePass_Header.Size = New Size(864, 100)
-        Fac_ChangePass_Header.TabIndex = 2
-        ' 
-        ' Fac_ChangePass_lbl
-        ' 
-        Fac_ChangePass_lbl.AutoSize = True
-        Fac_ChangePass_lbl.Font = New Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Fac_ChangePass_lbl.ForeColor = Color.Goldenrod
-        Fac_ChangePass_lbl.Location = New Point(241, 27)
-        Fac_ChangePass_lbl.Name = "Fac_ChangePass_lbl"
-        Fac_ChangePass_lbl.Size = New Size(389, 47)
-        Fac_ChangePass_lbl.TabIndex = 9
-        Fac_ChangePass_lbl.Text = "CHANGE PASSWORD"
         ' 
         ' Fac_Update_Profile_pnl
         ' 
@@ -553,6 +417,142 @@ Partial Class Update_Account
         FacUpdateTitle_lbl.Size = New Size(405, 56)
         FacUpdateTitle_lbl.TabIndex = 9
         FacUpdateTitle_lbl.Text = "UPDATE PROFILE"
+        ' 
+        ' Fac_ChangePass_Container_pnl
+        ' 
+        Fac_ChangePass_Container_pnl.Controls.Add(Fac_ChangePassword_pnl)
+        Fac_ChangePass_Container_pnl.Controls.Add(Fac_ChangePass_Header)
+        Fac_ChangePass_Container_pnl.Dock = DockStyle.Fill
+        Fac_ChangePass_Container_pnl.Location = New Point(0, 0)
+        Fac_ChangePass_Container_pnl.Name = "Fac_ChangePass_Container_pnl"
+        Fac_ChangePass_Container_pnl.Size = New Size(864, 495)
+        Fac_ChangePass_Container_pnl.TabIndex = 4
+        ' 
+        ' Fac_ChangePassword_pnl
+        ' 
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_Cancel_btn)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_Save_btn)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_ShowPass_cb)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_ConPass_lbl)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_NewPass_lbl)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_OldPass_lbl)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_ConPass_txt)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_NewPass_txt)
+        Fac_ChangePassword_pnl.Controls.Add(Fac_ChangePass_OldPass_txt)
+        Fac_ChangePassword_pnl.Dock = DockStyle.Fill
+        Fac_ChangePassword_pnl.Location = New Point(0, 100)
+        Fac_ChangePassword_pnl.Name = "Fac_ChangePassword_pnl"
+        Fac_ChangePassword_pnl.Size = New Size(864, 395)
+        Fac_ChangePassword_pnl.TabIndex = 3
+        ' 
+        ' Fac_ChangePass_Cancel_btn
+        ' 
+        Fac_ChangePass_Cancel_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Fac_ChangePass_Cancel_btn.Location = New Point(739, 319)
+        Fac_ChangePass_Cancel_btn.Name = "Fac_ChangePass_Cancel_btn"
+        Fac_ChangePass_Cancel_btn.Size = New Size(96, 45)
+        Fac_ChangePass_Cancel_btn.TabIndex = 8
+        Fac_ChangePass_Cancel_btn.Text = "CANCEL"
+        Fac_ChangePass_Cancel_btn.UseVisualStyleBackColor = True
+        ' 
+        ' Fac_ChangePass_Save_btn
+        ' 
+        Fac_ChangePass_Save_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Fac_ChangePass_Save_btn.Location = New Point(637, 319)
+        Fac_ChangePass_Save_btn.Name = "Fac_ChangePass_Save_btn"
+        Fac_ChangePass_Save_btn.Size = New Size(96, 45)
+        Fac_ChangePass_Save_btn.TabIndex = 7
+        Fac_ChangePass_Save_btn.Text = "SAVE"
+        Fac_ChangePass_Save_btn.UseVisualStyleBackColor = True
+        ' 
+        ' Fac_ChangePass_ShowPass_cb
+        ' 
+        Fac_ChangePass_ShowPass_cb.AutoSize = True
+        Fac_ChangePass_ShowPass_cb.Font = New Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Fac_ChangePass_ShowPass_cb.Location = New Point(254, 319)
+        Fac_ChangePass_ShowPass_cb.Name = "Fac_ChangePass_ShowPass_cb"
+        Fac_ChangePass_ShowPass_cb.Size = New Size(130, 24)
+        Fac_ChangePass_ShowPass_cb.TabIndex = 6
+        Fac_ChangePass_ShowPass_cb.Text = "Show Password"
+        Fac_ChangePass_ShowPass_cb.UseVisualStyleBackColor = True
+        ' 
+        ' Fac_ChangePass_ConPass_lbl
+        ' 
+        Fac_ChangePass_ConPass_lbl.AutoSize = True
+        Fac_ChangePass_ConPass_lbl.Font = New Font("Segoe UI", 14F)
+        Fac_ChangePass_ConPass_lbl.Location = New Point(254, 235)
+        Fac_ChangePass_ConPass_lbl.Name = "Fac_ChangePass_ConPass_lbl"
+        Fac_ChangePass_ConPass_lbl.Size = New Size(209, 32)
+        Fac_ChangePass_ConPass_lbl.TabIndex = 5
+        Fac_ChangePass_ConPass_lbl.Text = "Confirm Password:"
+        ' 
+        ' Fac_ChangePass_NewPass_lbl
+        ' 
+        Fac_ChangePass_NewPass_lbl.AutoSize = True
+        Fac_ChangePass_NewPass_lbl.Font = New Font("Segoe UI", 14F)
+        Fac_ChangePass_NewPass_lbl.Location = New Point(254, 130)
+        Fac_ChangePass_NewPass_lbl.Name = "Fac_ChangePass_NewPass_lbl"
+        Fac_ChangePass_NewPass_lbl.Size = New Size(171, 32)
+        Fac_ChangePass_NewPass_lbl.TabIndex = 4
+        Fac_ChangePass_NewPass_lbl.Text = "New Password:"
+        ' 
+        ' Fac_ChangePass_OldPass_lbl
+        ' 
+        Fac_ChangePass_OldPass_lbl.AutoSize = True
+        Fac_ChangePass_OldPass_lbl.Font = New Font("Segoe UI", 14F)
+        Fac_ChangePass_OldPass_lbl.Location = New Point(254, 22)
+        Fac_ChangePass_OldPass_lbl.Name = "Fac_ChangePass_OldPass_lbl"
+        Fac_ChangePass_OldPass_lbl.Size = New Size(161, 32)
+        Fac_ChangePass_OldPass_lbl.TabIndex = 3
+        Fac_ChangePass_OldPass_lbl.Text = "Old Password:"
+        ' 
+        ' Fac_ChangePass_ConPass_txt
+        ' 
+        Fac_ChangePass_ConPass_txt.Font = New Font("Segoe UI", 16F)
+        Fac_ChangePass_ConPass_txt.Location = New Point(254, 270)
+        Fac_ChangePass_ConPass_txt.Name = "Fac_ChangePass_ConPass_txt"
+        Fac_ChangePass_ConPass_txt.PasswordChar = "*"c
+        Fac_ChangePass_ConPass_txt.Size = New Size(360, 43)
+        Fac_ChangePass_ConPass_txt.TabIndex = 2
+        ' 
+        ' Fac_ChangePass_NewPass_txt
+        ' 
+        Fac_ChangePass_NewPass_txt.Font = New Font("Segoe UI", 16F)
+        Fac_ChangePass_NewPass_txt.Location = New Point(254, 165)
+        Fac_ChangePass_NewPass_txt.Name = "Fac_ChangePass_NewPass_txt"
+        Fac_ChangePass_NewPass_txt.PasswordChar = "*"c
+        Fac_ChangePass_NewPass_txt.Size = New Size(360, 43)
+        Fac_ChangePass_NewPass_txt.TabIndex = 1
+        ' 
+        ' Fac_ChangePass_OldPass_txt
+        ' 
+        Fac_ChangePass_OldPass_txt.Font = New Font("Segoe UI", 16F)
+        Fac_ChangePass_OldPass_txt.Location = New Point(254, 57)
+        Fac_ChangePass_OldPass_txt.Name = "Fac_ChangePass_OldPass_txt"
+        Fac_ChangePass_OldPass_txt.PasswordChar = "*"c
+        Fac_ChangePass_OldPass_txt.Size = New Size(360, 43)
+        Fac_ChangePass_OldPass_txt.TabIndex = 0
+        ' 
+        ' Fac_ChangePass_Header
+        ' 
+        Fac_ChangePass_Header.BackColor = Color.MidnightBlue
+        Fac_ChangePass_Header.Controls.Add(Fac_ChangePass_lbl)
+        Fac_ChangePass_Header.Dock = DockStyle.Top
+        Fac_ChangePass_Header.Location = New Point(0, 0)
+        Fac_ChangePass_Header.Name = "Fac_ChangePass_Header"
+        Fac_ChangePass_Header.Size = New Size(864, 100)
+        Fac_ChangePass_Header.TabIndex = 2
+        ' 
+        ' Fac_ChangePass_lbl
+        ' 
+        Fac_ChangePass_lbl.AutoSize = True
+        Fac_ChangePass_lbl.Font = New Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Fac_ChangePass_lbl.ForeColor = Color.Goldenrod
+        Fac_ChangePass_lbl.Location = New Point(241, 27)
+        Fac_ChangePass_lbl.Name = "Fac_ChangePass_lbl"
+        Fac_ChangePass_lbl.Size = New Size(389, 47)
+        Fac_ChangePass_lbl.TabIndex = 9
+        Fac_ChangePass_lbl.Text = "CHANGE PASSWORD"
         ' 
         ' Student_Update
         ' 
@@ -989,15 +989,15 @@ Partial Class Update_Account
         Text = "Update_Account"
         Update_Panel.ResumeLayout(False)
         Faculty_Update.ResumeLayout(False)
+        Fac_Update_Profile_pnl.ResumeLayout(False)
+        Fac_Update_Profile_pnl.PerformLayout()
+        FacUpdate_Header.ResumeLayout(False)
+        FacUpdate_Header.PerformLayout()
         Fac_ChangePass_Container_pnl.ResumeLayout(False)
         Fac_ChangePassword_pnl.ResumeLayout(False)
         Fac_ChangePassword_pnl.PerformLayout()
         Fac_ChangePass_Header.ResumeLayout(False)
         Fac_ChangePass_Header.PerformLayout()
-        Fac_Update_Profile_pnl.ResumeLayout(False)
-        Fac_Update_Profile_pnl.PerformLayout()
-        FacUpdate_Header.ResumeLayout(False)
-        FacUpdate_Header.PerformLayout()
         Student_Update.ResumeLayout(False)
         Stud_Update_Profile_pnl.ResumeLayout(False)
         Stud_Update_Profile_pnl.PerformLayout()

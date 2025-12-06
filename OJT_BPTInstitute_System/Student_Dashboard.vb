@@ -9,7 +9,6 @@ Public Class Student_Dashboard
         Me.TopMost = True
         Me.FormBorderStyle = FormBorderStyle.None
         Me.WindowState = FormWindowState.Maximized
-
         LoadHomePanel()
     End Sub
 
@@ -17,6 +16,7 @@ Public Class Student_Dashboard
         Dim result As DialogResult = MessageBox.Show("Do you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo)
         If result = DialogResult.Yes Then
             Me.Hide()
+            LogIn_Form.ShowPass_BTN.Checked = False
             LogIn_Form.Show()
             LogIn_Form.Name_Input.Clear()
             LogIn_Form.Pass_Input.Clear()
@@ -272,5 +272,140 @@ Public Class Student_Dashboard
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Stud_DateTimeNow_lbl.Text = DateTime.Now.ToString("MMMM dd, yyyy // hh:mm:ss tt").ToUpper()
+    End Sub
+
+    Private Function GetWordPath() As String
+        Try
+            Dim key As Microsoft.Win32.RegistryKey =
+            Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WINWORD.EXE")
+
+            If key IsNot Nothing Then
+                Return key.GetValue("").ToString()
+            End If
+        Catch
+        End Try
+
+        Return Nothing
+    End Function
+
+    Private Async Function OpenWordDocumentAsync(filePath As String) As Task
+        Dim wordPath As String = GetWordPath()
+
+        If wordPath Is Nothing Then
+            MessageBox.Show("Microsoft Word not found on this computer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        Try
+            ' UseShellExecute = True is important for Word
+            Dim psi As New ProcessStartInfo With {
+            .FileName = wordPath,
+            .Arguments = """" & filePath & """",
+            .UseShellExecute = True
+        }
+
+            Dim p As Process = Process.Start(psi)
+
+            ' Optional: Wait for user to close Word
+            If p IsNot Nothing Then
+                Await Task.Run(Sub() p.WaitForExit())
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Failed to open file: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+    End Function
+
+
+    Private Async Sub GradeSlip_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles GradeSlip_Linklbl.LinkClicked
+        Me.TopMost = False
+
+        Dim filePath As String = "D:\Jas\Projects (2ndYr - 1st Sem)\INFORMATION MANAGEMENT\IM-VB_SYSTEM\File for System\Individual-Grade-Slip.docx"
+        Dim wordPath As String = GetWordPath()
+
+        If wordPath Is Nothing Then
+            MessageBox.Show("Microsoft Word not found on this computer.")
+            Me.TopMost = True
+            Return
+        End If
+
+        LoadHomePanel()
+
+        Dim psi As New ProcessStartInfo With {
+        .FileName = wordPath,
+        .Arguments = """" & filePath & """",
+        .UseShellExecute = False
+    }
+
+        Dim p As Process = Process.Start(psi)
+
+        If p IsNot Nothing Then
+            ' Wait for user to CLOSE the DOCX\
+            LoadHomePanel()
+            Await Task.Run(Sub() p.WaitForExit())
+        End If
+
+        Me.TopMost = True
+    End Sub
+
+    Private Async Sub CompanyMOA_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles CompanyMOA_Linklbl.LinkClicked
+        Me.TopMost = False
+
+        Dim filePath As String = "D:\Jas\Projects (2ndYr - 1st Sem)\INFORMATION MANAGEMENT\IM-VB_SYSTEM\File for System\Memorandum-of-Association.docx"
+        Dim wordPath As String = GetWordPath()
+
+        If wordPath Is Nothing Then
+            MessageBox.Show("Microsoft Word not found on this computer.")
+            Me.TopMost = True
+            Return
+        End If
+
+        LoadHomePanel()
+
+        Dim psi As New ProcessStartInfo With {
+        .FileName = wordPath,
+        .Arguments = """" & filePath & """",
+        .UseShellExecute = False
+    }
+
+        Dim p As Process = Process.Start(psi)
+
+        If p IsNot Nothing Then
+            ' Wait for user to CLOSE the DOCX
+            Await Task.Run(Sub() p.WaitForExit())
+        End If
+
+        Me.TopMost = True
+    End Sub
+
+    Private Async Sub OJT_Guidelines_Linklbl_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles OJT_Guidelines_Linklbl.LinkClicked
+        Me.TopMost = False
+
+        Dim filePath As String = "D:\Jas\Projects (2ndYr - 1st Sem)\INFORMATION MANAGEMENT\IM-VB_SYSTEM\File for System\OJT_Guidelines.docx"
+        Dim wordPath As String = GetWordPath()
+
+        If wordPath Is Nothing Then
+            MessageBox.Show("Microsoft Word not found on this computer.")
+            Me.TopMost = True
+            Return
+        End If
+
+        LoadHomePanel()
+
+        Dim psi As New ProcessStartInfo With {
+        .FileName = wordPath,
+        .Arguments = """" & filePath & """",
+        .UseShellExecute = False
+    }
+
+        Dim p As Process = Process.Start(psi)
+
+        If p IsNot Nothing Then
+            ' Wait for user to CLOSE the DOCX
+            Await Task.Run(Sub() p.WaitForExit())
+        End If
+
+        Me.TopMost = True
+
     End Sub
 End Class

@@ -283,7 +283,7 @@ Partial Class Student_Dashboard
         ' 
         ' OJT_Guidelines_Linklbl
         ' 
-        OJT_Guidelines_Linklbl.ActiveLinkColor = Color.Gold
+        OJT_Guidelines_Linklbl.ActiveLinkColor = Color.Goldenrod
         OJT_Guidelines_Linklbl.AutoSize = True
         OJT_Guidelines_Linklbl.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         OJT_Guidelines_Linklbl.LinkColor = Color.Navy
@@ -296,7 +296,7 @@ Partial Class Student_Dashboard
         ' 
         ' GradeSlip_Linklbl
         ' 
-        GradeSlip_Linklbl.ActiveLinkColor = Color.Gold
+        GradeSlip_Linklbl.ActiveLinkColor = Color.Goldenrod
         GradeSlip_Linklbl.AutoSize = True
         GradeSlip_Linklbl.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GradeSlip_Linklbl.LinkColor = Color.Navy
@@ -309,7 +309,7 @@ Partial Class Student_Dashboard
         ' 
         ' CompanyMOA_Linklbl
         ' 
-        CompanyMOA_Linklbl.ActiveLinkColor = Color.Gold
+        CompanyMOA_Linklbl.ActiveLinkColor = Color.Goldenrod
         CompanyMOA_Linklbl.AutoSize = True
         CompanyMOA_Linklbl.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         CompanyMOA_Linklbl.LinkColor = Color.Navy
